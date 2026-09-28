@@ -24,7 +24,7 @@ export function mapSearchIssue(issue:SearchIssue):GitHubIssueRecord {
   };
 }
 
-async function githubSearch(query:string, token?:string):Promise<SearchIssue[]> {
+export async function githubSearch(query:string, token?:string):Promise<SearchIssue[]> {
   const headers:Record<string,string>={
     "Accept":"application/vnd.github+json",
     "X-GitHub-Api-Version":"2022-11-28",
@@ -51,7 +51,7 @@ async function main(){
   }
   const batch=orchestrateDiscovery(streams);
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues",observedAt,queries,summary:discoverySummary(batch),
+    source:"github-public-issues",observedAt,queries,failures,summary:discoverySummary(batch),
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
     rejected:batch.rejected
