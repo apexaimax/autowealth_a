@@ -36,3 +36,19 @@ test("ordinary issues are ignored",()=>{
   }],"2026-09-28T00:00:00Z");
   assert.equal(rows.length,0);
 });
+
+
+test("GitHub adapter applies explicit requirements when a profile is supplied",()=>{
+ const [raw]=githubIssueAdapter.ingest([{
+  repository:"owner/repo",number:10,title:"$75 paid QA task",
+  htmlUrl:"https://github.com/owner/repo/issues/10",state:"open",
+  labels:["bounty"],body:"US applicants only. Desktop required. QA experience required. Free to participate. Payment released after acceptance."
+ }],"2026-09-28T00:00:00Z",{
+  devices:["PHONE","TABLET"],workCapabilities:["QA"],countries:["US"]
+ });
+ assert.ok(raw);
+ assert.equal(raw.eligible,true);
+ assert.equal(raw.deviceCompatible,false);
+ assert.equal(raw.requiresUpfrontSpend,false);
+ assert.equal(raw.paymentVerifiable,true);
+});
