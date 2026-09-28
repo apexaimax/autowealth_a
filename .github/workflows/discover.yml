@@ -13,7 +13,12 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm test
-      - name: Discovery runner readiness
-        run: |
-          echo "Discovery orchestrator is buildable and tested."
-          echo "Live source retrieval remains adapter/provider-specific and must preserve authoritative verification."
+      - name: Search live GitHub opportunities
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm run discover:github > github-opportunities.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: github-opportunities
+          path: github-opportunities.json
+          retention-days: 7
