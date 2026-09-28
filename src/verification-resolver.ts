@@ -53,5 +53,8 @@ export function resolveAuthoritativeText(raw:RawOpportunity,text:string,referenc
     evidence.push({field:"paymentVerifiable",value:true,reference,observedAt:raw.observedAt,basis:"authoritative text describes escrow/funding or a concrete payment trigger"});
   }
 
-  return {resolved:{...raw,requiresUpfrontSpend,paymentVerifiable},evidence};
+  const resolved:RawOpportunity={...raw};
+  if(requiresUpfrontSpend!==undefined) resolved.requiresUpfrontSpend=requiresUpfrontSpend;
+  if(paymentVerifiable!==undefined) resolved.paymentVerifiable=paymentVerifiable;
+  return {resolved,evidence};
 }
