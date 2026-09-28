@@ -1,3 +1,4 @@
+import { resolveAuthoritativeText } from "./verification-resolver.js";
 import type { RawOpportunity } from "./collector.js";
 
 export interface SourceAdapter<T> {
@@ -45,7 +46,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
   ingest(issues, observedAt) {
     return issues.filter(bountySignal).map(issue => {
       const amount = cashAmount(issue.title + "\n" + (issue.body ?? ""));
-      return {
+      const raw:RawOpportunity = {
         sourceId: "github:" + issue.repository,
         externalId: String(issue.number),
         title: issue.title,
@@ -64,6 +65,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
         observedAt,
         ...(amount === undefined ? {} : { advertisedRewardUsd: amount })
       };
+      return resolveAuthoritativeText(raw,issue.title+"\n"+(issue.body ?? ""),issue.htmlUrl).resolved;
     });
   }
 };
