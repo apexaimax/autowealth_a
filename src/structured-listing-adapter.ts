@@ -11,7 +11,7 @@ export interface StructuredListing {
   rewardType: RewardType;
   rewardUsd?: number;
   open?: boolean;
-  requiresUpfrontSpend?: boolean;
+  requiresUpfrontSpend?: boolean | "UNKNOWN";
   participationMode?: ParticipationMode;
   eligible?: boolean | "UNKNOWN";
   deviceCompatible?: boolean | "UNKNOWN";
@@ -28,7 +28,7 @@ export function ingestStructuredListings(rows: StructuredListing[], observedAt: 
     sourceKind: row.authoritative ? "authoritative" : "aggregator",
     category: row.category,
     rewardType: row.rewardType,
-    requiresUpfrontSpend: row.requiresUpfrontSpend ?? false,
+    requiresUpfrontSpend: row.requiresUpfrontSpend ?? "UNKNOWN",
     openStatus: row.open === undefined ? "UNKNOWN" : row.open ? "OPEN" : "CLOSED",
     participationMode: row.participationMode ?? "HUMAN_REQUIRED",
     eligible: row.eligible ?? "UNKNOWN",
