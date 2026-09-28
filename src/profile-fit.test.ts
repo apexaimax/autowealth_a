@@ -37,6 +37,6 @@ test("unknown requirements stay unknown instead of being guessed",()=>{
 });
 
 test("missing required work capability can reject eligibility",()=>{
- const r=resolveProfileFit({...raw,eligible:true},profile,{requiredWorkCapabilities:["LOCAL_DEV"]});
+ const r=resolveProfileFit({...raw,eligible:true},profile,{requiredWorkCapabilities:["CODE_ANALYSIS"]});
  assert.equal(r.resolved.eligible,false);
 });
