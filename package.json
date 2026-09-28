@@ -1,1 +1,20 @@
-{"name":"revenue-automaton","version":"0.1.0","private":true,"description":"Revenue-first opportunity and profitability gate for agent workflows","type":"module","scripts":{"build":"tsc -p tsconfig.json","test":"npm run build && node --test dist/**/*.test.js"},"devDependencies":{"typescript":"^5.9.2","@types/node":"^22.15.30"},"engines":{"node":">=20"},"license":"MIT"}
+{
+  "name": "revenue-automaton",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Revenue-first opportunity and profitability gate for agent workflows",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/**/*.test.js",
+    "discover": "npm run build && node dist/discover-cli.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^22.15.30"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT"
+}
