@@ -41,7 +41,13 @@ async function main(){
   const queries=[
     'is:issue is:open bounty "$"',
     'is:issue is:open label:bounty',
-    'is:issue is:open "reward" "$"'
+    'is:issue is:open "reward" "$"',
+    'is:issue is:open "paid" "$" "testing"',
+    'is:issue is:open "paid" "$" "code review"',
+    'is:issue is:open "paid" "$" "audit"',
+    'is:issue is:open "paid" "$" "documentation"',
+    'is:issue is:open "reward" "$" "QA"',
+    'is:issue is:open "reward" "$" "AI evaluation"'
   ];
   const observedAt=new Date().toISOString();
   const streams=[];
