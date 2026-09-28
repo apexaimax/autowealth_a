@@ -1,0 +1,19 @@
+name: discover opportunities
+on:
+  workflow_dispatch:
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm test
+      - name: Discovery runner readiness
+        run: |
+          echo "Discovery orchestrator is buildable and tested."
+          echo "Live source retrieval remains adapter/provider-specific and must preserve authoritative verification."
