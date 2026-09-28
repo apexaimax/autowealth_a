@@ -24,14 +24,15 @@ test("search result cannot become authoritative merely by collection",()=>{
   assert.equal(classifyCandidate(candidate).decision,"REJECT");
 });
 
-test("missing facts remain unknown",()=>{
+test("missing facts remain unknown and cannot pass economics",()=>{
   const {candidate}=normalizeRawOpportunity({
     sourceId:"lead",externalId:"x",title:"Possible task",url:"https://example.test/x",
-    sourceKind:"community",category:"direct_service",observedAt:"2026-09-28T00:00:00Z"
+    sourceKind:"authoritative",category:"direct_service",rewardType:"cash",
+    openStatus:"OPEN",eligible:true,deviceCompatible:true,paymentVerifiable:true,
+    observedAt:"2026-09-28T00:00:00Z"
   });
-  assert.equal(candidate.rewardType,"unknown");
-  assert.equal(candidate.openStatus,"UNKNOWN");
-  assert.equal(candidate.eligible,"UNKNOWN");
+  assert.equal(candidate.requiresUpfrontSpend,"UNKNOWN");
+  assert.equal(classifyCandidate(candidate).decision,"NEEDS_VERIFICATION");
 });
 
 test("collector deduplicates source/external id",()=>{
