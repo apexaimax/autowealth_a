@@ -29,9 +29,22 @@ test("aggregator-only lead is rejected until authoritative evidence exists",()=>
   assert.ok(d.reasons.includes("NOT_AUTHORITATIVE"));
 });
 
-test("unknown eligibility stays in verification rather than being invented",()=>{
+test("unknown eligibility stays in verification with an explicit need",()=>{
   const d=classifyCandidate({...base,id:"unknown",eligible:"UNKNOWN"});
   assert.equal(d.decision,"NEEDS_VERIFICATION");
+  assert.deepEqual(d.verificationNeeds,["ELIGIBILITY"]);
+});
+
+test("multiple unknown facts produce a deterministic verification queue",()=>{
+  const d=classifyCandidate({...base,id:"unknowns",requiresUpfrontSpend:"UNKNOWN",deviceCompatible:"UNKNOWN",paymentVerifiable:"UNKNOWN"});
+  assert.equal(d.decision,"NEEDS_VERIFICATION");
+  assert.deepEqual(d.verificationNeeds,["UPFRONT_SPEND","DEVICE_COMPATIBILITY","PAYMENT_VERIFIABILITY"]);
+});
+
+test("rejected candidate does not request verification work",()=>{
+  const d=classifyCandidate({...base,id:"bad",rewardType:"token",eligible:"UNKNOWN"});
+  assert.equal(d.decision,"REJECT");
+  assert.deepEqual(d.verificationNeeds,[]);
 });
 
 test("prize can pass discovery but remains marked speculative",()=>{
