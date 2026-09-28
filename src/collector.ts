@@ -9,7 +9,7 @@ export interface RawOpportunity {
   category: OpportunityCategory;
   rewardType?: RewardType;
   advertisedRewardUsd?: number;
-  requiresUpfrontSpend?: boolean;
+  requiresUpfrontSpend?: boolean | "UNKNOWN";
   openStatus?: "OPEN" | "CLOSED" | "UNKNOWN";
   participationMode?: ParticipationMode;
   eligible?: boolean | "UNKNOWN";
@@ -31,7 +31,7 @@ export function normalizeRawOpportunity(raw: RawOpportunity): CollectedCandidate
     id: raw.sourceId + ":" + raw.externalId,
     category: raw.category,
     rewardType: raw.rewardType ?? "unknown",
-    requiresUpfrontSpend: raw.requiresUpfrontSpend ?? false,
+    requiresUpfrontSpend: raw.requiresUpfrontSpend ?? "UNKNOWN",
     authorityStatus: authoritative ? "AUTHORITATIVE" : "UNVERIFIED",
     openStatus: raw.openStatus ?? "UNKNOWN",
     participationMode: raw.participationMode ?? "ASSISTED",
