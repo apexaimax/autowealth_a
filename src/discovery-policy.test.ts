@@ -23,7 +23,7 @@ test("token reward is rejected even when advertised value exists",()=>{
 });
 
 test("aggregator-only lead is rejected until authoritative evidence exists",()=>{
-  const d=classifyCandidate({...base,id:"stale",authorityStatus:"UNVERIFIED",authoritativeReference:undefined});
+  const { authoritativeReference: _omitted, ...withoutAuthority } = base;\n  const d=classifyCandidate({...withoutAuthority,id:"stale",authorityStatus:"UNVERIFIED"});
   assert.equal(d.decision,"REJECT");
   assert.ok(d.reasons.includes("NOT_AUTHORITATIVE"));
 });
