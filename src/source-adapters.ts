@@ -1,9 +1,11 @@
+import { extractExplicitRequirements } from "./requirement-extractor.js";
+import { resolveProfileFit, type UserCapabilityProfile } from "./profile-fit.js";
 import { resolveAuthoritativeText } from "./verification-resolver.js";
 import type { RawOpportunity } from "./collector.js";
 
 export interface SourceAdapter<T> {
   readonly id: string;
-  ingest(input: T, observedAt: string): RawOpportunity[];
+  ingest(input: T, observedAt: string, profile?: UserCapabilityProfile): RawOpportunity[];
 }
 
 export interface GitHubIssueRecord {
@@ -43,7 +45,7 @@ function bountySignal(issue: GitHubIssueRecord): boolean {
 
 export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
   id: "github-issues",
-  ingest(issues, observedAt) {
+  ingest(issues, observedAt, profile) {
     return issues.filter(bountySignal).map(issue => {
       const amount = cashAmount(issue.title + "\n" + (issue.body ?? ""));
       const raw:RawOpportunity = {
@@ -65,7 +67,11 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
         observedAt,
         ...(amount === undefined ? {} : { advertisedRewardUsd: amount })
       };
-      return resolveAuthoritativeText(raw,issue.title+"\n"+(issue.body ?? ""),issue.htmlUrl).resolved;
+      const text=issue.title+"\n"+(issue.body ?? "");
+      const verified=resolveAuthoritativeText(raw,text,issue.htmlUrl).resolved;
+      if(!profile) return verified;
+      const extracted=extractExplicitRequirements(text,issue.htmlUrl);
+      return resolveProfileFit(verified,profile,extracted.requirements).resolved;
     });
   }
 };
