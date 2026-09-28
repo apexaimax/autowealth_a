@@ -1,3 +1,4 @@
+import { profileFromEnv } from "./profile-config.js";
 import { githubIssueAdapter, type GitHubIssueRecord } from "./source-adapters.js";
 import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
 
@@ -50,19 +51,20 @@ async function main(){
     'is:issue is:open "reward" "$" "AI evaluation"'
   ];
   const observedAt=new Date().toISOString();
+  const profile=profileFromEnv(process.env);
   const streams=[];
   const failures:{query:string;error:string}[]=[];
   for(const query of queries){
     try {
       const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
-      streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt));
+      streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt,profile));
     } catch(error) {
       failures.push({query,error:error instanceof Error?error.message:String(error)});
     }
   }
   const batch=orchestrateDiscovery(streams);
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues",observedAt,queries,failures,summary:discoverySummary(batch),
+    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),queries,failures,summary:discoverySummary(batch),
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
     rejected:batch.rejected
