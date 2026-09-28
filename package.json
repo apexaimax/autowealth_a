@@ -7,7 +7,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && node --test dist/**/*.test.js",
-    "discover": "npm run build && node dist/discover-cli.js"
+    "discover": "npm run build && node dist/discover-cli.js",
+    "discover:github": "npm run build && node dist/github-live.js"
   },
   "devDependencies": {
     "typescript": "^5.9.2",
