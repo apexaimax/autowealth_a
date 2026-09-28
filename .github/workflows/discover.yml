@@ -2,7 +2,7 @@ name: discover opportunities
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    - cron: "17 * * * *"
 jobs:
   discover:
     runs-on: ubuntu-latest
