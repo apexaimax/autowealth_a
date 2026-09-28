@@ -45,9 +45,14 @@ async function main(){
   ];
   const observedAt=new Date().toISOString();
   const streams=[];
+  const failures:{query:string;error:string}[]=[];
   for(const query of queries){
-    const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
-    streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt));
+    try {
+      const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+      streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt));
+    } catch(error) {
+      failures.push({query,error:error instanceof Error?error.message:String(error)});
+    }
   }
   const batch=orchestrateDiscovery(streams);
   process.stdout.write(JSON.stringify({
