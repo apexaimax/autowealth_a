@@ -53,7 +53,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
         sourceKind: "authoritative" as const,
         category: "bounty" as const,
         rewardType: amount === undefined ? "unknown" as const : "cash" as const,
-        requiresUpfrontSpend: false,
+        requiresUpfrontSpend: "UNKNOWN" as const,
         openStatus: issue.state === "open" && !issue.locked ? "OPEN" as const : "CLOSED" as const,
         participationMode: "ASSISTED" as const,
         eligible: "UNKNOWN" as const,
