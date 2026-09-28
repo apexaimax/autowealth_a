@@ -1,6 +1,8 @@
 name: discover opportunities
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "17 */6 * * *"
 jobs:
   discover:
     runs-on: ubuntu-latest
@@ -11,6 +13,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
       - run: npm install
       - run: npm test
       - name: Search live GitHub opportunities
