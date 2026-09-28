@@ -13,7 +13,7 @@ export interface DiscoveryCandidate {
   category: OpportunityCategory;
   rewardType: RewardType;
   advertisedRewardUsd?: number;
-  requiresUpfrontSpend: boolean;
+  requiresUpfrontSpend: boolean | "UNKNOWN";
   authorityStatus: AuthorityStatus;
   authoritativeReference?: string;
   openStatus: "OPEN" | "CLOSED" | "UNKNOWN";
@@ -40,7 +40,7 @@ export interface DiscoveryDecision {
 export function classifyCandidate(c: DiscoveryCandidate): DiscoveryDecision {
   const reasons: DiscoveryRejectReason[] = [];
   if (c.rewardType !== "cash" && c.rewardType !== "cash_equivalent") reasons.push("NON_CASH_REWARD");
-  if (c.requiresUpfrontSpend) reasons.push("UPFRONT_SPEND_REQUIRED");
+  if (c.requiresUpfrontSpend === true) reasons.push("UPFRONT_SPEND_REQUIRED");
   if (c.authorityStatus !== "AUTHORITATIVE" || !c.authoritativeReference) reasons.push("NOT_AUTHORITATIVE");
   if (c.openStatus === "CLOSED") reasons.push("NOT_OPEN");
   if (c.eligible === false) reasons.push("INELIGIBLE");
@@ -49,7 +49,7 @@ export function classifyCandidate(c: DiscoveryCandidate): DiscoveryDecision {
 
   if (reasons.length) return {candidateId:c.id, decision:"REJECT", reasons, speculative:c.probabilityDependent, humanRequired:c.participationMode==="HUMAN_REQUIRED"};
 
-  const unknown = c.openStatus === "UNKNOWN" || c.eligible === "UNKNOWN" ||
+  const unknown = c.requiresUpfrontSpend === "UNKNOWN" || c.openStatus === "UNKNOWN" || c.eligible === "UNKNOWN" ||
     c.deviceCompatible === "UNKNOWN" || c.paymentVerifiable === "UNKNOWN";
 
   return {
