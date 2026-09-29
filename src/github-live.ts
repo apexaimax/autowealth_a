@@ -1,6 +1,8 @@
 import { profileFromEnv } from "./profile-config.js";
 import { githubIssueAdapter, type GitHubIssueRecord } from "./source-adapters.js";
 import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
+import { buildScoutPlan, deriveUnverifiedHypotheses, type ScoutObservation } from "./scout.js";
+import { pathToFileURL } from "node:url";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -25,6 +27,10 @@ export function mapSearchIssue(issue:SearchIssue):GitHubIssueRecord {
   };
 }
 
+export function isCliEntryPoint(moduleUrl:string,argvPath:string|undefined):boolean {
+  return Boolean(argvPath && pathToFileURL(argvPath).href===moduleUrl);
+}
+
 export async function githubSearch(query:string, token?:string):Promise<SearchIssue[]> {
   const headers:Record<string,string>={
     "Accept":"application/vnd.github+json",
@@ -39,38 +45,52 @@ export async function githubSearch(query:string, token?:string):Promise<SearchIs
 }
 
 async function main(){
-  const queries=[
-    'is:issue is:open bounty "$"',
-    'is:issue is:open label:bounty',
-    'is:issue is:open "reward" "$"',
-    'is:issue is:open "paid" "$" "testing"',
-    'is:issue is:open "paid" "$" "code review"',
-    'is:issue is:open "paid" "$" "audit"',
-    'is:issue is:open "paid" "$" "documentation"',
-    'is:issue is:open "reward" "$" "QA"',
-    'is:issue is:open "reward" "$" "AI evaluation"'
-  ];
   const observedAt=new Date().toISOString();
   const profile=profileFromEnv(process.env);
   const streams=[];
   const failures:{query:string;error:string}[]=[];
-  for(const query of queries){
+  const searched=new Set<string>();
+  const paidQueries:string[]=[];
+  const paidObservations:ScoutObservation[]=[];
+  while(paidQueries.length<9){
+    const query=buildScoutPlan(profile,paidObservations,9).paidQueries.find(candidate=>!searched.has(candidate));
+    if(!query) break;
+    searched.add(query);
+    paidQueries.push(query);
     try {
       const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+      paidObservations.push(...issues.map(issue=>({
+        repository:repoName(issue.repository_url),number:issue.number,title:issue.title,
+        htmlUrl:issue.html_url,body:issue.body??"",labels:issue.labels.flatMap(x=>x.name?[x.name]:[])
+      })));
       streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt,profile));
+    } catch(error) {
+      failures.push({query,error:error instanceof Error?error.message:String(error)});
+    }
+  }
+  const problemQueries=buildScoutPlan(profile,paidObservations).problemQueries;
+  const problemObservations:ScoutObservation[]=[];
+  for(const query of problemQueries){
+    try {
+      const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+      problemObservations.push(...issues.map(issue=>({
+        repository:repoName(issue.repository_url),number:issue.number,title:issue.title,
+        htmlUrl:issue.html_url,body:issue.body??"",labels:issue.labels.flatMap(x=>x.name?[x.name]:[])
+      })));
     } catch(error) {
       failures.push({query,error:error instanceof Error?error.message:String(error)});
     }
   }
   const batch=orchestrateDiscovery(streams);
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),queries,failures,summary:discoverySummary(batch),
+    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),queries:paidQueries,problemQueries,failures,
+    unverifiedHypotheses:deriveUnverifiedHypotheses(problemObservations),summary:discoverySummary(batch),
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
     rejected:batch.rejected
   },null,2)+"\n");
 }
 
-if(process.env.NODE_ENV!=="test"){
+if(isCliEntryPoint(import.meta.url,process.argv[1])){
  main().catch(error=>{console.error(error instanceof Error?error.message:String(error));process.exitCode=1;});
 }
