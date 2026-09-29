@@ -101,7 +101,9 @@ profile + source registry + prior query metrics + run seed
 
 ## State and feedback
 
-The planner needs privacy-safe query metrics from prior runs to learn which variables produce useful results. Persist only aggregate metrics (query/source identifier, result counts, duplicate counts, survival counts, timestamps, and schema version), not private credentials or unnecessary personal information. Prefer a bounded GitHub Actions artifact or other existing free storage mechanism; define expiration and recovery behavior before implementation. If history is unavailable or invalid, start with a deterministic rotation and label the run as cold-start. Never let missing history stop safe discovery.
+Persist aggregate query metrics as a `discovery-metrics.json` GitHub Actions artifact with a seven-day retention, matching the existing discovery artifact's retention. The discovery workflow will grant only the `actions: read` permission needed to retrieve the latest successful metrics artifact. Metrics contain a schema version, query/source identifiers, run timestamps, result counts, duplicate counts, and counts passing source/profile checks; they never contain credentials, full page content, or unnecessary personal information.
+
+Each run may use only a schema-compatible metrics artifact from the previous seven days. It appends its own aggregate metrics and uploads the replacement artifact. If retrieval fails, the artifact is missing/expired, or its schema is invalid, the planner uses its deterministic rotating schedule and labels the run a cold-start. Discovery must continue safely without history. The workflow must not commit run state back to the repository.
 
 ## Failure handling
 
