@@ -70,11 +70,11 @@ The system may automatically update and persist adjustable filters when measured
 
 Search only sources with a free query path and lawful/public access. Prefer official employer career pages and documented job feeds/APIs; use allowlisted public pages only where automated access is permitted. Retain the canonical employer/listing URL, posted/observed dates, location/remote terms, pay when stated, application route, and supporting evidence. Confirm that a listing is current and that the employer/source is credible before presenting it as a high-fit result. A job ad's stated salary is not payment received.
 
-The remote-job output should explain fit, list pay when available, note schedule or application-process evidence, and identify unknowns. Include a direct application link when available. Discovery may prepare this information but must not submit applications, create accounts, message employers, or represent the owner.
+Rank remote jobs with an explainable fit summary using currentness, confirmed remote/location eligibility, fit to the private owner profile, compensation when stated, schedule evidence, and phone-friendly application evidence. Do not invent a fit percentage, hiring probability, pay estimate, or missing job detail. Include a direct application link when available; show unknowns rather than letting them silently lower the ranking. Discovery may prepare this information but must not submit applications, create accounts, message employers, or represent the owner.
 
 ### 4. Opportunity hypotheses from demand evidence
 
-Add a separate output for **opportunity hypotheses**. The system may form a hypothesis when independent, recent public signals show a recurring problem that plausibly matches the configured capabilities. A hypothesis should identify:
+Add a separate output for **opportunity hypotheses**. The system may call a pattern a business-opportunity hypothesis only when it has at least three independent problem reports from at least two unrelated source domains, observed within a rolling 90-day window, plus at least one verifiable buyer or willingness-to-pay signal (for example, a funded request, public procurement budget, or documented paid alternative). If recurring pain is visible but this threshold is not met, report a problem signal for further research and do not label it an opportunity. A hypothesis should identify:
 
 - the observed problem and supporting source links;
 - who appears to have the problem;
@@ -94,11 +94,21 @@ The discovery artifact will report, separately:
 - verified-source opportunity candidates and their current policy/economics states;
 - unverified leads awaiting an authoritative source check;
 - opportunity hypotheses and their evidence gaps;
-- remote jobs in a separate list with fit, source, status, pay evidence, and unknowns;
+- remote jobs in a separate, ranked list with fit, source, status, compensation evidence, schedule/application evidence, direct link, and unknowns;
 - queries and sources attempted, including failures and bounded-limit outcomes;
 - deduplication and relevance counts.
 
 Unknown values remain unknown. A generated hypothesis must not enter a verified-candidate or realized-revenue count. Remote job listings and advertised pay must not enter paid-task or realized-revenue counts. The current fail-closed profitability, approval, execution, payment verification, and revenue-ledger paths remain unchanged.
+
+## Delivery sequence
+
+Deliver this in three independently verifiable stages:
+
+1. **Useful separate streams:** preserve current paid-task discovery; add a remote-job stream with the confirmed private baseline filters, source verification, separate reporting, and adaptive query/title variants. Start with free, documented feeds/APIs and a small number of sources that pass live checks. Report a useful result or a clearly evidenced no-result/source-failure summary on every run.
+2. **Controlled source expansion:** add additional APIs/feeds and then specific allowlisted public-page adapters only when the source's access terms permit them and a live response/parser contract is verified. Do not build a general-purpose crawler.
+3. **Evidence-backed opportunity creation:** cluster recurring public problem reports and generate narrowly scoped service/product hypotheses only when the evidence threshold above is met. Keep weaker patterns as problem signals and suggest a $0 validation step.
+
+Every stream must produce an explainable priority order. Job ranking uses fit/currentness/pay/schedule/application evidence; paid-work ranking uses verified cash, eligibility, bounded cost, expected net economics and uncertainty; hypotheses use source diversity, buyer/spend evidence, fit, time-to-test, and zero-cost validation. Do not publish unsupported earnings or win-probability estimates. A run artifact should lead with the few best next actions and explain the evidence, missing facts, and why each was ranked there.
 
 ## Data flow
 
@@ -142,13 +152,14 @@ The implementation is acceptable when tests and run evidence show that:
 4. Every active source has a parser/schema test and at least one verified live response; unverified adapters remain disabled.
 5. Public-page extraction enforces the domain allowlist, destination/redirect checks, response and rate limits, and restricted-page refusal.
 6. Every candidate or hypothesis carries provenance and observation time; hypothesis records never count as verified paid opportunities or realized revenue.
-7. Repeated problem signals without willingness-to-pay evidence remain explicitly unvalidated.
-8. No application, bid, contact, publication, account action, or purchase is performed by discovery.
-9. Remote-job results remain separate from paid opportunities and realized revenue; advertised compensation is never treated as received payment.
-10. Job-profile adaptation changes only adjustable filters, writes an authenticated encrypted revision, and preserves every protected constraint; unknown preferences remain unknown.
-11. Public repository files, artifacts, and logs contain no plaintext remote-job profile, personal resume, or filter diff.
-12. ResuMaster contributes no owner profile facts unless a later read confirms owner-authored resume data is actually present and the owner approves that source.
-13. Existing discovery policy, profitability, approval, execution, and revenue-ledger tests remain green.
+7. Problem patterns below three independent reports across two unrelated domains within 90 days, or without a verifiable buyer/willingness-to-pay signal, remain problem signals and are not labeled business opportunities.
+8. Remote-job ranking exposes its evidence and unknowns, uses no invented pay/fit/probability values, and observes the profile's protected constraints.
+9. No application, bid, contact, publication, account action, or purchase is performed by discovery.
+10. Remote-job results remain separate from paid opportunities and realized revenue; advertised compensation is never treated as received payment.
+11. Job-profile adaptation changes only adjustable filters, writes an authenticated encrypted revision, and preserves every protected constraint; unknown preferences remain unknown.
+12. Public repository files, artifacts, and logs contain no plaintext remote-job profile, personal resume, or filter diff.
+13. ResuMaster contributes no owner profile facts unless a later read confirms owner-authored resume data is actually present and the owner approves that source.
+14. Existing discovery policy, profitability, approval, execution, and revenue-ledger tests remain green.
 
 ## Implementation boundaries
 
