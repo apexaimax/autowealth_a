@@ -1,6 +1,7 @@
 import { profileFromEnv } from "./profile-config.js";
 import { githubIssueAdapter, type GitHubIssueRecord } from "./source-adapters.js";
 import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
+import { analyzeDemand, DEFAULT_PROJECT_ASSETS, type DemandObservation } from "./demand-intelligence.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -25,6 +26,17 @@ export function mapSearchIssue(issue:SearchIssue):GitHubIssueRecord {
   };
 }
 
+function mapDemandObservation(issue:SearchIssue,observedAt:string):DemandObservation {
+  return {
+    id:`github:${repoName(issue.repository_url)}:${issue.number}`,
+    title:issue.title,
+    body:issue.body ?? "",
+    url:issue.html_url,
+    observedAt,
+    intent:"MARKET_PAIN"
+  };
+}
+
 export async function githubSearch(query:string, token?:string):Promise<SearchIssue[]> {
   const headers:Record<string,string>={
     "Accept":"application/vnd.github+json",
@@ -39,7 +51,7 @@ export async function githubSearch(query:string, token?:string):Promise<SearchIs
 }
 
 async function main(){
-  const queries=[
+  const paidQueries=[
     'is:issue is:open bounty "$"',
     'is:issue is:open label:bounty',
     'is:issue is:open "reward" "$"',
@@ -50,11 +62,21 @@ async function main(){
     'is:issue is:open "reward" "$" "QA"',
     'is:issue is:open "reward" "$" "AI evaluation"'
   ];
+  const demandQueries=[
+    'is:issue is:open "manual" "workflow" "automation"',
+    'is:issue is:open "tedious" "automation"',
+    'is:issue is:open "zip" "manual"',
+    'is:issue is:open "release" "compare" "versions"',
+    'is:issue is:open "ai agent" "approval"',
+    'is:issue is:open "form" "mapping" "browser extension"',
+    'is:issue is:open "EHR" "workflow"',
+    'is:issue is:open "resume" "automation"'
+  ];
   const observedAt=new Date().toISOString();
   const profile=profileFromEnv(process.env);
   const streams=[];
   const failures:{query:string;error:string}[]=[];
-  for(const query of queries){
+  for(const query of paidQueries){
     try {
       const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
       streams.push(githubIssueAdapter.ingest(issues.map(mapSearchIssue),observedAt,profile));
@@ -62,9 +84,33 @@ async function main(){
       failures.push({query,error:error instanceof Error?error.message:String(error)});
     }
   }
+
+  const demandObservations:DemandObservation[]=[];
+  const demandFailures:{query:string;error:string}[]=[];
+  for(const query of demandQueries){
+    try {
+      const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+      demandObservations.push(...issues.map(issue=>mapDemandObservation(issue,observedAt)));
+    } catch(error) {
+      demandFailures.push({query,error:error instanceof Error?error.message:String(error)});
+    }
+  }
+
+  const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
+  const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
+  const creationCandidates=demandRecommendations.filter(item=>item.lane!=="NEW_PRODUCT" || item.evidenceCount>=2);
   const batch=orchestrateDiscovery(streams);
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),queries,failures,summary:discoverySummary(batch),
+    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),
+    paidQueries,demandQueries,failures,demandFailures,
+    summary:discoverySummary(batch),
+    demandSummary:{
+      totalObserved:demandObservations.length,
+      uniqueObserved:uniqueDemand.length,
+      recommendations:demandRecommendations.length,
+      creationCandidates:creationCandidates.length
+    },
+    creationCandidates,
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
     rejected:batch.rejected
