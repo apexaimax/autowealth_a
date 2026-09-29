@@ -22,15 +22,15 @@ export interface GitHubIssueRecord {
 }
 
 const MONEY_PATTERNS = [
-  /(?:\$|USD\s*)(\d+(?:\.\d{1,2})?)/i,
-  /(\d+(?:\.\d{1,2})?)\s*USD\b/i
+  /(?:\$|USD\s*)(\d[\d,]*(?:\.\d{1,2})?)/i,
+  /(\d[\d,]*(?:\.\d{1,2})?)\s*USD\b/i
 ];
 
 function cashAmount(text: string): number | undefined {
   for (const pattern of MONEY_PATTERNS) {
     const match = text.match(pattern);
     if (match) {
-      const n = Number(match[1]);
+      const n = Number(match[1]?.replaceAll(",", ""));
       if (Number.isFinite(n) && n > 0) return n;
     }
   }
@@ -38,9 +38,11 @@ function cashAmount(text: string): number | undefined {
 }
 
 function bountySignal(issue: GitHubIssueRecord): boolean {
-  const labels = (issue.labels ?? []).join(" ").toLowerCase();
-  const text = (issue.title + " " + (issue.body ?? "")).toLowerCase();
-  return /bounty|reward|paid/.test(labels) || /\bbounty\b|\breward\b|\bpaid\b/.test(text);
+  const labels = (issue.labels ?? []).join(" ");
+  if (/\bbounty\b|\breward\b|\bpaid\b/i.test(labels)) return true;
+  if (/\bbounty\b|\breward\b|\bpaid\b/i.test(issue.title)) return true;
+  const body = issue.body ?? "";
+  return /\b(?:bounty|reward|payment|paid)\b[^$\n]{0,80}\$\s*\d[\d,]*/i.test(body);
 }
 
 export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
