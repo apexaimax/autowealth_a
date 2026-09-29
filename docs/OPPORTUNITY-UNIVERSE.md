@@ -32,6 +32,12 @@ Before economics, prefer the underlying buyer/sponsor/employer/program page and 
 
 Unknowns stay unknown. The system must not manufacture eligibility, availability, payment certainty or success probability.
 
+## Scout and problem hypotheses
+
+The GitHub Scout builds paid-search queries from the configured work capabilities. As results arrive during a run, it prioritizes capability topics that appeared in those results when choosing the next queries. This is bounded, in-run adaptation; it does not claim to retain a learning history across hourly runs.
+
+Separate problem-signal searches can produce `UNVERIFIED_HYPOTHESIS` records from issues describing manual, repetitive, slow, error-prone or painful workflows. These records are leads for possible services or products, not paid opportunities. They do not enter candidate qualification, economics, ranking, transaction approval or realized P&L. A hypothesis can become an opportunity only after an authoritative buyer/payment path is independently verified through the normal gates.
+
 ## Priority
 
 Large headline prizes do not automatically outrank small funded tasks. Probability-dependent rewards are marked speculative and should be evaluated separately from deterministic or funded work.
