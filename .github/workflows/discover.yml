@@ -15,13 +15,13 @@ jobs:
           node-version: 22
       - run: npm install
       - run: npm test
-      - name: Search live GitHub opportunities
+      - name: Search live GitHub opportunities and demand
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           REVENUE_PROFILE_DEVICES: PHONE,TABLET
           REVENUE_PROFILE_WORK: GITHUB_REVIEW,CODE_ANALYSIS,DOCUMENTATION,QA,AI_ASSISTED_RESEARCH
           REVENUE_PROFILE_COUNTRIES: US
-        run: npm run discover:github > github-opportunities.json
+        run: npm run --silent discover:github > github-opportunities.json
       - uses: actions/upload-artifact@v4
         with:
           name: github-opportunities
