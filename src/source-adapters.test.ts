@@ -37,6 +37,33 @@ test("ordinary issues are ignored",()=>{
   assert.equal(rows.length,0);
 });
 
+test("body-only generic paid/reward language without an explicit cash offer is ignored",()=>{
+  const rows=githubIssueAdapter.ingest([{
+    repository:"owner/repo",number:11,title:"Revenue research mission",
+    htmlUrl:"https://github.com/owner/repo/issues/11",state:"open",labels:[],
+    body:"Find paid work and rewards. Tiny painful workflows may be worth $50-$500."
+  }],"2026-09-28T00:00:00Z");
+  assert.equal(rows.length,0);
+});
+
+test("comma-formatted dollar amounts are parsed completely",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/repo",number:12,title:"Bounty: $145,000 compliance challenge",
+    htmlUrl:"https://github.com/owner/repo/issues/12",state:"open",labels:["bounty"]
+  }],"2026-09-28T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.advertisedRewardUsd,145000);
+});
+
+test("body-only explicit payment offer can still be discovered",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/repo",number:13,title:"Fix parser edge case",
+    htmlUrl:"https://github.com/owner/repo/issues/13",state:"open",labels:[],
+    body:"Payment: $80 after the accepted pull request."
+  }],"2026-09-28T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.advertisedRewardUsd,80);
+});
 
 test("GitHub adapter applies explicit requirements when a profile is supplied",()=>{
  const [raw]=githubIssueAdapter.ingest([{
