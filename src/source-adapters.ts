@@ -22,8 +22,8 @@ export interface GitHubIssueRecord {
 }
 
 const MONEY_PATTERNS = [
-  /(?:\$|USD\s*)(\d[\d,]*(?:\.\d{1,2})?)/i,
-  /(\d[\d,]*(?:\.\d{1,2})?)\s*USD\b/i
+  /(?:\\$|USD\\s*)(\\d[\\d,]*(?:\\.\\d{1,2})?)/i,
+  /(\\d[\\d,]*(?:\\.\\d{1,2})?)\\s*USD\\b/i
 ];
 
 function cashAmount(text: string): number | undefined {
@@ -39,17 +39,22 @@ function cashAmount(text: string): number | undefined {
 
 function bountySignal(issue: GitHubIssueRecord): boolean {
   const labels = (issue.labels ?? []).join(" ");
-  if (/\bbounty\b|\breward\b|\bpaid\b/i.test(labels)) return true;
-  if (/\bbounty\b|\breward\b|\bpaid\b/i.test(issue.title)) return true;
+  if (/\\bbounty\\b|\\breward\\b|\\bpaid\\b/i.test(labels)) return true;
+  if (/\\bbounty\\b|\\breward\\b|\\bpaid\\b/i.test(issue.title)) return true;
   const body = issue.body ?? "";
-  return /\b(?:bounty|reward|payment|paid)\b[^$\n]{0,80}\$\s*\d[\d,]*/i.test(body);
+  return body
+    .split(/[.!?\\n]+/)
+    .some(sentence =>
+      /\\b(?:bounty|reward|payment|paid)\\b/i.test(sentence) &&
+      /(?:\\$\\s*\\d[\\d,]*(?:\\.\\d{1,2})?|\\b\\d[\\d,]*(?:\\.\\d{1,2})?\\s*USD\\b)/i.test(sentence)
+    );
 }
 
 export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
   id: "github-issues",
   ingest(issues, observedAt, profile) {
     return issues.filter(bountySignal).map(issue => {
-      const amount = cashAmount(issue.title + "\n" + (issue.body ?? ""));
+      const amount = cashAmount(issue.title + "\\n" + (issue.body ?? ""));
       const raw:RawOpportunity = {
         sourceId: "github:" + issue.repository,
         externalId: String(issue.number),
@@ -69,7 +74,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
         observedAt,
         ...(amount === undefined ? {} : { advertisedRewardUsd: amount })
       };
-      const text=issue.title+"\n"+(issue.body ?? "");
+      const text=issue.title+"\\n"+(issue.body ?? "");
       const verified=resolveAuthoritativeText(raw,text,issue.htmlUrl).resolved;
       if(!profile) return verified;
       const extracted=extractExplicitRequirements(text,issue.htmlUrl);
