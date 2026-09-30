@@ -42,7 +42,12 @@ function bountySignal(issue: GitHubIssueRecord): boolean {
   if (/\bbounty\b|\breward\b|\bpaid\b/i.test(labels)) return true;
   if (/\bbounty\b|\breward\b|\bpaid\b/i.test(issue.title)) return true;
   const body = issue.body ?? "";
-  return /\b(?:bounty|reward|payment|paid)\b[^$\n]{0,80}\$\s*\d[\d,]*/i.test(body);
+  return body
+    .split(/[.!?\n]+/)
+    .some(sentence =>
+      /\b(?:bounty|reward|payment|paid)\b/i.test(sentence) &&
+      /(?:\$\s*\d[\d,]*(?:\.\d{1,2})?|\b\d[\d,]*(?:\.\d{1,2})?\s*USD\b)/i.test(sentence)
+    );
 }
 
 export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
