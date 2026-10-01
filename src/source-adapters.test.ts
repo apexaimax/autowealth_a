@@ -127,3 +127,27 @@ test("single bounty hosted by its own project remains authoritative",()=>{
   assert.ok(raw);
   assert.equal(raw.sourceKind,"authoritative");
 });
+
+
+test("reward amount binds to the explicit bounty/payment sentence rather than unrelated body money",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/product",number:84,title:"Parser bounty",
+    htmlUrl:"https://github.com/owner/product/issues/84",state:"open",
+    labels:["bounty"],
+    body:"Our product costs $1.50 per month. Reward: $150 after the accepted pull request."
+  }],"2026-10-01T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.advertisedRewardUsd,150);
+});
+
+test("bounty label alone does not turn an unrelated dollar amount into a reward",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/product",number:85,title:"Parser bounty",
+    htmlUrl:"https://github.com/owner/product/issues/85",state:"open",
+    labels:["bounty"],
+    body:"Our existing service costs $19 per month. Submit a fix for review."
+  }],"2026-10-01T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.advertisedRewardUsd,undefined);
+  assert.equal(raw.rewardType,"unknown");
+});
