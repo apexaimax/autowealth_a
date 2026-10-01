@@ -1,0 +1,39 @@
+name: commercial state durability proof
+
+on:
+  pull_request:
+    paths:
+      - "src/commercial-state-proof.ts"
+      - "src/git-commercial-store.ts"
+      - "src/commercial-events.ts"
+      - "src/commercial-persistence.ts"
+      - ".github/workflows/commercial-state-proof.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  prove:
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      COMMERCIAL_STATE_BRANCH: commercial-state-proof
+      COMMERCIAL_PROOF_KEY: ${{ github.event.pull_request.head.sha }}:${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - name: Write event in process A
+        run: node dist/commercial-state-proof.js write restart
+      - name: Reconstruct event in process B
+        run: node dist/commercial-state-proof.js read restart
+      - name: Capture pre-conflict state
+        run: node dist/commercial-state-proof.js capture > stale-version.txt
+      - name: Advance state in process C
+        run: node dist/commercial-state-proof.js write winner
+      - name: Reject stale writer in process D
+        run: node dist/commercial-state-proof.js expect-stale "$(cat stale-version.txt)" loser
