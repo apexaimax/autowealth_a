@@ -21,7 +21,8 @@ test("hourly demand evidence becomes discovery-only Mode B research seed",()=>{
 });
 
 test("unmatched new-product ideas do not enter capability-to-buyer lane",()=>{
- const newIdea:DemandRecommendation={...recommendation,key:"new:x",lane:"NEW_PRODUCT",action:"CREATE_NEW",matchedAssetId:undefined,matchedAssetName:undefined,matchedAssetStatus:undefined,matchedKeywords:[]};
+ const {matchedAssetId:_,matchedAssetName:__,matchedAssetStatus:___,...base}=recommendation;
+ const newIdea:DemandRecommendation={...base,key:"new:x",lane:"NEW_PRODUCT",action:"CREATE_NEW",matchedKeywords:[]};
  const seeds=buildCommercialResearchSeeds([newIdea]);
  assert.equal(seeds.length,0);
 });
