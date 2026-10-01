@@ -22,15 +22,18 @@ export interface GitHubIssueRecord {
 }
 
 const MONEY_PATTERNS = [
-  /(?:\$|USD\s*)(\d[\d,]*(?:\.\d{1,2})?)/i,
-  /(\d[\d,]*(?:\.\d{1,2})?)\s*USD\b/i
+  /(?:\$|USD\s*)(\d[\d,]*(?:\.\d{1,2})?)\s*([kKmM])?/i,
+  /(\d[\d,]*(?:\.\d{1,2})?)\s*([kKmM])?\s*USD\b/i
 ];
 
 function cashAmount(text: string): number | undefined {
   for (const pattern of MONEY_PATTERNS) {
     const match = text.match(pattern);
     if (match) {
-      const n = Number(match[1]?.replaceAll(",", ""));
+      const base = Number(match[1]?.replaceAll(",", ""));
+      const suffix = match[2]?.toLowerCase();
+      const multiplier = suffix === "k" ? 1_000 : suffix === "m" ? 1_000_000 : 1;
+      const n = base * multiplier;
       if (Number.isFinite(n) && n > 0) return n;
     }
   }
@@ -46,7 +49,7 @@ function bountySignal(issue: GitHubIssueRecord): boolean {
     .split(/[.!?\n]+/)
     .some(sentence =>
       /\b(?:bounty|reward|payment|paid)\b/i.test(sentence) &&
-      /(?:\$\s*\d[\d,]*(?:\.\d{1,2})?|\b\d[\d,]*(?:\.\d{1,2})?\s*USD\b)/i.test(sentence)
+      /(?:\$\s*\d[\d,]*(?:\.\d{1,2})?\s*[kKmM]?|\b\d[\d,]*(?:\.\d{1,2})?\s*[kKmM]?\s*USD\b)/i.test(sentence)
     );
 }
 
