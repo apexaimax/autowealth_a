@@ -28,14 +28,14 @@ export function mapSearchIssue(issue:SearchIssue):GitHubIssueRecord {
   };
 }
 
-function mapDemandObservation(issue:SearchIssue,observedAt:string):DemandObservation {
+export function mapDemandObservation(issue:SearchIssue,observedAt:string,intent:DemandObservation["intent"]="MARKET_PAIN"):DemandObservation {
   return {
     id:`github:${repoName(issue.repository_url)}:${issue.number}`,
     title:issue.title,
     body:issue.body ?? "",
     url:issue.html_url,
     observedAt,
-    intent:"MARKET_PAIN"
+    intent
   };
 }
 
@@ -72,7 +72,33 @@ async function main(){
     'is:issue is:open "ai agent" "approval"',
     'is:issue is:open "form" "mapping" "browser extension"',
     'is:issue is:open "EHR" "workflow"',
-    'is:issue is:open "resume" "automation"'
+    'is:issue is:open "resume" "automation"',
+    'is:issue is:open "license" "pilot" "integration"',
+    'is:issue is:open "human approval" "agent" "audit"',
+    'is:issue is:open "healthcare" "workflow" "integration"'
+  ];
+  const serviceQueries=[
+    'is:issue is:open "looking for" "code review"',
+    'is:issue is:open "looking for" "security audit"',
+    'is:issue is:open "need help" "automation"',
+    'is:issue is:open "paid" "technical audit"',
+    'is:issue is:open "contract" "browser extension"'
+  ];
+  const remoteWorkQueries=[
+    'is:issue is:open "remote" "code review" "contract"',
+    'is:issue is:open "remote" "AI" "reviewer"',
+    'is:issue is:open "remote" "QA" "contract"',
+    'is:issue is:open "remote" "automation" "contract"'
+  ];
+  const externalResearchQueries=[
+    'remote freelance code review AI-generated code contract',
+    'paid technical audit AI agent workflow security freelance',
+    'software bounty paid task code review QA documentation',
+    'AI agent human approval audit trail authorization enterprise pilot',
+    'healthcare EHR workflow automation integration pilot vendor',
+    'browser extension form mapping workflow automation contract',
+    'ZIP release verification archive comparison software teams',
+    'AI software licensing pilot proof of concept developer tools'
   ];
   const observedAt=new Date().toISOString();
   const profile=profileFromEnv(process.env);
@@ -98,6 +124,17 @@ async function main(){
     }
   }
 
+  for(const [queries,intent] of [[serviceQueries,"SERVICE_REQUEST"],[remoteWorkQueries,"REMOTE_WORK"]] as const){
+    for(const query of queries){
+      try {
+        const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+        demandObservations.push(...issues.map(issue=>mapDemandObservation(issue,observedAt,intent)));
+      } catch(error) {
+        demandFailures.push({query,error:error instanceof Error?error.message:String(error)});
+      }
+    }
+  }
+
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
   const creationCandidates=demandRecommendations.filter(item=>item.lane!=="NEW_PRODUCT" || item.evidenceCount>=2);
@@ -117,7 +154,7 @@ async function main(){
   };
   process.stdout.write(JSON.stringify({
     source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),
-    paidQueries,demandQueries,failures,demandFailures,
+    paidQueries,demandQueries,serviceQueries,remoteWorkQueries,externalResearchQueries,failures,demandFailures,
     summary:discoverySummary(batch),
     demandSummary:{
       totalObserved:demandObservations.length,
