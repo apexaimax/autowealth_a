@@ -19,6 +19,16 @@ opportunity -> evidence -> capability check -> profitability gate
 
 Projected revenue is never counted as realized revenue.
 
+## Acquisition modes
+
+**Mode A — Posted opportunity** preserves the existing bounty/task/service pipeline. Authoritative payment, eligibility, device, cost and profitability gates remain fail-closed.
+
+**Mode B — Capability to buyer** starts from a demonstrated capability, records external workflow/problem evidence, creates a commercial candidate only when the evidence chain is defensible, and may prepare an exact proposal for human review. Hourly GitHub demand discovery emits discovery-only `commercialResearchSeeds`; those seeds are not buyer intent or authoritative commercial evidence.
+
+Commercial proposals bind approval to the exact recipient, route, subject, body, links, attachments and capability evidence references. This repository contains no autonomous email, DM, web-form, job-application or proposal-send worker.
+
+Commercial pipeline events can be persisted through the Git-backed compare-and-swap store on a dedicated state branch. A stale ref cannot silently overwrite newer committed history. See `docs/COMMERCIAL-MODE-B.md`.
+
 ## Development
 
 ```bash
