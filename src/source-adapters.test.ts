@@ -79,3 +79,15 @@ test("GitHub adapter applies explicit requirements when a profile is supplied",(
  assert.equal(raw.requiresUpfrontSpend,false);
  assert.equal(raw.paymentVerifiable,true);
 });
+
+
+test("compact k and m suffix dollar amounts are expanded",()=>{
+  const rows=githubIssueAdapter.ingest([
+    {repository:"owner/repo",number:14,title:"Bounty: $1.5k parser fix",htmlUrl:"https://github.com/owner/repo/issues/14",state:"open",labels:["bounty"]},
+    {repository:"owner/repo",number:15,title:"Reward: $2K migration",htmlUrl:"https://github.com/owner/repo/issues/15",state:"open",labels:["reward"]},
+    {repository:"owner/repo",number:16,title:"Bounty: $1.25M challenge",htmlUrl:"https://github.com/owner/repo/issues/16",state:"open",labels:["bounty"]}
+  ],"2026-10-01T00:00:00Z");
+  assert.equal(rows[0]?.advertisedRewardUsd,1500);
+  assert.equal(rows[1]?.advertisedRewardUsd,2000);
+  assert.equal(rows[2]?.advertisedRewardUsd,1250000);
+});
