@@ -1,0 +1,32 @@
+name: commercial state durability proof
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prove:
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      COMMERCIAL_STATE_BRANCH: commercial-state-proof
+      COMMERCIAL_PROOF_KEY: ${{ github.sha }}:${{ github.run_attempt }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - name: Write event in process A
+        run: node dist/commercial-state-proof.js write restart
+      - name: Reconstruct event in process B
+        run: node dist/commercial-state-proof.js read restart
+      - name: Capture pre-conflict state
+        run: node dist/commercial-state-proof.js capture > stale-version.txt
+      - name: Advance state in process C
+        run: node dist/commercial-state-proof.js write winner
+      - name: Reject stale writer in process D
+        run: node dist/commercial-state-proof.js expect-stale "$(cat stale-version.txt)" loser
