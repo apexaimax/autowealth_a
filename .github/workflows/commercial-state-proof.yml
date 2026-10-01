@@ -1,25 +1,18 @@
 name: commercial state durability proof
 
 on:
-  pull_request:
-    paths:
-      - "src/commercial-state-proof.ts"
-      - "src/git-commercial-store.ts"
-      - "src/commercial-events.ts"
-      - "src/commercial-persistence.ts"
-      - ".github/workflows/commercial-state-proof.yml"
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   prove:
-    if: github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       COMMERCIAL_STATE_BRANCH: commercial-state-proof
-      COMMERCIAL_PROOF_KEY: ${{ github.event.pull_request.head.sha }}:${{ github.run_attempt }}
+      COMMERCIAL_PROOF_KEY: ${{ github.sha }}:${{ github.run_attempt }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
