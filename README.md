@@ -27,7 +27,7 @@ Projected revenue is never counted as realized revenue.
 
 Commercial proposals bind approval to the exact recipient, route, subject, body, links, attachments and capability evidence references. This repository contains no autonomous email, DM, web-form, job-application or proposal-send worker.
 
-Commercial pipeline events can be persisted through the Git-backed compare-and-swap store on a dedicated state branch. A stale ref cannot silently overwrite newer committed history. See `docs/COMMERCIAL-MODE-B.md`.
+Commercial pipeline events can be persisted through the Git-backed compare-and-swap store on a dedicated state branch. Hourly discovery also maintains a separate durable, deduplicated `opportunity-inbox` branch containing `opportunity-inbox.json`; this is discovery state only and cannot authorize claims, applications, outreach, or spending. A stale ref cannot silently overwrite newer committed history. See `docs/COMMERCIAL-MODE-B.md`.
 
 ## Development
 

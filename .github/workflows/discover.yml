@@ -10,7 +10,7 @@ jobs:
   discover:
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -25,6 +25,11 @@ jobs:
           REVENUE_PROFILE_WORK: GITHUB_REVIEW,CODE_ANALYSIS,DOCUMENTATION,QA,AI_ASSISTED_RESEARCH
           REVENUE_PROFILE_COUNTRIES: US
         run: npm run --silent discover:github > github-opportunities.json
+      - name: Update durable opportunity inbox
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          OPPORTUNITY_INBOX_BRANCH: opportunity-inbox
+        run: node dist/opportunity-inbox-github-run.js github-opportunities.json
       - uses: actions/upload-artifact@v4
         with:
           name: github-opportunities
