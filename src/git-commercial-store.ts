@@ -1,5 +1,5 @@
 import type { CommercialEvent } from "./commercial-events.js";
-import { createCommercialEvent } from "./commercial-events.js";
+import { createCommercialEvent, validateCommercialEvent } from "./commercial-events.js";
 import type { CommitResult, DurableEventStore, EventStoreView } from "./commercial-persistence.js";
 
 export interface GitStateTransport {
@@ -100,6 +100,7 @@ export class GitHubStateBranchTransport implements GitStateTransport {
     if(current.version!==expectedVersion) return {status:"STALE",version:current.version};
     const existing=new Set(current.events.map(event=>event.id));
     const additions=events.filter(event=>!existing.has(event.id));
+    for(const event of additions) validateCommercialEvent(event);
     if(additions.length===0) return {status:"COMMITTED",version:current.version};
 
     const baseTree=await this.treeForCommit(expectedVersion);
