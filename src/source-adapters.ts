@@ -40,6 +40,24 @@ function cashAmount(text: string): number | undefined {
   return undefined;
 }
 
+const AGGREGATOR_REPO_PATTERNS=[
+  /(?:^|[-_.])bountyscout(?:$|[-_.])/i,
+  /(?:^|[-_.])bounty[-_.]?plaza(?:$|[-_.])/i,
+  /(?:^|[-_.])bounty[-_.]?(?:radar|board|watch|feed|aggregator)(?:$|[-_.])/i
+];
+const AGGREGATOR_TEXT_PATTERNS=[
+  /\b(?:opportunity|bounty) (?:queue|radar|watch|digest|feed|roundup|index)\b/i,
+  /\b(?:aggregated|aggregator|curated) (?:bounties|opportunities|listings)\b/i,
+  /\bmultiple (?:bounties|opportunities|listings)\b/i
+];
+
+export function isAggregatorIssue(issue:GitHubIssueRecord):boolean {
+  const repo=issue.repository.split("/").at(-1)??issue.repository;
+  if(AGGREGATOR_REPO_PATTERNS.some(pattern=>pattern.test(repo))) return true;
+  const text=issue.title+"\n"+(issue.body??"");
+  return AGGREGATOR_TEXT_PATTERNS.some(pattern=>pattern.test(text));
+}
+
 function bountySignal(issue: GitHubIssueRecord): boolean {
   const labels = (issue.labels ?? []).join(" ");
   if (/\bbounty\b|\breward\b|\bpaid\b/i.test(labels)) return true;
@@ -63,7 +81,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
         externalId: String(issue.number),
         title: issue.title,
         url: issue.htmlUrl,
-        sourceKind: "authoritative" as const,
+        sourceKind: isAggregatorIssue(issue) ? "aggregator" as const : "authoritative" as const,
         category: "bounty" as const,
         rewardType: amount === undefined ? "unknown" as const : "cash" as const,
         requiresUpfrontSpend: "UNKNOWN" as const,

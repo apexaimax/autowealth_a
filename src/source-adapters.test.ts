@@ -91,3 +91,39 @@ test("compact k and m suffix dollar amounts are expanded",()=>{
   assert.equal(rows[1]?.advertisedRewardUsd,2000);
   assert.equal(rows[2]?.advertisedRewardUsd,1250000);
 });
+
+
+test("known bounty aggregator repository is not authoritative",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"someone/BountyScout",number:81,title:"$750 opportunity queue",
+    htmlUrl:"https://github.com/someone/BountyScout/issues/81",state:"open",
+    labels:["bounty"],body:"Opportunity queue with multiple bounties from other projects."
+  }],"2026-10-01T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.sourceKind,"aggregator");
+  const decision=classifyCandidate(normalizeRawOpportunity(raw).candidate);
+  assert.equal(decision.decision,"REJECT");
+  assert.ok(decision.reasons.includes("NOT_AUTHORITATIVE"));
+});
+
+test("generic radar or roundup issue is not authoritative even outside known repo names",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/tools",number:82,title:"Bounty radar: $500 opportunities",
+    htmlUrl:"https://github.com/owner/tools/issues/82",state:"open",
+    labels:["bounty"],body:"Curated bounties and listings from across GitHub."
+  }],"2026-10-01T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.sourceKind,"aggregator");
+  const decision=classifyCandidate(normalizeRawOpportunity(raw).candidate);
+  assert.ok(decision.reasons.includes("NOT_AUTHORITATIVE"));
+});
+
+test("single bounty hosted by its own project remains authoritative",()=>{
+  const [raw]=githubIssueAdapter.ingest([{
+    repository:"owner/product",number:83,title:"$150 bounty: implement parser",
+    htmlUrl:"https://github.com/owner/product/issues/83",state:"open",
+    labels:["bounty"],body:"Submit a pull request to this repository. Payment released after merge."
+  }],"2026-10-01T00:00:00Z");
+  assert.ok(raw);
+  assert.equal(raw.sourceKind,"authoritative");
+});
