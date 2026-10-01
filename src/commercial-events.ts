@@ -15,6 +15,11 @@ export interface CommercialEventInput {
 
 export interface CommercialEvent extends CommercialEventInput { id:string; }
 
+export function validateCommercialEvent(event:CommercialEvent):void {
+  const expected=digest({kind:event.kind,subjectId:event.subjectId,logicalKey:event.logicalKey,payload:event.payload});
+  if(expected!==event.id) throw new Error("CORRUPT_EVENT_DIGEST");
+}
+
 export function createCommercialEvent(input:CommercialEventInput):CommercialEvent {
   if(!input.subjectId.trim() || !input.logicalKey.trim() || !input.occurredAt.trim()) throw new Error("INVALID_COMMERCIAL_EVENT");
   const id=digest({kind:input.kind,subjectId:input.subjectId,logicalKey:input.logicalKey,payload:input.payload});
@@ -35,6 +40,7 @@ function hasExact(events:readonly CommercialEvent[],kind:CommercialEventKind,sub
 }
 
 export function appendCommercialEvent(events:readonly CommercialEvent[],event:CommercialEvent):CommercialEvent[] {
+  validateCommercialEvent(event);
   if(events.some(existing=>existing.id===event.id)) return [...events];
 
   if(event.kind==="PROPOSAL_APPROVED"){
