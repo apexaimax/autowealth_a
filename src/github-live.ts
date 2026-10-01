@@ -2,6 +2,7 @@ import { profileFromEnv } from "./profile-config.js";
 import { githubIssueAdapter, type GitHubIssueRecord } from "./source-adapters.js";
 import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
 import { analyzeDemand, DEFAULT_PROJECT_ASSETS, type DemandObservation } from "./demand-intelligence.js";
+import { verifyGitHubCandidates } from "./github-verification.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -100,6 +101,18 @@ async function main(){
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
   const creationCandidates=demandRecommendations.filter(item=>item.lane!=="NEW_PRODUCT" || item.evidenceCount>=2);
   const batch=orchestrateDiscovery(streams);
+  const verificationAttempts=await verifyGitHubCandidates(batch.needsVerification,profile,process.env.GITHUB_TOKEN);
+  const verified=verificationAttempts.flatMap(item=>item.evaluated?[item.evaluated]:[]);
+  const verifiedReadyForEconomics=verified.filter(item=>item.decision.decision==="PASS_TO_ECONOMICS");
+  const verifiedNeedsVerification=verified.filter(item=>item.decision.decision==="NEEDS_VERIFICATION");
+  const verifiedRejected=verified.filter(item=>item.decision.decision==="REJECT");
+  const verificationSummary={
+    attempted:verificationAttempts.length,
+    resolved:verificationAttempts.filter(item=>item.status==="RESOLVED").length,
+    partial:verificationAttempts.filter(item=>item.status==="PARTIAL").length,
+    rejected:verificationAttempts.filter(item=>item.status==="REJECTED").length,
+    errors:verificationAttempts.filter(item=>item.status==="ERROR").length
+  };
   process.stdout.write(JSON.stringify({
     source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),
     paidQueries,demandQueries,failures,demandFailures,
@@ -113,7 +126,12 @@ async function main(){
     creationCandidates,
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
-    rejected:batch.rejected
+    rejected:batch.rejected,
+    verificationSummary,
+    verificationAttempts,
+    verifiedReadyForEconomics,
+    verifiedNeedsVerification,
+    verifiedRejected
   },null,2)+"\n");
 }
 
