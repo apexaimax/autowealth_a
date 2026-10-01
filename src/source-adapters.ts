@@ -58,6 +58,21 @@ export function isAggregatorIssue(issue:GitHubIssueRecord):boolean {
   return AGGREGATOR_TEXT_PATTERNS.some(pattern=>pattern.test(text));
 }
 
+function paymentContextAmount(issue: GitHubIssueRecord): number | undefined {
+  if (/\b(?:bounty|reward|payment|paid)\b/i.test(issue.title)) {
+    const titleAmount = cashAmount(issue.title);
+    if (titleAmount !== undefined) return titleAmount;
+  }
+  const body = issue.body ?? "";
+  for (const sentence of body.split(/[.!?\n]+/)) {
+    if (/\b(?:bounty|reward|payment|paid)\b/i.test(sentence)) {
+      const amount = cashAmount(sentence);
+      if (amount !== undefined) return amount;
+    }
+  }
+  return undefined;
+}
+
 function bountySignal(issue: GitHubIssueRecord): boolean {
   const labels = (issue.labels ?? []).join(" ");
   if (/\bbounty\b|\breward\b|\bpaid\b/i.test(labels)) return true;
@@ -75,7 +90,7 @@ export const githubIssueAdapter: SourceAdapter<GitHubIssueRecord[]> = {
   id: "github-issues",
   ingest(issues, observedAt, profile) {
     return issues.filter(bountySignal).map(issue => {
-      const amount = cashAmount(issue.title + "\n" + (issue.body ?? ""));
+      const amount = paymentContextAmount(issue);
       const raw:RawOpportunity = {
         sourceId: "github:" + issue.repository,
         externalId: String(issue.number),
