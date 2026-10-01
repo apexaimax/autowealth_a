@@ -41,3 +41,11 @@ export function chooseCurrentEvidence(observations:readonly EvidenceObservation[
     .filter(item=>item.verificationStatus!=="CONTRADICTED")
     .sort((a,b)=>Date.parse(b.observedAt)-Date.parse(a.observedAt) || a.evidenceId.localeCompare(b.evidenceId))[0];
 }
+
+export function evidenceFreshness(observation:EvidenceObservation,asOf:string,maxAgeMs:number):"CURRENT"|"STALE" {
+  if(!Number.isFinite(maxAgeMs) || maxAgeMs<0) throw new Error("INVALID_FRESHNESS_POLICY");
+  const observed=Date.parse(observation.observedAt);
+  const current=Date.parse(asOf);
+  if(!Number.isFinite(observed) || !Number.isFinite(current) || current<observed) throw new Error("INVALID_FRESHNESS_TIME");
+  return current-observed>maxAgeMs?"STALE":"CURRENT";
+}
