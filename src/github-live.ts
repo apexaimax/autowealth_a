@@ -3,6 +3,7 @@ import { githubIssueAdapter, type GitHubIssueRecord } from "./source-adapters.js
 import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
 import { analyzeDemand, DEFAULT_PROJECT_ASSETS, type DemandObservation } from "./demand-intelligence.js";
 import { verifyGitHubCandidates } from "./github-verification.js";
+import { buildCommercialResearchSeeds } from "./commercial-seeds.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -100,6 +101,7 @@ async function main(){
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
   const creationCandidates=demandRecommendations.filter(item=>item.lane!=="NEW_PRODUCT" || item.evidenceCount>=2);
+  const commercialResearchSeeds=buildCommercialResearchSeeds(demandRecommendations);
   const batch=orchestrateDiscovery(streams);
   const verificationAttempts=await verifyGitHubCandidates(batch.needsVerification,profile,process.env.GITHUB_TOKEN);
   const verified=verificationAttempts.flatMap(item=>item.evaluated?[item.evaluated]:[]);
@@ -121,8 +123,10 @@ async function main(){
       totalObserved:demandObservations.length,
       uniqueObserved:uniqueDemand.length,
       recommendations:demandRecommendations.length,
-      creationCandidates:creationCandidates.length
+      creationCandidates:creationCandidates.length,
+      commercialResearchSeeds:commercialResearchSeeds.length
     },
+    commercialResearchSeeds,
     creationCandidates,
     readyForEconomics:batch.readyForEconomics,
     needsVerification:batch.needsVerification,
