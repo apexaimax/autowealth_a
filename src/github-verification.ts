@@ -4,6 +4,7 @@ import { extractExplicitRequirements } from "./requirement-extractor.js";
 import { resolveProfileFit, type UserCapabilityProfile } from "./profile-fit.js";
 import { resolveAuthoritativeText, type VerificationEvidence } from "./verification-resolver.js";
 import type { EvaluatedCandidate } from "./orchestrator.js";
+import { verifyIssueViability, type ViabilityDecision } from "./issue-viability.js";
 
 interface GitHubIssueApi {
   html_url:string;
@@ -35,6 +36,7 @@ export interface GitHubVerificationAttempt {
   evidence:VerificationEvidence[];
   claimInstructions:string[];
   evaluated?:EvaluatedCandidate;
+  viability?:ViabilityDecision;
   error?:string;
 }
 
@@ -70,8 +72,9 @@ export function resolveGitHubVerification(
   raw:RawOpportunity,
   issue:GitHubIssueApi,
   trustedComments:GitHubCommentApi[],
-  profile?:UserCapabilityProfile
-):{raw:RawOpportunity;evidence:VerificationEvidence[];claimInstructions:string[]} {
+  profile?:UserCapabilityProfile,
+  openCompetingPullRequests=0
+):{raw:RawOpportunity;evidence:VerificationEvidence[];claimInstructions:string[];viability:ViabilityDecision} {
   const checkedAt=new Date().toISOString();
   const refreshed:RawOpportunity={
     ...raw,
@@ -79,7 +82,7 @@ export function resolveGitHubVerification(
     url:issue.html_url,
     sourceKind:"authoritative",
     openStatus:issue.state==="open" && !issue.locked ? "OPEN" : "CLOSED",
-    competitionCount:(issue.assignees?.length??0)+(issue.comments??0),
+    competitionCount:openCompetingPullRequests,
     observedAt:checkedAt
   };
 
@@ -96,10 +99,12 @@ export function resolveGitHubVerification(
     resolved=resolveProfileFit(resolved,profile,extracted.requirements).resolved;
   }
 
+  const viability=verifyIssueViability({id:raw.externalId,title:issue.title,source:raw.url,expectedRevenueUsd:raw.advertisedRewardUsd??0,maxCostUsd:0,executable:true,evidence:[]},{state:issue.state,locked:issue.locked,assignees:issue.assignees.flatMap(a=>a.login?[a.login]:[]),openCompetingPullRequests,checkedAt});
   return {
     raw:resolved,
     evidence:verified.evidence,
-    claimInstructions:claimInstructions(combined)
+    claimInstructions:claimInstructions(combined),
+    viability
   };
 }
 
@@ -139,10 +144,14 @@ export async function verifyGitHubCandidate(
           `https://api.github.com/repos/${parsed.owner}/${parsed.repo}/issues/${parsed.number}/comments?per_page=100`,token
         )
       : [];
-    const resolution=resolveGitHubVerification(item.raw,issue,comments,profile);
+    const prs=await githubJson<Array<{state:string}>>(`https://api.github.com/repos/${parsed.owner}/${parsed.repo}/pulls?state=open&per_page=100`,token);
+    const competingPrs=prs.filter(pr=>pr.state==="open").length;
+    const resolution=resolveGitHubVerification(item.raw,issue,comments,profile,competingPrs);
     const collected=normalizeRawOpportunity(resolution.raw);
     const evaluated:EvaluatedCandidate={...collected,decision:classifyCandidate(collected.candidate)};
-    const status=evaluated.decision.decision==="PASS_TO_ECONOMICS"
+    const status=!resolution.viability.viable
+      ? "REJECTED"
+      : evaluated.decision.decision==="PASS_TO_ECONOMICS"
       ? "RESOLVED"
       : evaluated.decision.decision==="REJECT"
         ? "REJECTED"
@@ -153,7 +162,8 @@ export async function verifyGitHubCandidate(
       afterNeeds:evaluated.decision.verificationNeeds,
       evidence:resolution.evidence,
       claimInstructions:resolution.claimInstructions,
-      evaluated
+      viability:resolution.viability,
+      evaluated:resolution.viability.viable?evaluated:{...evaluated,decision:{...evaluated.decision,decision:"REJECT",verificationNeeds:[]}}
     };
   }catch(error){
     return {
