@@ -1,7 +1,8 @@
 import { readFile,writeFile } from "node:fs/promises";
 import { emptyInbox,inboxKey,mergeInbox,type InboxObservation,type OpportunityInbox } from "./opportunity-inbox.js";
+import { publicRecordEvidence,type PublicRecordSignal } from "./public-records.js";
 
-interface DiscoveryJson { observedAt:string; readyForEconomics?:any[]; needsVerification?:any[]; rejected?:any[]; verifiedReadyForEconomics?:any[]; verifiedNeedsVerification?:any[]; verifiedRejected?:any[]; commercialResearchSeeds?:any[]; creationCandidates?:any[]; }
+interface DiscoveryJson { observedAt:string; readyForEconomics?:any[]; needsVerification?:any[]; rejected?:any[]; verifiedReadyForEconomics?:any[]; verifiedNeedsVerification?:any[]; verifiedRejected?:any[]; commercialResearchSeeds?:any[]; creationCandidates?:any[]; publicRecordSignals?:PublicRecordSignal[]; }
 
 function candidateObservation(row:any,decision:InboxObservation["decision"],observedAt:string):InboxObservation|undefined {
  const raw=row?.raw; const candidate=row?.candidate;
@@ -22,6 +23,21 @@ function observations(input:DiscoveryJson):InboxObservation[]{
   const url=rec.sourceUrls?.[0]; if(!url)continue;
   const title=`${rec.action}: ${rec.matchedAssetName??rec.key}`;
   out.push({key:inboxKey("demand",url,title),title,url,source:"demand",lane:rec.lane??"demand",decision:"RESEARCH_SEED",verificationNeeds:rec.verificationNeeds??[],observedAt:input.observedAt});
+ }
+ for(const signal of input.publicRecordSignals??[]){
+  const evidence=publicRecordEvidence(signal,"official public record may indicate funded activity; buyer intent is not established");
+  const recipient=signal.organizationName??signal.subjectName??"unknown recipient";
+  const title=`PUBLIC_RECORD: ${signal.recordType}: ${recipient}: ${signal.recordId}`;
+  out.push({
+    key:inboxKey(`public-record:${signal.sourceId}`,evidence.officialUrl,title),
+    title,
+    url:evidence.officialUrl,
+    source:`public-record:${signal.sourceId}`,
+    lane:"PUBLIC_RECORD",
+    decision:"RESEARCH_SEED",
+    verificationNeeds:["BUYER_INTENT","CURRENT_NEED","CONTACTABILITY"],
+    observedAt:input.observedAt
+  });
  }
  return [...new Map(out.map(x=>[x.key,x])).values()];
 }

@@ -5,7 +5,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "17 * * * *"
+    - cron: "7,22,37,52 * * * *"
 jobs:
   discover:
     runs-on: ubuntu-latest
@@ -24,6 +24,7 @@ jobs:
           REVENUE_PROFILE_DEVICES: PHONE,TABLET
           REVENUE_PROFILE_WORK: GITHUB_REVIEW,CODE_ANALYSIS,DOCUMENTATION,QA,AI_ASSISTED_RESEARCH
           REVENUE_PROFILE_COUNTRIES: US
+          REVENUE_PUBLIC_RECORD_KEYWORDS: artificial intelligence software,cybersecurity software,healthcare workflow software,browser automation software
         run: npm run --silent discover:github > github-opportunities.json
       - name: Update durable opportunity inbox
         env:
