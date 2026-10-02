@@ -7,6 +7,8 @@ import { buildCommercialResearchSeeds } from "./commercial-seeds.js";
 import { isCommercialServiceSignal } from "./service-signal-quality.js";
 import { fetchUsaSpendingContractAwards } from "./usaspending-public-records.js";
 import { fetchGrantsGovOpportunities } from "./grants-gov.js";
+import { qualifyPublicRecordForCustomer } from "./customer-public-records.js";
+import type { CustomerLeadProfile } from "./customer-leads.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -173,6 +175,20 @@ async function main(){
     ? await fetchGrantsGovOpportunities(publicRecordKeywords,observedAt,grantsEligibleApplicantTypes)
     : {signals:[],failures:[]};
   const combinedPublicRecordSignals=[...publicRecords.signals,...grantRecords.signals];
+  const customerLeadProfile:CustomerLeadProfile|undefined=profile ? {
+    id:profile.id,
+    name:profile.name,
+    offer:profile.offer,
+    targetIndustries:profile.targetIndustries,
+    targetRoles:profile.targetRoles,
+    targetRegions:profile.targetRegions,
+    problemTerms:profile.problemTerms,
+    solutionTerms:profile.solutionTerms,
+    exclusions:profile.exclusions
+  } : undefined;
+  const customerPublicRecordLeads=customerLeadProfile
+    ? combinedPublicRecordSignals.map(signal=>qualifyPublicRecordForCustomer(customerLeadProfile,signal))
+    : [];
 
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
@@ -206,6 +222,7 @@ async function main(){
     },
     publicRecordSummary:{source:"USAspending+Grants.gov",polled:shouldFetchPublicRecords,records:combinedPublicRecordSignals.length,failures:publicRecords.failures.length+grantRecords.failures.length,bySource:{usaspending:publicRecords.signals.length,grantsGov:grantRecords.signals.length}},
     publicRecordSignals:combinedPublicRecordSignals,
+    customerPublicRecordLeads,
     commercialResearchSeeds,
     creationCandidates,
     readyForEconomics:batch.readyForEconomics,
