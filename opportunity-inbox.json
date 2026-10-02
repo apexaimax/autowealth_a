@@ -1,6 +1,6 @@
 {
   "schema": "revenue-opportunity-inbox-v1",
-  "updatedAt": "2026-10-02T14:07:01.310Z",
+  "updatedAt": "2026-10-02T19:14:27.406Z",
   "entries": [
     {
       "key": "07e8ac88fe3fca2ab5a1b247f145e4a6df87edd226533197ae90c713d056cf70",
@@ -14,10 +14,10 @@
         "CURRENT_NEED",
         "CONTACTABILITY"
       ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
+      "observedAt": "2026-10-02T19:14:27.406Z",
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
       "previousDecisions": []
     },
     {
@@ -32,10 +32,916 @@
         "CURRENT_NEED",
         "CONTACTABILITY"
       ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
+      "observedAt": "2026-10-02T19:14:27.406Z",
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "1bd8eb41f44e3065e139518cae21800dd89f0d13c88fc4c042446f32b7ad0233",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 356055",
+      "url": "https://www.grants.gov/search-results-detail/356055",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "1c0cc65f949c61a65080879e35a0316234734440cb9234116eb353848afebc43",
+      "title": "ChartPaste MD: commercial research seed",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/4347",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "251833eb059f8bd06ed8c45bf41a0b9b299f23eb6f05c4044113bffa7caa2f89",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359271",
+      "url": "https://www.grants.gov/search-results-detail/359271",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "273274d5248eaf95c15f5dc5d3bce304d53d266f30a6ffa498dd825e0560f892",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/snackdriven/portfolio/issues/19",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
+      "title": "OFFER_SERVICE: ResuMaster",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "2d34fe22c1ec13b89317846374c74e4eec449504c6b836e6180594c0be648777",
+      "title": "PUBLIC_RECORD: federal-contract-award: ACCESSAGILITY LLC: 70CMSD26FR0000167",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 7,
+      "previousDecisions": []
+    },
+    {
+      "key": "3b5847ea35e82643fda97d7f0f101a284235b73a5bcbbeb2a9913404c72c0ed2",
+      "title": "FieldBridge Studio: commercial research seed",
+      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 7,
+      "previousDecisions": []
+    },
+    {
+      "key": "435fe9c43a314b08363f4dd6217616bf5b73f1bbdbff4eae2a1a84c0ecd034db",
+      "title": "VersionVault: commercial research seed",
+      "url": "https://github.com/Automattic/wp-calypso/issues/80201",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "4cb23c19e2b98839f5be9c9a521ba2261c66126dc3124ebdba9c5797085ae45e",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359269",
+      "url": "https://www.grants.gov/search-results-detail/359269",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "4f2c56a70e2be18be285cf2243eb90551deb689788cd7153f6460e46343c7e8d",
+      "title": "PUBLIC_RECORD: federal-contract-award: IMPRES TECHNOLOGY SOLUTIONS, INC: 70CMSD26FR0000161",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 7,
+      "previousDecisions": []
+    },
+    {
+      "key": "5f0fa5c7333bff6ec3c942a5a83d7a4a35a6d66d860d179ba4c835a7c9adfc09",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359123",
+      "url": "https://www.grants.gov/search-results-detail/359123",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "6784ce8df5351b955a274261f29a009796f7293220870496ea3466acce656b80",
+      "title": "ADAPT_EXISTING: VersionVault",
+      "url": "https://github.com/Automattic/wp-calypso/issues/80201",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "684e63e9c73a6530d573cec1b9f5e95c784aca6f59074065e44cbcd99417b5a7",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359949",
+      "url": "https://www.grants.gov/search-results-detail/359949",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "6a37dc1f6804d2ab9084cd3fd25af67e57500a4efb76adfad0f286845b5b8667",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359004",
+      "url": "https://www.grants.gov/search-results-detail/359004",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "6a76ae386d9e47321cbc8b24ed36eb119d85c16cef4d3e40fde32b4057624435",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359666",
+      "url": "https://www.grants.gov/search-results-detail/359666",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "73944096a5de24451580fe516850f47a927c225c0f374f14185e0f9dd69606e8",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358934",
+      "url": "https://www.grants.gov/search-results-detail/358934",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "7de7c25d5dab09fe8a3f79e8a731715e97059651f61038a4a5604c5d80fb54e3",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 355439",
+      "url": "https://www.grants.gov/search-results-detail/355439",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "881e2803920b6a09875f0526c8832fe4f409d2044e6909a48ca0c7ac8c777762",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 361526",
+      "url": "https://www.grants.gov/search-results-detail/361526",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "8b951b7704c447347a71a99c490f57de88f1d755eb5adedde51c56544f0a6453",
+      "title": "OFFER_SERVICE: service:165-188-1d642530-2026-292",
+      "url": "https://github.com/messagecrate/message-crate/issues/1082",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "922cf7a72e5899fd6c08a67cc5adced423ecbed9e5f4007768ff2ae1ec543a11",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359003",
+      "url": "https://www.grants.gov/search-results-detail/359003",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "9fb81d45c207e7427a948ce4994406f64c28f8057ffd2e4f2ceb2822013d4612",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/gabned/provelume/issues/255",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "a214e4f7dd71f14bdd4774aeb2847e32b845e09081ea4c2936e63f11492ce2d5",
+      "title": "OFFER_SERVICE: service:0030-a-capture-bot-per-brand-takes-the-telegram-contact-100-105-2024",
+      "url": "https://github.com/Zikrasoft/approved_rs/issues/100",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "b04dada97e0057844eba95d567b26e4b163ef27f315a35bca983f27987fd1c24",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357309",
+      "url": "https://www.grants.gov/search-results-detail/357309",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "b21eda0589cc7141a604c159a7ffd344e17336f10da6215ee0c8c0c6b748f75a",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359270",
+      "url": "https://www.grants.gov/search-results-detail/359270",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "b6621c11c130cf6df03c42103b596823f83da6b99506fa2d15ce4fc4008db69a",
+      "title": "ADAPT_EXISTING: ChartPaste MD",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/4347",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
+      "title": "ResuMaster: commercial research seed",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "ca821265ef0b34aa2d5aaee30c9bb228d8205b274a1333b8c6ecf71784168fde",
+      "title": "ADAPT_EXISTING: FieldBridge Studio",
+      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "cad697fad6ad3b382310a7a098022ef20946a64f2f554f5a232145fe741e01a5",
+      "title": "PUBLIC_RECORD: federal-contract-award: FOUR POINTS TECHNOLOGY, L.L.C.: 7571TE26F80332",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 7,
+      "previousDecisions": []
+    },
+    {
+      "key": "d1bdc8a098f13d6773dfd2329e2106e5aba6021b48437f5757f7eed446560d5c",
+      "title": "OFFER_SERVICE: service:1074-118-125-125-128",
+      "url": "https://github.com/Shivam-Fl/actual-budget-sdlc/issues/14",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "d83a0a0701dc083850377a571a36673382a9e62a064e2b8b82f041b67958287c",
+      "title": "OFFER_SERVICE: ProofRail",
+      "url": "https://github.com/snackdriven/portfolio/issues/19",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "df1c1179318385cc359685a9911a6e83ef6dab655a50e9ca947e08ff2cea5bf2",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358864",
+      "url": "https://www.grants.gov/search-results-detail/358864",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "e1ae9750ad255b6a3ee45f9b3588dd3d73d9411c84f9d7840c1ade8da060fb6e",
+      "title": "ADAPT_EXISTING: ProofRail",
+      "url": "https://github.com/gabned/provelume/issues/255",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "ea0a70ba78e2e1e094b32d1a3a7c3424616b025e4170315157c47a12986990cf",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357308",
+      "url": "https://www.grants.gov/search-results-detail/357308",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "fc22fafcbd6cb4b9b5cf5c7e73e1e9d2276f29ed06a5958486b560f198456763",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 320753",
+      "url": "https://www.grants.gov/search-results-detail/320753",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "fcbba34678e102ce91f37512cb70e3a4fe448ce1f8005304e08019084418c2e8",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359268",
+      "url": "https://www.grants.gov/search-results-detail/359268",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:Arrow-air/project-quiver:256",
+      "title": "T-09: Platform Engineering Report, the decision register from PT1 to the 2026 dev kit",
+      "url": "https://github.com/Arrow-air/project-quiver/issues/256",
+      "source": "github:Arrow-air/project-quiver",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:auscaster/frantic-board:277",
+      "title": "Frantic bounty #97: Your first bounty is on the house ($10 back when it clears, first five)",
+      "url": "https://github.com/auscaster/frantic-board/issues/277",
+      "source": "github:auscaster/frantic-board",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T14:07:01.310Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
+      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 12,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:daria-kopaliani/wristhomage:24",
+      "title": "SN058 is on Amazon now, $74 above the maker's own price — decide whether the row should route there",
+      "url": "https://github.com/daria-kopaliani/wristhomage/issues/24",
+      "source": "github:daria-kopaliani/wristhomage",
+      "lane": "bounty",
+      "decision": "NEEDS_VERIFICATION",
+      "verificationNeeds": [
+        "UPFRONT_SPEND",
+        "ELIGIBILITY",
+        "DEVICE_COMPATIBILITY",
+        "PAYMENT_VERIFIABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:demetriodiazdeleon-pixel/morriganprueba:1",
+      "title": "La función suma() resta en vez de sumar",
+      "url": "https://github.com/demetriodiazdeleon-pixel/morriganprueba/issues/1",
+      "source": "github:demetriodiazdeleon-pixel/morriganprueba",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T14:07:01.310Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:HHS/simpler-grants-gov:12569",
+      "title": "Pagination on saved searches",
+      "url": "https://github.com/HHS/simpler-grants-gov/issues/12569",
+      "source": "github:HHS/simpler-grants-gov",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:nick-transition/fitapp:81",
+      "title": "[Bounty Proposal] Login-only gradient hero and responsive sign-in panel for #43 — USD 150",
+      "url": "https://github.com/nick-transition/fitapp/issues/81",
+      "source": "github:nick-transition/fitapp",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:oguzpoyrazyasin/poyraz:1",
+      "title": "[Opportunity Router] Latest ranked opportunities",
+      "url": "https://github.com/oguzpoyrazyasin/poyraz/issues/1",
+      "source": "github:oguzpoyrazyasin/poyraz",
+      "lane": "bounty",
+      "decision": "NEEDS_VERIFICATION",
+      "verificationNeeds": [
+        "UPFRONT_SPEND",
+        "ELIGIBILITY",
+        "DEVICE_COMPATIBILITY",
+        "PAYMENT_VERIFIABILITY"
+      ],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:743",
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 12,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:80",
+      "title": "Pixel Art Creation with high Creative Thinking",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 12,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:StellarEdgeServices/otterquote-platform:2121",
+      "title": "[PROJECT] Homeowner paid funnel: the plan checklist (Arm F first; realtor test slotted)",
+      "url": "https://github.com/StellarEdgeServices/otterquote-platform/issues/2121",
+      "source": "github:StellarEdgeServices/otterquote-platform",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:tenstorrent/tt-metal:58986",
+      "title": "[Bounty $1,000] FP32 ttnn.cumsum returns NaN after infinity or overflow",
+      "url": "https://github.com/tenstorrent/tt-metal/issues/58986",
+      "source": "github:tenstorrent/tt-metal",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:warpspeedopen-source/warpspeed-bounties:1",
+      "title": "[PAID BOUNTY - $960] Attachment Summarizer Service",
+      "url": "https://github.com/warpspeedopen-source/warpspeed-bounties/issues/1",
+      "source": "github:warpspeedopen-source/warpspeed-bounties",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:ZcashCommunityGrants/zcashcommunitygrants:458",
+      "title": "Grant Application - VaihtoFX: Shielded ZEC On/Off-Ramp via M-Pesa & Airtel Money in Kenya",
+      "url": "https://github.com/ZcashCommunityGrants/zcashcommunitygrants/issues/458",
+      "source": "github:ZcashCommunityGrants/zcashcommunitygrants",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:zkp2p/peer-link:21",
+      "title": "[$50 funded] Itau Brazil — BRL / BR",
+      "url": "https://github.com/zkp2p/peer-link/issues/21",
+      "source": "github:zkp2p/peer-link",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:zkp2p/peer-link:73",
+      "title": "[$50 funded] Chase — USD / US",
+      "url": "https://github.com/zkp2p/peer-link/issues/73",
+      "source": "github:zkp2p/peer-link",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T14:07:01.310Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:zkp2p/peer-link:75",
+      "title": "[$50 funded] Wells Fargo — USD / US",
+      "url": "https://github.com/zkp2p/peer-link/issues/75",
+      "source": "github:zkp2p/peer-link",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T19:14:27.406Z",
+      "firstSeenAt": "2026-10-02T19:14:27.406Z",
+      "lastSeenAt": "2026-10-02T19:14:27.406Z",
+      "observationCount": 1,
       "previousDecisions": []
     },
     {
@@ -56,60 +962,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T14:07:01.310Z",
       "observationCount": 10,
-      "previousDecisions": []
-    },
-    {
-      "key": "1bd8eb41f44e3065e139518cae21800dd89f0d13c88fc4c042446f32b7ad0233",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 356055",
-      "url": "https://www.grants.gov/search-results-detail/356055",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "251833eb059f8bd06ed8c45bf41a0b9b299f23eb6f05c4044113bffa7caa2f89",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359271",
-      "url": "https://www.grants.gov/search-results-detail/359271",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "2d34fe22c1ec13b89317846374c74e4eec449504c6b836e6180594c0be648777",
-      "title": "PUBLIC_RECORD: federal-contract-award: ACCESSAGILITY LLC: 70CMSD26FR0000167",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 6,
       "previousDecisions": []
     },
     {
@@ -171,150 +1023,6 @@
       "previousDecisions": []
     },
     {
-      "key": "4cb23c19e2b98839f5be9c9a521ba2261c66126dc3124ebdba9c5797085ae45e",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359269",
-      "url": "https://www.grants.gov/search-results-detail/359269",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "4f2c56a70e2be18be285cf2243eb90551deb689788cd7153f6460e46343c7e8d",
-      "title": "PUBLIC_RECORD: federal-contract-award: IMPRES TECHNOLOGY SOLUTIONS, INC: 70CMSD26FR0000161",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 6,
-      "previousDecisions": []
-    },
-    {
-      "key": "5f0fa5c7333bff6ec3c942a5a83d7a4a35a6d66d860d179ba4c835a7c9adfc09",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359123",
-      "url": "https://www.grants.gov/search-results-detail/359123",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "684e63e9c73a6530d573cec1b9f5e95c784aca6f59074065e44cbcd99417b5a7",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359949",
-      "url": "https://www.grants.gov/search-results-detail/359949",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "6a37dc1f6804d2ab9084cd3fd25af67e57500a4efb76adfad0f286845b5b8667",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359004",
-      "url": "https://www.grants.gov/search-results-detail/359004",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "6a76ae386d9e47321cbc8b24ed36eb119d85c16cef4d3e40fde32b4057624435",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359666",
-      "url": "https://www.grants.gov/search-results-detail/359666",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "73944096a5de24451580fe516850f47a927c225c0f374f14185e0f9dd69606e8",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358934",
-      "url": "https://www.grants.gov/search-results-detail/358934",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "7de7c25d5dab09fe8a3f79e8a731715e97059651f61038a4a5604c5d80fb54e3",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 355439",
-      "url": "https://www.grants.gov/search-results-detail/355439",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
       "key": "8792e8fa0cdb3384d1cf27e58226ea1cb2d60d425471eea6423582bc3ac8b557",
       "title": "ADAPT_EXISTING: ProofRail",
       "url": "https://github.com/portyu9/portyu9/issues/1243",
@@ -334,42 +1042,6 @@
       "previousDecisions": []
     },
     {
-      "key": "881e2803920b6a09875f0526c8832fe4f409d2044e6909a48ca0c7ac8c777762",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 361526",
-      "url": "https://www.grants.gov/search-results-detail/361526",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "922cf7a72e5899fd6c08a67cc5adced423ecbed9e5f4007768ff2ae1ec543a11",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359003",
-      "url": "https://www.grants.gov/search-results-detail/359003",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
       "key": "99533aa05bd56c8ecd9e8f2f8c60ba6421e72099a60a47dc938292c45818f949",
       "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-101-1066-108cdeb60dd7e4b3dadd1f7cd34841a294c0774c",
       "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/344",
@@ -385,42 +1057,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T14:07:01.310Z",
       "observationCount": 10,
-      "previousDecisions": []
-    },
-    {
-      "key": "b04dada97e0057844eba95d567b26e4b163ef27f315a35bca983f27987fd1c24",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357309",
-      "url": "https://www.grants.gov/search-results-detail/357309",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "b21eda0589cc7141a604c159a7ffd344e17336f10da6215ee0c8c0c6b748f75a",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359270",
-      "url": "https://www.grants.gov/search-results-detail/359270",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
       "previousDecisions": []
     },
     {
@@ -444,24 +1080,6 @@
       "previousDecisions": []
     },
     {
-      "key": "cad697fad6ad3b382310a7a098022ef20946a64f2f554f5a232145fe741e01a5",
-      "title": "PUBLIC_RECORD: federal-contract-award: FOUR POINTS TECHNOLOGY, L.L.C.: 7571TE26F80332",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 6,
-      "previousDecisions": []
-    },
-    {
       "key": "cee225e35c0aca93269d0d47f6921db62587bfb4944582c2aef8cec5ad107fd7",
       "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-1066-1166-120",
       "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/1166",
@@ -477,42 +1095,6 @@
       "firstSeenAt": "2026-10-02T00:37:36.138Z",
       "lastSeenAt": "2026-10-02T14:07:01.310Z",
       "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
-      "key": "df1c1179318385cc359685a9911a6e83ef6dab655a50e9ca947e08ff2cea5bf2",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358864",
-      "url": "https://www.grants.gov/search-results-detail/358864",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "ea0a70ba78e2e1e094b32d1a3a7c3424616b025e4170315157c47a12986990cf",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357308",
-      "url": "https://www.grants.gov/search-results-detail/357308",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
       "previousDecisions": []
     },
     {
@@ -547,56 +1129,6 @@
         "COMPETITION",
         "ASSET_READINESS"
       ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T14:07:01.310Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "fc22fafcbd6cb4b9b5cf5c7e73e1e9d2276f29ed06a5958486b560f198456763",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 320753",
-      "url": "https://www.grants.gov/search-results-detail/320753",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "fcbba34678e102ce91f37512cb70e3a4fe448ce1f8005304e08019084418c2e8",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359268",
-      "url": "https://www.grants.gov/search-results-detail/359268",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:auscaster/frantic-board:277",
-      "title": "Frantic bounty #97: Your first bounty is on the house ($10 back when it clears, first five)",
-      "url": "https://github.com/auscaster/frantic-board/issues/277",
-      "source": "github:auscaster/frantic-board",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
       "observedAt": "2026-10-02T14:07:01.310Z",
       "firstSeenAt": "2026-10-02T14:07:01.310Z",
       "lastSeenAt": "2026-10-02T14:07:01.310Z",
@@ -694,72 +1226,10 @@
       ]
     },
     {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
-      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 11,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
       "key": "github:claude-builders-bounty/claude-builders-bounty:5",
       "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
       "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
       "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 11,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:demetriodiazdeleon-pixel/morriganprueba:1",
-      "title": "La función suma() resta en vez de sumar",
-      "url": "https://github.com/demetriodiazdeleon-pixel/morriganprueba/issues/1",
-      "source": "github:demetriodiazdeleon-pixel/morriganprueba",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T14:07:01.310Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:743",
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 11,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:80",
-      "title": "Pixel Art Creation with high Creative Thinking",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
-      "source": "github:SecureBananaLabs/bug-bounty",
       "lane": "bounty",
       "decision": "REJECT",
       "verificationNeeds": [],
@@ -803,20 +1273,6 @@
       "key": "github:zkp2p/peer-link:6",
       "title": "[$50 funded] Monobank — UAH / UA",
       "url": "https://github.com/zkp2p/peer-link/issues/6",
-      "source": "github:zkp2p/peer-link",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T14:07:01.310Z",
-      "firstSeenAt": "2026-10-02T14:07:01.310Z",
-      "lastSeenAt": "2026-10-02T14:07:01.310Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:zkp2p/peer-link:73",
-      "title": "[$50 funded] Chase — USD / US",
-      "url": "https://github.com/zkp2p/peer-link/issues/73",
       "source": "github:zkp2p/peer-link",
       "lane": "bounty",
       "decision": "REJECT",
@@ -1049,26 +1505,6 @@
       "previousDecisions": []
     },
     {
-      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
-      "title": "OFFER_SERVICE: ResuMaster",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T07:34:55.637Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T07:34:55.637Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "2ffa8a54067c376c0d9c715a976be2a50768f7a084b352a4b044d8f2b674f827",
       "title": "OFFER_SERVICE: service:031-0310569-058-061",
       "url": "https://github.com/SUSANO-OOO/Zombieee/issues/172",
@@ -1200,26 +1636,6 @@
       "firstSeenAt": "2026-10-02T07:34:55.637Z",
       "lastSeenAt": "2026-10-02T07:34:55.637Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "3b5847ea35e82643fda97d7f0f101a284235b73a5bcbbeb2a9913404c72c0ed2",
-      "title": "FieldBridge Studio: commercial research seed",
-      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T07:34:55.637Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T07:34:55.637Z",
-      "observationCount": 6,
       "previousDecisions": []
     },
     {
@@ -1606,26 +2022,6 @@
       "previousDecisions": []
     },
     {
-      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
-      "title": "ResuMaster: commercial research seed",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T07:34:55.637Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T07:34:55.637Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "bd3b11a057625707ed2a60fcae5f9514dcc832e4780af8cdc7a728df2a7b0166",
       "title": "OFFER_SERVICE: service:16379-1a0e87a8c1e-79ffcebbc6c9-1a0e87b2433-3aaad65743e4-1a0e87b263c-9c2bdcc5cdd2",
       "url": "https://github.com/daniel-ospina/tortoise/issues/6145",
@@ -1680,25 +2076,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T07:34:55.637Z",
       "observationCount": 10,
-      "previousDecisions": []
-    },
-    {
-      "key": "ca821265ef0b34aa2d5aaee30c9bb228d8205b274a1333b8c6ecf71784168fde",
-      "title": "ADAPT_EXISTING: FieldBridge Studio",
-      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
-      "source": "demand",
-      "lane": "EXISTING_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T07:34:55.637Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T07:34:55.637Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
