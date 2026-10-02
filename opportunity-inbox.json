@@ -1,7 +1,1201 @@
 {
   "schema": "revenue-opportunity-inbox-v1",
-  "updatedAt": "2026-10-02T04:42:06.069Z",
+  "updatedAt": "2026-10-02T07:34:55.637Z",
   "entries": [
+    {
+      "key": "029d9e90cf610b02ebf363ea2272b4652960ea2eab8672685aa8a7f8c5debab5",
+      "title": "ADAPT_EXISTING: VersionVault",
+      "url": "https://github.com/mpaykin1/World_server/issues/80",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "0681c2df914c5e451b84e1156a45aa8bec9ec21b2394b8a5072d30776b55eff6",
+      "title": "OFFER_SERVICE: service:accessibility-actual-add-added",
+      "url": "https://github.com/Cosmian/kms/issues/1030",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "0a6e20abaad5a9364242e54c0936002eb2cf03a8a937b789b966ba953c002f29",
+      "title": "OFFER_SERVICE: service:000-001-0b101-0xff",
+      "url": "https://github.com/gHashTag/t27/issues/5533",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "0bc96c3f47f6177f79a38faf6dcca7319a4c8e1ed6c9b75693c3213b320eae30",
+      "title": "OFFER_SERVICE: service:16390-200-2026-08-07-375",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16471",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "0d45f65baf1113442d6cd34f831f1f4117f231515aedcb620ba127afa46ffd1b",
+      "title": "ChartPaste MD: commercial research seed",
+      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "0f492afdb3ee96eea04f50b67c0f895677d5bd7466db47b3567adb63b46d8674",
+      "title": "OFFER_SERVICE: service:000-0b101-0xff-123",
+      "url": "https://github.com/gHashTag/t27/issues/5530",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "0f905a242af24bb05454cfbfd46720770c06278e042344b89c2a99cb2e1294df",
+      "title": "OFFER_SERVICE: service:0-alpha-403-accepts-accessible",
+      "url": "https://github.com/AETHERXGLOBAL/execsurface/issues/86",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "19dd4df1005ad5ddaf4fb3c9e8d006abf4eac8935449e05b83ed936d2c9126c5",
+      "title": "OFFER_SERVICE: service:000-120-player-300s-580",
+      "url": "https://github.com/Acervator-LLC/ACERVATOR/issues/147",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "19f3ca8fc5b2a59fc5944f26ee0daa4f9fb77940564ba2f3ccf7adabe97aa7b5",
+      "title": "OFFER_SERVICE: service:124-235-403-above",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/254",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "1b67cbc41d554bb2431cfc6ca57deb61961ba46d395508de5e6581f75b53974b",
+      "title": "OFFER_SERVICE: service:0-1-0-14-0-2-0-3",
+      "url": "https://github.com/7h3-3mp7y-m4n/GitHub-api-learner/issues/61",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "1dd52ad5cf80423a4d6ebb570422b5b1047cc293138d39c017dd183e365a1a9f",
+      "title": "OFFER_SERVICE: service:actual-adapter-adoption-aggregate",
+      "url": "https://github.com/ashuujha/devcompanion-launch/issues/1",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "21addec2580af21128b71079cdca5987d29595309e853a9d05f844dfa4a9df36",
+      "title": "OFFER_SERVICE: service:0-beta-0-preview-0-rc-1-alpha",
+      "url": "https://github.com/AMackProjekt/amackprojekt-web/issues/42",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
+      "title": "OFFER_SERVICE: ResuMaster",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "2ffa8a54067c376c0d9c715a976be2a50768f7a084b352a4b044d8f2b674f827",
+      "title": "OFFER_SERVICE: service:031-0310569-058-061",
+      "url": "https://github.com/SUSANO-OOO/Zombieee/issues/172",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "32183712efa5fc8894d4d771c0a8724933cd236987887c23edfe019b1342e8f1",
+      "title": "OFFER_SERVICE: service:0rrpy1ph7hafi3qoitg0mr-10am-12pm-11u71et-rztkvvp8yj-1p76k0fgfiaweiieyoyj",
+      "url": "https://github.com/hackforla/website/issues/3780",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "332aa444b26f2912f6ec51f50fa5ebb5416d8c17bc52d38aaad3ec767b01b4ca",
+      "title": "OFFER_SERVICE: service:700-743-all-another",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "37852f37bdb7c486de1ae39b79b87f04fc96c2aad1e96a6822a0259b08b79e72",
+      "title": "OFFER_SERVICE: service:10-12-402-above-abrir",
+      "url": "https://github.com/Bitcoindefi/Open-Stellar/issues/29",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "3792f39da002489ef78f43cefb6f9f0979c9167a37a500567e92ea773c6f7b33",
+      "title": "ResuMaster: commercial research seed",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6367",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:51:34.445Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "383b4db8319296b4713c5c4bb65d9e4afa86e94e89788390529d95d0f20b7578",
+      "title": "OFFER_SERVICE: VersionVault",
+      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "3a988d6024ab6b851a4209f0683dbc237c762f016185624f491d88d50e279c87",
+      "title": "OFFER_SERVICE: service:000-0b101-0bbe6a0a411a-0xff",
+      "url": "https://github.com/gHashTag/t27/issues/5531",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "3b5847ea35e82643fda97d7f0f101a284235b73a5bcbbeb2a9913404c72c0ed2",
+      "title": "FieldBridge Studio: commercial research seed",
+      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "4062271b54f72c9ad127b724d48f6200486ff4239de4752bed981764c188b1e2",
+      "title": "OFFER_SERVICE: ProofRail",
+      "url": "https://github.com/mikeroetker-alt/gabriel-crm/issues/22",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "41538916ff864094320df0e93606388493be4c1bccb66e9192d225b17c32758c",
+      "title": "OFFER_SERVICE: service:177-178-2026-10-02-added",
+      "url": "https://github.com/jxburros/AI-Nugget/issues/27",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "52a15f2e526dc77da560b8c21a8e431d3215751b528ccf2b723c5a16bdd06e08",
+      "title": "OFFER_SERVICE: service:000-033-0b101-0xff",
+      "url": "https://github.com/gHashTag/t27/issues/5527",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "5515f5e53bd481b889b15bb929cb27f343889f83e8dad294c912de70cab5f1f3",
+      "title": "VersionVault: commercial research seed",
+      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "6120b9fdf6427a48e5e08944b344597b5578263ff2dc644aed8e0269ef2a053e",
+      "title": "OFFER_SERVICE: service:000001-100-2026-2026-09-09t15",
+      "url": "https://github.com/sanizakka-cyber/AI-CROP-DETECTOR/issues/9",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "6e171ba8a5ac8d63a3878d636dd979cde884d6d6bf1c7296613a20b954db28f1",
+      "title": "OFFER_SERVICE: service:1000-1107-1280-15-60",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16601",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "6f03ecd55fe95d4287543e69942098bf4697e144b82f2ceefa95af0fbcb058fa",
+      "title": "OFFER_SERVICE: service:000-115-131-135",
+      "url": "https://github.com/spy4x/antonshubin.com/issues/388",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "73b9ae39df742bccfa0c374943e22a7e9681af790dc39047026ac26718ca37c3",
+      "title": "OFFER_SERVICE: service:1117-1123-1210-1239",
+      "url": "https://github.com/ethtri/bloomjoy-hub/issues/628",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "73fbfd37ed92c64c0760988c9c3972a4f491c4dcefa5c320e605dc66f81a1bd9",
+      "title": "VersionVault: commercial research seed",
+      "url": "https://github.com/mpaykin1/World_server/issues/80",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "767706a028c54693d78c230b3c53f84465afa44f5a5828ca23023315aa869955",
+      "title": "OFFER_SERVICE: service:045-074-10-page-134d4084662f28b27d8345969dca5de9d3cbc18a",
+      "url": "https://github.com/usdimpact/usd-impact-site/issues/570",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "77e00e52c222726d92696a64292bbe851d3e7fd5ca9b628f1c9d848a61f8b732",
+      "title": "OFFER_SERVICE: service:110496328283-168d86612554661281a28697c3c948c6126b49a4-2026-10-01-2cf55fde8bdb964d914ded7deaa0e93226284070",
+      "url": "https://github.com/bifanaboy/liszt/issues/5",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "7c6723ab581963a9a000555967f19e8e8b118a72aedd4e9260001e86e0ffbe09",
+      "title": "OFFER_SERVICE: service:2026-09-28-2026-09-29-280-acceptance",
+      "url": "https://github.com/LowcountryDigitalWorks/gas-engine/issues/31",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "7f137bf9d466daf275d3161aee651410f12bbe14881e4eb1447e87f323d2e915",
+      "title": "OFFER_SERVICE: service:000-0b101-0xff-120p",
+      "url": "https://github.com/gHashTag/t27/issues/5529",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "93913558e1f5f5b829b3db10988a01a4d82913deae2a8751376a2d4b489af39c",
+      "title": "OFFER_SERVICE: service:198-220-acceptance-add",
+      "url": "https://github.com/Dfunder/stellarAid-contract/issues/798",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "93b106bfbf1270de50c296ea7d1ccf2522566a25e25b63eafae0f8bcbe1daf0e",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/mikeroetker-alt/gabriel-crm/issues/22",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "96f8d9ea90eef0089f7a0d8b837758a5b8a6db31b242345b302f59f739966707",
+      "title": "OFFER_SERVICE: service:1316-1570-2022-2025",
+      "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "97e629699749144ae90909d14bb0d913708257a7cfb42a56669004fec6ff4f73",
+      "title": "OFFER_SERVICE: service:000-60-day-absent-acceptance",
+      "url": "https://github.com/in-c0/tuned/issues/1",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "99533aa05bd56c8ecd9e8f2f8c60ba6421e72099a60a47dc938292c45818f949",
+      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-101-1066-108cdeb60dd7e4b3dadd1f7cd34841a294c0774c",
+      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/344",
+      "source": "demand",
+      "lane": "NEW_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "a35e919bfc754de946510bf81c1928ec167d0afd0366ddc3fe83aebed1035252",
+      "title": "OFFER_SERVICE: service:794-advanced-already-already-completed",
+      "url": "https://github.com/Ajo-contrib/soroban-ajo/issues/904",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "b962b1d2d87b24656b3e9249e9e85e3d5274c8102ff31112923302c10cced878",
+      "title": "OFFER_SERVICE: service:0rrpy1ph7hafi3qoitg0mr-1-16-10am-12pm-11u71et-rztkvvp8yj",
+      "url": "https://github.com/hackforla/website/issues/7746",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "bb0fca8fea8e6db86e735f328ca6902ff41bebba6e4b0dff8742d2c6b88c07de",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/oimus1976/agent-controller/issues/216",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
+      "title": "ResuMaster: commercial research seed",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "bd3b11a057625707ed2a60fcae5f9514dcc832e4780af8cdc7a728df2a7b0166",
+      "title": "OFFER_SERVICE: service:16379-1a0e87a8c1e-79ffcebbc6c9-1a0e87b2433-3aaad65743e4-1a0e87b263c-9c2bdcc5cdd2",
+      "url": "https://github.com/daniel-ospina/tortoise/issues/6145",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "c63730545f035d0d4a926f1ba2448bc7210b18884e9daa687633e2c799e589b1",
+      "title": "OFFER_SERVICE: service:14-specific-2025-11-25-2026-10-01-336",
+      "url": "https://github.com/radek-cerny-soukr/netops/issues/1",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "c9496a31e6c1fc45c907f20fc0d58e925392a09ecf9126e85b44b10417dbdf49",
+      "title": "OFFER_SERVICE: service:174-38s-692-694",
+      "url": "https://github.com/engine262/engine262/issues/367",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "ca821265ef0b34aa2d5aaee30c9bb228d8205b274a1333b8c6ecf71784168fde",
+      "title": "ADAPT_EXISTING: FieldBridge Studio",
+      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "cee225e35c0aca93269d0d47f6921db62587bfb4944582c2aef8cec5ad107fd7",
+      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-1066-1166-120",
+      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/1166",
+      "source": "demand",
+      "lane": "NEW_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "eb17e342a611670be2a1bcda35bbdfbe330a3948c3176752bc92a3b34e1fff71",
+      "title": "ADAPT_EXISTING: ChartPaste MD",
+      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "ed12a9798ba4e7d292d14badf191516c50f2d532530f1fa0d02b03f68e21b52a",
+      "title": "ADAPT_EXISTING: ResuMaster",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6367",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "f1f1d6435200944d581af442698670e5d211f4315b7c4fd4401fb62919423b26",
+      "title": "ADAPT_EXISTING: ProofRail",
+      "url": "https://github.com/oimus1976/agent-controller/issues/216",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "f6278c5284e3505adbec2c6b9574cedd9a15bc7e593f22aa1634e145cbd1c5ff",
+      "title": "OFFER_SERVICE: service:1-adopt-baseline-rollout-1-hotfix-and-rollout-report-237965f559e77569803463ecbf35233025dafc1f407aaccdd351d9ad61f87bf5-a88a61b7fcae632cdf5b282dc4461592b92cad57",
+      "url": "https://github.com/KayzenRoot/gef-bootstrap/issues/357",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:BasedHardware/omi:20284",
+      "title": "[Bounty Proposal] fix(backend/agents): external Hume webhook crashes on missing job_id or unhandled db exceptions ($50 proposed)",
+      "url": "https://github.com/BasedHardware/omi/issues/20284",
+      "source": "github:BasedHardware/omi",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:BasedHardware/omi:20292",
+      "title": "[Bounty Proposal] feat(python-cli): memories -> HTML report recipe (5 proposed)",
+      "url": "https://github.com/BasedHardware/omi/issues/20292",
+      "source": "github:BasedHardware/omi",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:BasedHardware/omi:20295",
+      "title": "[Bounty Proposal] feat(python-cli): memories -> SQLite database recipe (5 proposed)",
+      "url": "https://github.com/BasedHardware/omi/issues/20295",
+      "source": "github:BasedHardware/omi",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:BasedHardware/omi:20296",
+      "title": "[Bounty proposal] feat(python-cli): conversations -> JSONL export recipe ($25 proposed)",
+      "url": "https://github.com/BasedHardware/omi/issues/20296",
+      "source": "github:BasedHardware/omi",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T07:34:55.637Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:1",
+      "title": "[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:2",
+      "title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:3",
+      "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
+      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:5",
+      "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:ethtri/bloomjoy-hub:1687",
+      "title": "P1: Add refund exception amounts and English/Spanish customer pages",
+      "url": "https://github.com/ethtri/bloomjoy-hub/issues/1687",
+      "source": "github:ethtri/bloomjoy-hub",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:imhurl23/evals_research_repo:19",
+      "title": "Frontier watch — 2026-09-27",
+      "url": "https://github.com/imhurl23/evals_research_repo/issues/19",
+      "source": "github:imhurl23/evals_research_repo",
+      "lane": "bounty",
+      "decision": "NEEDS_VERIFICATION",
+      "verificationNeeds": [
+        "UPFRONT_SPEND",
+        "ELIGIBILITY",
+        "DEVICE_COMPATIBILITY",
+        "PAYMENT_VERIFIABILITY"
+      ],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:743",
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:80",
+      "title": "Pixel Art Creation with high Creative Thinking",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T07:34:55.637Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T07:34:55.637Z",
+      "observationCount": 10,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
     {
       "key": "00607ec8ed1e605473efac5612cc91bec83bc22f58ef3377805d283d6ddcfd4a",
       "title": "PURSUE_REMOTE_WORK: remote:048-120-1505-1507",
@@ -41,25 +1235,6 @@
       "previousDecisions": []
     },
     {
-      "key": "0681c2df914c5e451b84e1156a45aa8bec9ec21b2394b8a5072d30776b55eff6",
-      "title": "OFFER_SERVICE: service:accessibility-actual-add-added",
-      "url": "https://github.com/Cosmian/kms/issues/1030",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
       "key": "07e8ac88fe3fca2ab5a1b247f145e4a6df87edd226533197ae90c713d056cf70",
       "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 363869",
       "url": "https://www.grants.gov/search-results-detail/363869",
@@ -96,45 +1271,6 @@
       "previousDecisions": []
     },
     {
-      "key": "0bc96c3f47f6177f79a38faf6dcca7319a4c8e1ed6c9b75693c3213b320eae30",
-      "title": "OFFER_SERVICE: service:16390-200-2026-08-07-375",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16471",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
-      "key": "0d45f65baf1113442d6cd34f831f1f4117f231515aedcb620ba127afa46ffd1b",
-      "title": "ChartPaste MD: commercial research seed",
-      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "0eba87357fcf56e751e4f977f7c5bb49032ce3bd0c1c47f5bb16514c7a586426",
       "title": "PURSUE_REMOTE_WORK: remote:00s-01s-1070-109",
       "url": "https://github.com/deanhiller/webpieces-ts/issues/1067",
@@ -151,25 +1287,6 @@
       "firstSeenAt": "2026-10-02T04:42:06.069Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "0f905a242af24bb05454cfbfd46720770c06278e042344b89c2a99cb2e1294df",
-      "title": "OFFER_SERVICE: service:0-alpha-403-accepts-accessible",
-      "url": "https://github.com/AETHERXGLOBAL/execsurface/issues/86",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
       "previousDecisions": []
     },
     {
@@ -212,44 +1329,6 @@
       "previousDecisions": []
     },
     {
-      "key": "19dd4df1005ad5ddaf4fb3c9e8d006abf4eac8935449e05b83ed936d2c9126c5",
-      "title": "OFFER_SERVICE: service:000-120-player-300s-580",
-      "url": "https://github.com/Acervator-LLC/ACERVATOR/issues/147",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
-      "key": "19f3ca8fc5b2a59fc5944f26ee0daa4f9fb77940564ba2f3ccf7adabe97aa7b5",
-      "title": "OFFER_SERVICE: service:124-235-403-above",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/254",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "1b2371a3461ccf25f787e837284274a392167e6dd3ac72a4ea53c507616954cc",
       "title": "ADAPT_EXISTING: FieldBridge Studio",
       "url": "https://github.com/VoltickVL/FreeNet-Router/issues/5",
@@ -269,25 +1348,6 @@
       "previousDecisions": []
     },
     {
-      "key": "1b67cbc41d554bb2431cfc6ca57deb61961ba46d395508de5e6581f75b53974b",
-      "title": "OFFER_SERVICE: service:0-1-0-14-0-2-0-3",
-      "url": "https://github.com/7h3-3mp7y-m4n/GitHub-api-learner/issues/61",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
       "key": "1bd8eb41f44e3065e139518cae21800dd89f0d13c88fc4c042446f32b7ad0233",
       "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 356055",
       "url": "https://www.grants.gov/search-results-detail/356055",
@@ -303,25 +1363,6 @@
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "21addec2580af21128b71079cdca5987d29595309e853a9d05f844dfa4a9df36",
-      "title": "OFFER_SERVICE: service:0-beta-0-preview-0-rc-1-alpha",
-      "url": "https://github.com/AMackProjekt/amackprojekt-web/issues/42",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
       "previousDecisions": []
     },
     {
@@ -380,26 +1421,6 @@
       "previousDecisions": []
     },
     {
-      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
-      "title": "OFFER_SERVICE: ResuMaster",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
       "key": "2d34fe22c1ec13b89317846374c74e4eec449504c6b836e6180594c0be648777",
       "title": "PUBLIC_RECORD: federal-contract-award: ACCESSAGILITY LLC: 70CMSD26FR0000167",
       "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
@@ -437,63 +1458,6 @@
       "previousDecisions": []
     },
     {
-      "key": "332aa444b26f2912f6ec51f50fa5ebb5416d8c17bc52d38aaad3ec767b01b4ca",
-      "title": "OFFER_SERVICE: service:700-743-all-another",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
-      "key": "37852f37bdb7c486de1ae39b79b87f04fc96c2aad1e96a6822a0259b08b79e72",
-      "title": "OFFER_SERVICE: service:10-12-402-above-abrir",
-      "url": "https://github.com/Bitcoindefi/Open-Stellar/issues/29",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "383b4db8319296b4713c5c4bb65d9e4afa86e94e89788390529d95d0f20b7578",
-      "title": "OFFER_SERVICE: VersionVault",
-      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
       "key": "3ddeba2d68421499f46667b4b8648c4e6a21829f188b47ed85898821fa717885",
       "title": "OFFER_SERVICE: ChartPaste MD",
       "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1068",
@@ -511,25 +1475,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "41538916ff864094320df0e93606388493be4c1bccb66e9192d225b17c32758c",
-      "title": "OFFER_SERVICE: service:177-178-2026-10-02-added",
-      "url": "https://github.com/jxburros/AI-Nugget/issues/27",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T04:42:06.069Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 1,
       "previousDecisions": []
     },
     {
@@ -645,26 +1590,6 @@
       "previousDecisions": []
     },
     {
-      "key": "5515f5e53bd481b889b15bb929cb27f343889f83e8dad294c912de70cab5f1f3",
-      "title": "VersionVault: commercial research seed",
-      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
       "key": "5d738d241ec03cdd1fef44a2f27dfd6eb835e7f2eac720c44ab497821a6e04b6",
       "title": "OFFER_SERVICE: service:10m-20m-429-479",
       "url": "https://github.com/sadouninc/Sado-Investment-Lab/issues/727",
@@ -718,25 +1643,6 @@
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "6120b9fdf6427a48e5e08944b344597b5578263ff2dc644aed8e0269ef2a053e",
-      "title": "OFFER_SERVICE: service:000001-100-2026-2026-09-09t15",
-      "url": "https://github.com/sanizakka-cyber/AI-CROP-DETECTOR/issues/9",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
       "previousDecisions": []
     },
     {
@@ -813,44 +1719,6 @@
       "previousDecisions": []
     },
     {
-      "key": "6e171ba8a5ac8d63a3878d636dd979cde884d6d6bf1c7296613a20b954db28f1",
-      "title": "OFFER_SERVICE: service:1000-1107-1280-15-60",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16601",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "6f03ecd55fe95d4287543e69942098bf4697e144b82f2ceefa95af0fbcb058fa",
-      "title": "OFFER_SERVICE: service:000-115-131-135",
-      "url": "https://github.com/spy4x/antonshubin.com/issues/388",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "702a1fc5e20ef66133a0bbbe7011d7e740474a975a543b40c8541ca2a89265dc",
       "title": "PURSUE_REMOTE_WORK: remote:2026-09-27-absence-acceptable-acceptance",
       "url": "https://github.com/elboaf/YAAH/issues/118",
@@ -885,63 +1753,6 @@
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "73b9ae39df742bccfa0c374943e22a7e9681af790dc39047026ac26718ca37c3",
-      "title": "OFFER_SERVICE: service:1117-1123-1210-1239",
-      "url": "https://github.com/ethtri/bloomjoy-hub/issues/628",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T04:42:06.069Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "767706a028c54693d78c230b3c53f84465afa44f5a5828ca23023315aa869955",
-      "title": "OFFER_SERVICE: service:045-074-10-page-134d4084662f28b27d8345969dca5de9d3cbc18a",
-      "url": "https://github.com/usdimpact/usd-impact-site/issues/570",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "77e00e52c222726d92696a64292bbe851d3e7fd5ca9b628f1c9d848a61f8b732",
-      "title": "OFFER_SERVICE: service:110496328283-168d86612554661281a28697c3c948c6126b49a4-2026-10-01-2cf55fde8bdb964d914ded7deaa0e93226284070",
-      "url": "https://github.com/bifanaboy/liszt/issues/5",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
       "previousDecisions": []
     },
     {
@@ -981,25 +1792,6 @@
       "firstSeenAt": "2026-10-02T04:42:06.069Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "7c6723ab581963a9a000555967f19e8e8b118a72aedd4e9260001e86e0ffbe09",
-      "title": "OFFER_SERVICE: service:2026-09-28-2026-09-29-280-acceptance",
-      "url": "https://github.com/LowcountryDigitalWorks/gas-engine/issues/31",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
       "previousDecisions": []
     },
     {
@@ -1229,25 +2021,6 @@
       "previousDecisions": []
     },
     {
-      "key": "93913558e1f5f5b829b3db10988a01a4d82913deae2a8751376a2d4b489af39c",
-      "title": "OFFER_SERVICE: service:198-220-acceptance-add",
-      "url": "https://github.com/Dfunder/stellarAid-contract/issues/798",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "9398032d7b6eb14acf37c73b8d3d6d51abd20a58afc5fcd36b0b8631dfdeaa9d",
       "title": "PURSUE_REMOTE_WORK: remote:149-2026-09-30-2026-10-01-5085",
       "url": "https://github.com/Unjuno/agent-interface/issues/59",
@@ -1286,44 +2059,6 @@
       "previousDecisions": []
     },
     {
-      "key": "96f8d9ea90eef0089f7a0d8b837758a5b8a6db31b242345b302f59f739966707",
-      "title": "OFFER_SERVICE: service:1316-1570-2022-2025",
-      "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "97e629699749144ae90909d14bb0d913708257a7cfb42a56669004fec6ff4f73",
-      "title": "OFFER_SERVICE: service:000-60-day-absent-acceptance",
-      "url": "https://github.com/in-c0/tuned/issues/1",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
       "key": "98ee207f0995909b6a9993c0a0c954cb37c191498bd731ccf0db45fe75b86e45",
       "title": "OFFER_SERVICE: service:2026-2026-10-01-2030-24-1-ipu-ai-security-filter",
       "url": "https://github.com/skerishKang/ai-revenue-lab/issues/731",
@@ -1332,24 +2067,6 @@
       "decision": "RESEARCH_SEED",
       "verificationNeeds": [
         "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "99533aa05bd56c8ecd9e8f2f8c60ba6421e72099a60a47dc938292c45818f949",
-      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-101-1066-108cdeb60dd7e4b3dadd1f7cd34841a294c0774c",
-      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/344",
-      "source": "demand",
-      "lane": "NEW_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
         "BUYER_INTENT",
         "PAYMENT_PATH",
         "COMPETITION"
@@ -1396,25 +2113,6 @@
       "firstSeenAt": "2026-10-02T04:42:06.069Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "a35e919bfc754de946510bf81c1928ec167d0afd0366ddc3fe83aebed1035252",
-      "title": "OFFER_SERVICE: service:794-advanced-already-already-completed",
-      "url": "https://github.com/Ajo-contrib/soroban-ajo/issues/904",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
       "previousDecisions": []
     },
     {
@@ -1550,45 +2248,6 @@
       "previousDecisions": []
     },
     {
-      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
-      "title": "ResuMaster: commercial research seed",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "bd3b11a057625707ed2a60fcae5f9514dcc832e4780af8cdc7a728df2a7b0166",
-      "title": "OFFER_SERVICE: service:16379-1a0e87a8c1e-79ffcebbc6c9-1a0e87b2433-3aaad65743e4-1a0e87b263c-9c2bdcc5cdd2",
-      "url": "https://github.com/daniel-ospina/tortoise/issues/6145",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T04:42:06.069Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
       "key": "c1b1ac2a668777ea9d27a431e26e56a60f16f888b20e3bd4f324922e05b3d9a6",
       "title": "PURSUE_REMOTE_WORK: remote:1000-120-147-2025-04-15",
       "url": "https://github.com/Slather-00/Test-Repo/issues/1",
@@ -1665,25 +2324,6 @@
       "previousDecisions": []
     },
     {
-      "key": "c63730545f035d0d4a926f1ba2448bc7210b18884e9daa687633e2c799e589b1",
-      "title": "OFFER_SERVICE: service:14-specific-2025-11-25-2026-10-01-336",
-      "url": "https://github.com/radek-cerny-soukr/netops/issues/1",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
       "key": "c72ae1df430ef5f9a7a8b8d6e23e893a10bd1bc02f78cf916861497b1aad60f4",
       "title": "ProofRail: commercial research seed",
       "url": "https://github.com/ArgumentumGames/Argumentum/issues/458",
@@ -1701,25 +2341,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "c9496a31e6c1fc45c907f20fc0d58e925392a09ecf9126e85b44b10417dbdf49",
-      "title": "OFFER_SERVICE: service:174-38s-692-694",
-      "url": "https://github.com/engine262/engine262/issues/367",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
       "previousDecisions": []
     },
     {
@@ -1795,24 +2416,6 @@
       "firstSeenAt": "2026-10-02T04:42:06.069Z",
       "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "cee225e35c0aca93269d0d47f6921db62587bfb4944582c2aef8cec5ad107fd7",
-      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-1066-1166-120",
-      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/1166",
-      "source": "demand",
-      "lane": "NEW_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 7,
       "previousDecisions": []
     },
     {
@@ -2004,25 +2607,6 @@
       "previousDecisions": []
     },
     {
-      "key": "eb17e342a611670be2a1bcda35bbdfbe330a3948c3176752bc92a3b34e1fff71",
-      "title": "ADAPT_EXISTING: ChartPaste MD",
-      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
-      "source": "demand",
-      "lane": "EXISTING_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "ec22084a87cd686f237a7dd0565ec882d9f465bfc8685bb89356f5cbd04486b7",
       "title": "PURSUE_REMOTE_WORK: remote:1144-1507b818ad2585441ec08154845d76d19c5fc5a2c99d73911c62ddafd6c3cf6a-16-byte-168",
       "url": "https://github.com/4laric/pikmin-randomizer/issues/1148",
@@ -2177,25 +2761,6 @@
       "previousDecisions": []
     },
     {
-      "key": "f6278c5284e3505adbec2c6b9574cedd9a15bc7e593f22aa1634e145cbd1c5ff",
-      "title": "OFFER_SERVICE: service:1-adopt-baseline-rollout-1-hotfix-and-rollout-report-237965f559e77569803463ecbf35233025dafc1f407aaccdd351d9ad61f87bf5-a88a61b7fcae632cdf5b282dc4461592b92cad57",
-      "url": "https://github.com/KayzenRoot/gef-bootstrap/issues/357",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "fc22fafcbd6cb4b9b5cf5c7e73e1e9d2276f29ed06a5958486b560f198456763",
       "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 320753",
       "url": "https://www.grants.gov/search-results-detail/320753",
@@ -2298,119 +2863,6 @@
       "previousDecisions": []
     },
     {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:1",
-      "title": "[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:2",
-      "title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:3",
-      "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
-      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:5",
-      "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:ethtri/bloomjoy-hub:1687",
-      "title": "P1: Add refund exception amounts and English/Spanish customer pages",
-      "url": "https://github.com/ethtri/bloomjoy-hub/issues/1687",
-      "source": "github:ethtri/bloomjoy-hub",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T04:42:06.069Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:imhurl23/evals_research_repo:19",
-      "title": "Frontier watch — 2026-09-27",
-      "url": "https://github.com/imhurl23/evals_research_repo/issues/19",
-      "source": "github:imhurl23/evals_research_repo",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": []
-    },
-    {
       "key": "github:NextCommunity/NextCommunity.github.io:613",
       "title": "Join Hacktoberfest and get paid with GitHub Sponsors",
       "url": "https://github.com/NextCommunity/NextCommunity.github.io/issues/613",
@@ -2446,41 +2898,9 @@
       "previousDecisions": []
     },
     {
-      "key": "github:SecureBananaLabs/bug-bounty:743",
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
       "key": "github:SecureBananaLabs/bug-bounty:76",
       "title": "Technical Poem Generation and Content Creation",
       "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/76",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "REJECT",
-      "verificationNeeds": [],
-      "observedAt": "2026-10-02T04:42:06.069Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T04:42:06.069Z",
-      "observationCount": 9,
-      "previousDecisions": [
-        "NEEDS_VERIFICATION"
-      ]
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:80",
-      "title": "Pixel Art Creation with high Creative Thinking",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
       "source": "github:SecureBananaLabs/bug-bounty",
       "lane": "bounty",
       "decision": "REJECT",
@@ -4189,25 +4609,6 @@
       "previousDecisions": []
     },
     {
-      "key": "2ffa8a54067c376c0d9c715a976be2a50768f7a084b352a4b044d8f2b674f827",
-      "title": "OFFER_SERVICE: service:031-0310569-058-061",
-      "url": "https://github.com/SUSANO-OOO/Zombieee/issues/172",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T02:09:18.182Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T02:09:18.182Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "30aa1981abc7c73ee0b8c23cce6acebe0344387797636948e962de5790cfe37b",
       "title": "OFFER_SERVICE: service:above-adding-adds-afaik",
       "url": "https://github.com/rochecompaan/patchmill/issues/165",
@@ -4224,26 +4625,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T02:09:18.182Z",
       "observationCount": 6,
-      "previousDecisions": []
-    },
-    {
-      "key": "3b5847ea35e82643fda97d7f0f101a284235b73a5bcbbeb2a9913404c72c0ed2",
-      "title": "FieldBridge Studio: commercial research seed",
-      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T02:09:18.182Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T02:09:18.182Z",
-      "observationCount": 5,
       "previousDecisions": []
     },
     {
@@ -4471,26 +4852,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T02:09:18.182Z",
       "observationCount": 6,
-      "previousDecisions": []
-    },
-    {
-      "key": "ca821265ef0b34aa2d5aaee30c9bb228d8205b274a1333b8c6ecf71784168fde",
-      "title": "ADAPT_EXISTING: FieldBridge Studio",
-      "url": "https://github.com/pyatkoff/poisk-turov-test/issues/1646",
-      "source": "demand",
-      "lane": "EXISTING_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T02:09:18.182Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T02:09:18.182Z",
-      "observationCount": 2,
       "previousDecisions": []
     },
     {
@@ -5730,26 +6091,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T00:51:34.445Z",
       "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "3792f39da002489ef78f43cefb6f9f0979c9167a37a500567e92ea773c6f7b33",
-      "title": "ResuMaster: commercial research seed",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6367",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T00:51:34.445Z",
-      "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T00:51:34.445Z",
-      "observationCount": 1,
       "previousDecisions": []
     },
     {
