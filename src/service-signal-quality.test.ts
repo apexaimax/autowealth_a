@@ -1,0 +1,3 @@
+import test from "node:test";import assert from "node:assert/strict";import { isCommercialServiceSignal } from "./service-signal-quality.js";
+test("accepts explicit commercial help requests",()=>{assert.equal(isCommercialServiceSignal("Looking for a browser extension contractor"),true);assert.equal(isCommercialServiceSignal("Need help with automation","seeking consultant"),true);});
+test("rejects generic technical issue text",()=>{assert.equal(isCommercialServiceSignal("Actual accessibility regression","workflow fails after update"),false);assert.equal(isCommercialServiceSignal("Add support for feature","automation workflow request"),false);});
