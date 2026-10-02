@@ -162,7 +162,11 @@ async function main(){
   const end=new Date(observedAt);
   const start=new Date(end);
   start.setUTCDate(start.getUTCDate()-30);
-  const publicRecords=await fetchUsaSpendingContractAwards(publicRecordKeywords,dateOnly(start),dateOnly(end),observedAt);
+  const scheduledRun=process.env.GITHUB_EVENT_NAME==="schedule";
+  const shouldFetchPublicRecords=!scheduledRun || end.getUTCMinutes()<15;
+  const publicRecords=shouldFetchPublicRecords
+    ? await fetchUsaSpendingContractAwards(publicRecordKeywords,dateOnly(start),dateOnly(end),observedAt)
+    : {signals:[],failures:[]};
 
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
@@ -194,7 +198,7 @@ async function main(){
       commercialResearchSeeds:commercialResearchSeeds.length,
       serviceFilteredByQuality
     },
-    publicRecordSummary:{source:"USAspending",records:publicRecords.signals.length,failures:publicRecords.failures.length},
+    publicRecordSummary:{source:"USAspending",polled:shouldFetchPublicRecords,records:publicRecords.signals.length,failures:publicRecords.failures.length},
     publicRecordSignals:publicRecords.signals,
     commercialResearchSeeds,
     creationCandidates,
