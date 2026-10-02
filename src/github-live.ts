@@ -4,6 +4,8 @@ import { orchestrateDiscovery, discoverySummary } from "./orchestrator.js";
 import { analyzeDemand, DEFAULT_PROJECT_ASSETS, type DemandObservation } from "./demand-intelligence.js";
 import { verifyGitHubCandidates } from "./github-verification.js";
 import { buildCommercialResearchSeeds } from "./commercial-seeds.js";
+import { isCommercialServiceSignal } from "./service-signal-quality.js";
+import { fetchUsaSpendingContractAwards } from "./usaspending-public-records.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -39,6 +41,10 @@ export function mapDemandObservation(issue:SearchIssue,observedAt:string,intent:
   };
 }
 
+export function serviceIssuePassesQualityGate(issue:Pick<SearchIssue,"title"|"body">):boolean {
+  return isCommercialServiceSignal(issue.title,issue.body??"");
+}
+
 export async function githubSearch(query:string, token?:string):Promise<SearchIssue[]> {
   const headers:Record<string,string>={
     "Accept":"application/vnd.github+json",
@@ -51,6 +57,12 @@ export async function githubSearch(query:string, token?:string):Promise<SearchIs
   if(!response.ok) throw new Error("GitHub search failed: "+response.status+" "+response.statusText);
   return ((await response.json()) as SearchResponse).items;
 }
+
+function csvEnv(value:string|undefined,fallback:readonly string[]):string[]{
+  const parsed=(value??"").split(",").map(x=>x.trim()).filter(Boolean);
+  return parsed.length?parsed:[...fallback];
+}
+function dateOnly(date:Date):string{return date.toISOString().slice(0,10);}
 
 async function main(){
   const paidQueries=[
@@ -100,6 +112,12 @@ async function main(){
     'ZIP release verification archive comparison software teams',
     'AI software licensing pilot proof of concept developer tools'
   ];
+  const publicRecordKeywords=csvEnv(process.env.REVENUE_PUBLIC_RECORD_KEYWORDS,[
+    "artificial intelligence software",
+    "cybersecurity software",
+    "healthcare workflow software",
+    "browser automation software"
+  ]);
   const observedAt=new Date().toISOString();
   const profile=profileFromEnv(process.env);
   const streams=[];
@@ -115,6 +133,7 @@ async function main(){
 
   const demandObservations:DemandObservation[]=[];
   const demandFailures:{query:string;error:string}[]=[];
+  let serviceFilteredByQuality=0;
   for(const query of demandQueries){
     try {
       const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
@@ -127,13 +146,23 @@ async function main(){
   for(const [queries,intent] of [[serviceQueries,"SERVICE_REQUEST"],[remoteWorkQueries,"REMOTE_WORK"]] as const){
     for(const query of queries){
       try {
-        const issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+        let issues=await githubSearch(query,process.env.GITHUB_TOKEN);
+        if(intent==="SERVICE_REQUEST"){
+          const before=issues.length;
+          issues=issues.filter(serviceIssuePassesQualityGate);
+          serviceFilteredByQuality+=before-issues.length;
+        }
         demandObservations.push(...issues.map(issue=>mapDemandObservation(issue,observedAt,intent)));
       } catch(error) {
         demandFailures.push({query,error:error instanceof Error?error.message:String(error)});
       }
     }
   }
+
+  const end=new Date(observedAt);
+  const start=new Date(end);
+  start.setUTCDate(start.getUTCDate()-30);
+  const publicRecords=await fetchUsaSpendingContractAwards(publicRecordKeywords,dateOnly(start),dateOnly(end),observedAt);
 
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
@@ -153,16 +182,20 @@ async function main(){
     errors:verificationAttempts.filter(item=>item.status==="ERROR").length
   };
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues",observedAt,profileEnabled:Boolean(profile),
-    paidQueries,demandQueries,serviceQueries,remoteWorkQueries,externalResearchQueries,failures,demandFailures,
+    source:"github-public-issues+usaspending-public-records",observedAt,profileEnabled:Boolean(profile),
+    paidQueries,demandQueries,serviceQueries,remoteWorkQueries,externalResearchQueries,publicRecordKeywords,
+    failures,demandFailures,publicRecordFailures:publicRecords.failures,
     summary:discoverySummary(batch),
     demandSummary:{
       totalObserved:demandObservations.length,
       uniqueObserved:uniqueDemand.length,
       recommendations:demandRecommendations.length,
       creationCandidates:creationCandidates.length,
-      commercialResearchSeeds:commercialResearchSeeds.length
+      commercialResearchSeeds:commercialResearchSeeds.length,
+      serviceFilteredByQuality
     },
+    publicRecordSummary:{source:"USAspending",records:publicRecords.signals.length,failures:publicRecords.failures.length},
+    publicRecordSignals:publicRecords.signals,
     commercialResearchSeeds,
     creationCandidates,
     readyForEconomics:batch.readyForEconomics,
