@@ -16,3 +16,14 @@ test("maps widened search observations to explicit service and remote-work inten
  assert.equal(mapDemandObservation(issue,"2026-10-01T00:00:00Z","SERVICE_REQUEST").intent,"SERVICE_REQUEST");
  assert.equal(mapDemandObservation(issue,"2026-10-01T00:00:00Z","REMOTE_WORK").intent,"REMOTE_WORK");
 });
+
+import { runtimeProfileFromEnv } from "./github-live.js";
+
+test("live runtime reads configured Tony capability profile",()=>{
+ const p=runtimeProfileFromEnv({
+  REVENUE_PROFILE_DEVICES:"PHONE,TABLET",
+  REVENUE_PROFILE_WORK:"GITHUB_REVIEW,CODE_ANALYSIS,DOCUMENTATION,QA,AI_ASSISTED_RESEARCH",
+  REVENUE_PROFILE_COUNTRIES:"US"
+ });
+ assert.deepEqual(p,{devices:["PHONE","TABLET"],workCapabilities:["GITHUB_REVIEW","CODE_ANALYSIS","DOCUMENTATION","QA","AI_ASSISTED_RESEARCH"],countries:["US"]});
+});
