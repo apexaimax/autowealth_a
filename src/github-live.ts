@@ -8,7 +8,7 @@ import { isCommercialServiceSignal } from "./service-signal-quality.js";
 import { fetchUsaSpendingContractAwards } from "./usaspending-public-records.js";
 import { fetchGrantsGovOpportunities } from "./grants-gov.js";
 import { qualifyPublicRecordForCustomer } from "./customer-public-records.js";
-import type { CustomerLeadProfile } from "./customer-leads.js";
+import { customerLeadProfileFromEnv } from "./customer-lead-profile-config.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -175,17 +175,7 @@ async function main(){
     ? await fetchGrantsGovOpportunities(publicRecordKeywords,observedAt,grantsEligibleApplicantTypes)
     : {signals:[],failures:[]};
   const combinedPublicRecordSignals=[...publicRecords.signals,...grantRecords.signals];
-  const customerLeadProfile:CustomerLeadProfile|undefined=profile ? {
-    id:profile.id,
-    name:profile.name,
-    offer:profile.offer,
-    targetIndustries:profile.targetIndustries,
-    targetRoles:profile.targetRoles,
-    targetRegions:profile.targetRegions,
-    problemTerms:profile.problemTerms,
-    solutionTerms:profile.solutionTerms,
-    exclusions:profile.exclusions
-  } : undefined;
+  const customerLeadProfile=customerLeadProfileFromEnv(process.env);
   const customerPublicRecordLeads=customerLeadProfile
     ? combinedPublicRecordSignals.map(signal=>qualifyPublicRecordForCustomer(customerLeadProfile,signal))
     : [];
