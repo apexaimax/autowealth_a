@@ -1,6 +1,6 @@
 {
   "schema": "revenue-opportunity-inbox-v1",
-  "updatedAt": "2026-10-02T03:08:53.639Z",
+  "updatedAt": "2026-10-02T04:42:06.069Z",
   "entries": [
     {
       "key": "00607ec8ed1e605473efac5612cc91bec83bc22f58ef3377805d283d6ddcfd4a",
@@ -15,11 +15,2483 @@
         "PAYMENT_PATH",
         "COMPETITION"
       ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
+      "observedAt": "2026-10-02T04:42:06.069Z",
       "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "0249bc34761591a2f2f793cc71dbe4d7898bf30d8721acb30ebf9aea2d69eb37",
+      "title": "OFFER_SERVICE: service:1-wrong-results-109-2-crashes-2026",
+      "url": "https://github.com/OpenWaterAnalytics/EPANET/issues/942",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "0681c2df914c5e451b84e1156a45aa8bec9ec21b2394b8a5072d30776b55eff6",
+      "title": "OFFER_SERVICE: service:accessibility-actual-add-added",
+      "url": "https://github.com/Cosmian/kms/issues/1030",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "07e8ac88fe3fca2ab5a1b247f145e4a6df87edd226533197ae90c713d056cf70",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 363869",
+      "url": "https://www.grants.gov/search-results-detail/363869",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "0a8af252e9d79b7eca0c2fe8c18bd71cad16c759b5efbca40696331ead669335",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 350469",
+      "url": "https://www.grants.gov/search-results-detail/350469",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "0bc96c3f47f6177f79a38faf6dcca7319a4c8e1ed6c9b75693c3213b320eae30",
+      "title": "OFFER_SERVICE: service:16390-200-2026-08-07-375",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16471",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "0d45f65baf1113442d6cd34f831f1f4117f231515aedcb620ba127afa46ffd1b",
+      "title": "ChartPaste MD: commercial research seed",
+      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "0eba87357fcf56e751e4f977f7c5bb49032ce3bd0c1c47f5bb16514c7a586426",
+      "title": "PURSUE_REMOTE_WORK: remote:00s-01s-1070-109",
+      "url": "https://github.com/deanhiller/webpieces-ts/issues/1067",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "0f905a242af24bb05454cfbfd46720770c06278e042344b89c2a99cb2e1294df",
+      "title": "OFFER_SERVICE: service:0-alpha-403-accepts-accessible",
+      "url": "https://github.com/AETHERXGLOBAL/execsurface/issues/86",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "1030b54e8641676feb58c5ee0ef98a61a19896a9d2520950a5d861b7bba2595f",
+      "title": "PURSUE_REMOTE_WORK: remote:1044-1045-1046-1047",
+      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1048",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "17437980f6d3558f91f9457bd80584df6c5572961402e5235facf2978900f9cd",
+      "title": "FieldBridge Studio: commercial research seed",
+      "url": "https://github.com/VoltickVL/FreeNet-Router/issues/5",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "19dd4df1005ad5ddaf4fb3c9e8d006abf4eac8935449e05b83ed936d2c9126c5",
+      "title": "OFFER_SERVICE: service:000-120-player-300s-580",
+      "url": "https://github.com/Acervator-LLC/ACERVATOR/issues/147",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "19f3ca8fc5b2a59fc5944f26ee0daa4f9fb77940564ba2f3ccf7adabe97aa7b5",
+      "title": "OFFER_SERVICE: service:124-235-403-above",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/254",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "1b2371a3461ccf25f787e837284274a392167e6dd3ac72a4ea53c507616954cc",
+      "title": "ADAPT_EXISTING: FieldBridge Studio",
+      "url": "https://github.com/VoltickVL/FreeNet-Router/issues/5",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "1b67cbc41d554bb2431cfc6ca57deb61961ba46d395508de5e6581f75b53974b",
+      "title": "OFFER_SERVICE: service:0-1-0-14-0-2-0-3",
+      "url": "https://github.com/7h3-3mp7y-m4n/GitHub-api-learner/issues/61",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "1bd8eb41f44e3065e139518cae21800dd89f0d13c88fc4c042446f32b7ad0233",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 356055",
+      "url": "https://www.grants.gov/search-results-detail/356055",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "21addec2580af21128b71079cdca5987d29595309e853a9d05f844dfa4a9df36",
+      "title": "OFFER_SERVICE: service:0-beta-0-preview-0-rc-1-alpha",
+      "url": "https://github.com/AMackProjekt/amackprojekt-web/issues/42",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "225ef90bb498a65993e1f57cc3ab7d83c61c09761e995b2477f3bb9a3fb6bfd4",
+      "title": "PURSUE_REMOTE_WORK: remote:00z-01z-150-189",
+      "url": "https://github.com/LEAPWare-Software/LEAPWare-ShellUX/issues/187",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "251833eb059f8bd06ed8c45bf41a0b9b299f23eb6f05c4044113bffa7caa2f89",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359271",
+      "url": "https://www.grants.gov/search-results-detail/359271",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "298022dc5f4acd0723800c7051d12662d30d832ca82f3f3820b669c5c4093609",
+      "title": "ADAPT_EXISTING: VersionVault",
+      "url": "https://github.com/OpenCTI-Platform/opencti/issues/3395",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
+      "title": "OFFER_SERVICE: ResuMaster",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "2d34fe22c1ec13b89317846374c74e4eec449504c6b836e6180594c0be648777",
+      "title": "PUBLIC_RECORD: federal-contract-award: ACCESSAGILITY LLC: 70CMSD26FR0000167",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "31edcdf63f3b5fab52916b7227897d18f777dec56d3bb9be8315cbdd0fcf0582",
+      "title": "OFFER_SERVICE: service:1179-1180-1182-138",
+      "url": "https://github.com/misofm/engine/issues/1181",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "332aa444b26f2912f6ec51f50fa5ebb5416d8c17bc52d38aaad3ec767b01b4ca",
+      "title": "OFFER_SERVICE: service:700-743-all-another",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "37852f37bdb7c486de1ae39b79b87f04fc96c2aad1e96a6822a0259b08b79e72",
+      "title": "OFFER_SERVICE: service:10-12-402-above-abrir",
+      "url": "https://github.com/Bitcoindefi/Open-Stellar/issues/29",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "383b4db8319296b4713c5c4bb65d9e4afa86e94e89788390529d95d0f20b7578",
+      "title": "OFFER_SERVICE: VersionVault",
+      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "3ddeba2d68421499f46667b4b8648c4e6a21829f188b47ed85898821fa717885",
+      "title": "OFFER_SERVICE: ChartPaste MD",
+      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1068",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "41538916ff864094320df0e93606388493be4c1bccb66e9192d225b17c32758c",
+      "title": "OFFER_SERVICE: service:177-178-2026-10-02-added",
+      "url": "https://github.com/jxburros/AI-Nugget/issues/27",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "418dfd0aa0c11cc084047e27d9feaa955f9b78776592af2068086fc0394589ab",
+      "title": "PURSUE_REMOTE_WORK: remote:2026-10-02-2048-2e0b6670-344",
+      "url": "https://github.com/nessalabs/nessa-agent/issues/348",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "44219013b6f85e8528a62d111cce806c936f9c6823afc722cc1f4728e8116820",
+      "title": "PURSUE_REMOTE_WORK: remote:554-able-act-acting",
+      "url": "https://github.com/SoulSchoolAcademy/NayaPOWER/issues/554",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "44456c128e373a2b91e3d0b0440d03b884077578e8ffa8ece3886e0da34eb8ba",
+      "title": "PURSUE_REMOTE_WORK: remote:002-test-02d9abd62782-032s-064cfc900144",
+      "url": "https://github.com/smithersai/smithers/issues/2290",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
       "observationCount": 3,
       "previousDecisions": []
+    },
+    {
+      "key": "4cb23c19e2b98839f5be9c9a521ba2261c66126dc3124ebdba9c5797085ae45e",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359269",
+      "url": "https://www.grants.gov/search-results-detail/359269",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "4f2c56a70e2be18be285cf2243eb90551deb689788cd7153f6460e46343c7e8d",
+      "title": "PUBLIC_RECORD: federal-contract-award: IMPRES TECHNOLOGY SOLUTIONS, INC: 70CMSD26FR0000161",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "51967fdf04d05fee0674a18e70ac04d862a16d9996ad93f5afda2dfa1cceb052",
+      "title": "PURSUE_REMOTE_WORK: remote:0ba6b78051c9e758b1f76b3903ec924319e01b3c-0f4cc64a106d7cc82c7133d84fcf99b0ae9d04b1-1001-1006",
+      "url": "https://github.com/pongbiphang/pbps/issues/595",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:51:34.445Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "5515f5e53bd481b889b15bb929cb27f343889f83e8dad294c912de70cab5f1f3",
+      "title": "VersionVault: commercial research seed",
+      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "5d738d241ec03cdd1fef44a2f27dfd6eb835e7f2eac720c44ab497821a6e04b6",
+      "title": "OFFER_SERVICE: service:10m-20m-429-479",
+      "url": "https://github.com/sadouninc/Sado-Investment-Lab/issues/727",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "5ec32310271f3d85a56b75f8e3cb0b2f0dd8a09b3e3dc62f20f986bf83ebb7db",
+      "title": "OFFER_SERVICE: ProofRail",
+      "url": "https://github.com/ArgumentumGames/Argumentum/issues/458",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "5f0fa5c7333bff6ec3c942a5a83d7a4a35a6d66d860d179ba4c835a7c9adfc09",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359123",
+      "url": "https://www.grants.gov/search-results-detail/359123",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "6120b9fdf6427a48e5e08944b344597b5578263ff2dc644aed8e0269ef2a053e",
+      "title": "OFFER_SERVICE: service:000001-100-2026-2026-09-09t15",
+      "url": "https://github.com/sanizakka-cyber/AI-CROP-DETECTOR/issues/9",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "684e63e9c73a6530d573cec1b9f5e95c784aca6f59074065e44cbcd99417b5a7",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359949",
+      "url": "https://www.grants.gov/search-results-detail/359949",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "69d35e40fb2da6d27ca84ab687ebbebacffc1191b32ed1a44fafaeedbac62c15",
+      "title": "PURSUE_REMOTE_WORK: remote:00z-0129zpnabcyzz51rcvqixg6c-014tk5wcw9jeanhbkpcdszez-017js5ktpttxiebjpyscgxj3",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/12708",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "6a37dc1f6804d2ab9084cd3fd25af67e57500a4efb76adfad0f286845b5b8667",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359004",
+      "url": "https://www.grants.gov/search-results-detail/359004",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "6a76ae386d9e47321cbc8b24ed36eb119d85c16cef4d3e40fde32b4057624435",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359666",
+      "url": "https://www.grants.gov/search-results-detail/359666",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "6e171ba8a5ac8d63a3878d636dd979cde884d6d6bf1c7296613a20b954db28f1",
+      "title": "OFFER_SERVICE: service:1000-1107-1280-15-60",
+      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16601",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "6f03ecd55fe95d4287543e69942098bf4697e144b82f2ceefa95af0fbcb058fa",
+      "title": "OFFER_SERVICE: service:000-115-131-135",
+      "url": "https://github.com/spy4x/antonshubin.com/issues/388",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "702a1fc5e20ef66133a0bbbe7011d7e740474a975a543b40c8541ca2a89265dc",
+      "title": "PURSUE_REMOTE_WORK: remote:2026-09-27-absence-acceptable-acceptance",
+      "url": "https://github.com/elboaf/YAAH/issues/118",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "73944096a5de24451580fe516850f47a927c225c0f374f14185e0f9dd69606e8",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358934",
+      "url": "https://www.grants.gov/search-results-detail/358934",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "73b9ae39df742bccfa0c374943e22a7e9681af790dc39047026ac26718ca37c3",
+      "title": "OFFER_SERVICE: service:1117-1123-1210-1239",
+      "url": "https://github.com/ethtri/bloomjoy-hub/issues/628",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "767706a028c54693d78c230b3c53f84465afa44f5a5828ca23023315aa869955",
+      "title": "OFFER_SERVICE: service:045-074-10-page-134d4084662f28b27d8345969dca5de9d3cbc18a",
+      "url": "https://github.com/usdimpact/usd-impact-site/issues/570",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "77e00e52c222726d92696a64292bbe851d3e7fd5ca9b628f1c9d848a61f8b732",
+      "title": "OFFER_SERVICE: service:110496328283-168d86612554661281a28697c3c948c6126b49a4-2026-10-01-2cf55fde8bdb964d914ded7deaa0e93226284070",
+      "url": "https://github.com/bifanaboy/liszt/issues/5",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "797da884f1f06eb880ec2fc22bd3dd7da699ca49a3345ba61e40f270039263ad",
+      "title": "VersionVault: commercial research seed",
+      "url": "https://github.com/OpenCTI-Platform/opencti/issues/3395",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "7a22123a084fdf90205c0902ea706e0039327e78c8577014a79926d5b6f73b44",
+      "title": "PURSUE_REMOTE_WORK: remote:108-159-2026-10-01-above",
+      "url": "https://github.com/ypxing/coding-crew/issues/110",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "7c6723ab581963a9a000555967f19e8e8b118a72aedd4e9260001e86e0ffbe09",
+      "title": "OFFER_SERVICE: service:2026-09-28-2026-09-29-280-acceptance",
+      "url": "https://github.com/LowcountryDigitalWorks/gas-engine/issues/31",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "7d021fa6a882a33cd52c2dc7ef0557ca6f5025e8459a8a7fcd15be53e5207f1b",
+      "title": "PURSUE_REMOTE_WORK: remote:100-117-120-120-15-63",
+      "url": "https://github.com/thatsnotmynameio/pururu-ha/issues/95",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "7d5874c4fecd5b9e6f406150a7028d7c509a1d759c3353cbac2ab21c68dd7fa8",
+      "title": "PURSUE_REMOTE_WORK: remote:1-4-112-commit-1869-18b9295",
+      "url": "https://github.com/division-sh/swarm/issues/2151",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "7de7c25d5dab09fe8a3f79e8a731715e97059651f61038a4a5604c5d80fb54e3",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 355439",
+      "url": "https://www.grants.gov/search-results-detail/355439",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "833c41767615f5e6dbf75fd6db08ebba0bc70962493fdd0e67dba56a73d3650d",
+      "title": "PURSUE_REMOTE_WORK: remote:3563-4175-4276-4311",
+      "url": "https://github.com/chase-sets/chase-sets/issues/4388",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "861a63f1dafedb4fe8d839671f13da4c2d80dd33c3e06271188b7ff57f167065",
+      "title": "PURSUE_REMOTE_WORK: remote:103-108-527-537",
+      "url": "https://github.com/skerishKang/lovetree-limone/issues/589",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "881e2803920b6a09875f0526c8832fe4f409d2044e6909a48ca0c7ac8c777762",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 361526",
+      "url": "https://www.grants.gov/search-results-detail/361526",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "88b555f86c1e66dbf68a5f763268111007a4f11b1d8fc3ed5a7ceebe0b78d75d",
+      "title": "PURSUE_REMOTE_WORK: remote:3af46da813c94f6d93ee5e7d9ca63911-4210-4240-5ac2776c-f1a9-48e2-ac26-8349ffcb0287",
+      "url": "https://github.com/eng-cc/oasis7/issues/4211",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "8aa6cb9f2a94addfc5c3b43ef3612518548865015f61266c7e223b7e38ab1620",
+      "title": "PURSUE_REMOTE_WORK: remote:0045-014f099ddc73c935770cba917aed4374c58b7ba8-095c836c-0bf40375",
+      "url": "https://github.com/killjoy00/mtg-ev-analyzer/issues/575",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "8f63154c7fbcb423eba7885df7fad2a305c0f75e268fa3d05ff6e7c1fea37925",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/udhaikgit/skills-ai-in-actions/issues/1",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "9039bea5ec536f48dbe11625dc13a72c8adb1dc3f23e0065cae58adf4c03a88d",
+      "title": "PURSUE_REMOTE_WORK: remote:169-357-379-667",
+      "url": "https://github.com/LouPineWays/Loop-Dee-Loup/issues/379",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:51:34.445Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "90889b7eba98b46310e26bdf7769675e9ee7204f21996e36b69bcb7506efe473",
+      "title": "PURSUE_REMOTE_WORK: remote:000-000-run-100-100-gb",
+      "url": "https://github.com/SAC-CS112-Randall-Christopher/Q-Trades/issues/28",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "922cf7a72e5899fd6c08a67cc5adced423ecbed9e5f4007768ff2ae1ec543a11",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359003",
+      "url": "https://www.grants.gov/search-results-detail/359003",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "93913558e1f5f5b829b3db10988a01a4d82913deae2a8751376a2d4b489af39c",
+      "title": "OFFER_SERVICE: service:198-220-acceptance-add",
+      "url": "https://github.com/Dfunder/stellarAid-contract/issues/798",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "9398032d7b6eb14acf37c73b8d3d6d51abd20a58afc5fcd36b0b8631dfdeaa9d",
+      "title": "PURSUE_REMOTE_WORK: remote:149-2026-09-30-2026-10-01-5085",
+      "url": "https://github.com/Unjuno/agent-interface/issues/59",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "96a2886dc04ac8b44e4f7243651219ba07cf00784f51ee0e42aaede6b1a9edb7",
+      "title": "OFFER_SERVICE: service:1-gpu-1-row-10151-1024",
+      "url": "https://github.com/bingxche/sglang-ci-bot/issues/213",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "96f8d9ea90eef0089f7a0d8b837758a5b8a6db31b242345b302f59f739966707",
+      "title": "OFFER_SERVICE: service:1316-1570-2022-2025",
+      "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "97e629699749144ae90909d14bb0d913708257a7cfb42a56669004fec6ff4f73",
+      "title": "OFFER_SERVICE: service:000-60-day-absent-acceptance",
+      "url": "https://github.com/in-c0/tuned/issues/1",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "98ee207f0995909b6a9993c0a0c954cb37c191498bd731ccf0db45fe75b86e45",
+      "title": "OFFER_SERVICE: service:2026-2026-10-01-2030-24-1-ipu-ai-security-filter",
+      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/731",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "99533aa05bd56c8ecd9e8f2f8c60ba6421e72099a60a47dc938292c45818f949",
+      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-101-1066-108cdeb60dd7e4b3dadd1f7cd34841a294c0774c",
+      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/344",
+      "source": "demand",
+      "lane": "NEW_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "9ed7e764786cb16701b74cd76cc14ae686ba9099c639e35aeea04b044bc5feb8",
+      "title": "PURSUE_REMOTE_WORK: remote:0-k-1-2-1107-1130",
+      "url": "https://github.com/botsarefuture/mielenosoitukset_fi/issues/833",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "a0202c5c25a33ebac49ac3edb5bbdd30b443a3072e53674ae2ab0d931a523faa",
+      "title": "PURSUE_REMOTE_WORK: remote:000-100-116-124",
+      "url": "https://github.com/sjo1848/portfolio-sebastian-ojeda/issues/125",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "a35e919bfc754de946510bf81c1928ec167d0afd0366ddc3fe83aebed1035252",
+      "title": "OFFER_SERVICE: service:794-advanced-already-already-completed",
+      "url": "https://github.com/Ajo-contrib/soroban-ajo/issues/904",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "a4e9b2b64b5b3c2f89723b48e710b0993644e4cf34dfa77765a02549b0817616",
+      "title": "OFFER_SERVICE: service:across-actually-add-on-adjustable",
+      "url": "https://github.com/FinalAsgard/asgard-guild-fellowship/issues/23",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "ac6b5093b0ef8319a4346cce55d28f28e329b9e57eb0cee050948c5080fcc961",
+      "title": "PURSUE_REMOTE_WORK: remote:2-hourly-access-accessibility-achieved",
+      "url": "https://github.com/NextOneTwoLabs/ecnl-dashboard/issues/12",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "af1a1b00ca94e98eeed3eb692d92c19d33b142a4a5931ac8d11c62f2d382b1b4",
+      "title": "PURSUE_REMOTE_WORK: remote:03-spec-networking-100-120-127",
+      "url": "https://github.com/gominimal/minimal/issues/1437",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "b04dada97e0057844eba95d567b26e4b163ef27f315a35bca983f27987fd1c24",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357309",
+      "url": "https://www.grants.gov/search-results-detail/357309",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "b21eda0589cc7141a604c159a7ffd344e17336f10da6215ee0c8c0c6b748f75a",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359270",
+      "url": "https://www.grants.gov/search-results-detail/359270",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "b61edd63eaff182ed7b25d10812cc8daa644ea4646d717b38996570461541191",
+      "title": "PURSUE_REMOTE_WORK: remote:000-file-05z-1-sol-128",
+      "url": "https://github.com/Grimblaz-and-Friends/tradecraft/issues/683",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "b763164a427e4dc122b1ba1ad1b5b8db7c1a69d24981de3cac6fed34a0ccdd15",
+      "title": "ResuMaster: commercial research seed",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/21118",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
+      "title": "ResuMaster: commercial research seed",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "bd3b11a057625707ed2a60fcae5f9514dcc832e4780af8cdc7a728df2a7b0166",
+      "title": "OFFER_SERVICE: service:16379-1a0e87a8c1e-79ffcebbc6c9-1a0e87b2433-3aaad65743e4-1a0e87b263c-9c2bdcc5cdd2",
+      "url": "https://github.com/daniel-ospina/tortoise/issues/6145",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "c1b1ac2a668777ea9d27a431e26e56a60f16f888b20e3bd4f324922e05b3d9a6",
+      "title": "PURSUE_REMOTE_WORK: remote:1000-120-147-2025-04-15",
+      "url": "https://github.com/Slather-00/Test-Repo/issues/1",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "c28f727f0db421752312dc9998f7256a43ad1957e14dcefae93883669feb3ea9",
+      "title": "PURSUE_REMOTE_WORK: remote:018fxqvrjw12tahc7duq89y6-01pah3yshlerepjjugd82ohh-01utnxvdin376gf3sgxwaw4d-0a3e5409f",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/6017",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "c3ab32015438e56d248b883fc7c6511f9f8a80efe81188935f97d81166f1b5ba",
+      "title": "OFFER_SERVICE: service:190-191-249-250-403-427",
+      "url": "https://github.com/sol-aeternum/Daemon/issues/373",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "c62918bbe34c8a4209fcb55c661ac190f0ecae21809673b2e39cf5ea9ab6f200",
+      "title": "PURSUE_REMOTE_WORK: remote:031-0310569-058-061",
+      "url": "https://github.com/SUSANO-OOO/Zombieee/issues/172",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "c63730545f035d0d4a926f1ba2448bc7210b18884e9daa687633e2c799e589b1",
+      "title": "OFFER_SERVICE: service:14-specific-2025-11-25-2026-10-01-336",
+      "url": "https://github.com/radek-cerny-soukr/netops/issues/1",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "c72ae1df430ef5f9a7a8b8d6e23e893a10bd1bc02f78cf916861497b1aad60f4",
+      "title": "ProofRail: commercial research seed",
+      "url": "https://github.com/ArgumentumGames/Argumentum/issues/458",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "c9496a31e6c1fc45c907f20fc0d58e925392a09ecf9126e85b44b10417dbdf49",
+      "title": "OFFER_SERVICE: service:174-38s-692-694",
+      "url": "https://github.com/engine262/engine262/issues/367",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "ca4f433f50b031a21cd6d8b4ea3989e37b37909e68bf00e1e95b6a632ba6ed91",
+      "title": "PURSUE_REMOTE_WORK: remote:024b574fcbf7ab3dfac03327075621ad81ad521a-1087-1152-1153",
+      "url": "https://github.com/relativityE/speaksharp/issues/1258",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:23:29.704Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 6,
+      "previousDecisions": []
+    },
+    {
+      "key": "cad697fad6ad3b382310a7a098022ef20946a64f2f554f5a232145fe741e01a5",
+      "title": "PUBLIC_RECORD: federal-contract-award: FOUR POINTS TECHNOLOGY, L.L.C.: 7571TE26F80332",
+      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
+      "source": "public-record:usaspending-federal-awards",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:51:08.799Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "cd45f7e7c7ecfc2ff3128020e8845bb547d836714fe6321706a357a416cd8037",
+      "title": "PURSUE_REMOTE_WORK: remote:208-above-accessible-across",
+      "url": "https://github.com/dzianisv/opencode-mobile/issues/214",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "ce547b9fcb34ed6262b0224d950257b82d159fdb9dd97cd12a2c393f0173e212",
+      "title": "PURSUE_REMOTE_WORK: remote:000-000-character-001z-016z",
+      "url": "https://github.com/letta-ai/letta-code/issues/3926",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "cee225e35c0aca93269d0d47f6921db62587bfb4944582c2aef8cec5ad107fd7",
+      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-1066-1166-120",
+      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/1166",
+      "source": "demand",
+      "lane": "NEW_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:37:36.138Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 7,
+      "previousDecisions": []
+    },
+    {
+      "key": "d8c5a4af0f1c2cf221357ca6ba42afb7c8599ca3b39f06b0737534f7c6d093c9",
+      "title": "PURSUE_REMOTE_WORK: remote:139-157-158-2026-10-02t04",
+      "url": "https://github.com/szl-holdings/.github/issues/585",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "d8cdb0859bed2980593b5cf81e55579d9998b8f8ca9dbfe972f8b4431350b90c",
+      "title": "PURSUE_REMOTE_WORK: remote:0376-09-19-0e2f50d7d-100",
+      "url": "https://github.com/jaspercurry/JTS/issues/5925",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "d8de55a5d405528e781dd44356a959ccec9be8a0f1ecd3c4b52d72c4a1a3df6f",
+      "title": "PURSUE_REMOTE_WORK: remote:174-176-181-abi",
+      "url": "https://github.com/laqieer/fireemblem8-expansion/issues/180",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "dadc657759b8359d6c55ee13c91579bec93ce558214d9445de0021f5bdf1d2c2",
+      "title": "PURSUE_REMOTE_WORK: remote:121-151-180-231",
+      "url": "https://github.com/eXPerience83/remote-dev-containers/issues/238",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "dea84f8f38cc3f7b8fad69ea7893727e585e73f84a07ab1b3621efca448a2247",
+      "title": "PURSUE_REMOTE_WORK: remote:1312-1322-1404-1457",
+      "url": "https://github.com/chris-dare-dev/derived-alg-geo-lean/issues/554",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:51:34.445Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "df1c1179318385cc359685a9911a6e83ef6dab655a50e9ca947e08ff2cea5bf2",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358864",
+      "url": "https://www.grants.gov/search-results-detail/358864",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "e1606b616c1ece806386518ac7e894dae2c15117fd5ac989af3dd33906d3a41f",
+      "title": "OFFER_SERVICE: service:4616-4617-49h-5728",
+      "url": "https://github.com/genfeedai/genfeed.ai/issues/5788",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "e7cc30327c939602992885bd7b19aae513df8b7c6479ad85b6b57461ff1a3f0b",
+      "title": "PURSUE_REMOTE_WORK: remote:0600-1103155bc7f4c00de8c6f350e431cb607d5515ab-121-123",
+      "url": "https://github.com/VoltickVL/FreeNet-Router/issues/7",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "e81d4309391e9581ff06318bcc31cc3cda1ed7086e3217d3226b4902b03fd770",
+      "title": "ADAPT_EXISTING: ProofRail",
+      "url": "https://github.com/udhaikgit/skills-ai-in-actions/issues/1",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "ea0a70ba78e2e1e094b32d1a3a7c3424616b025e4170315157c47a12986990cf",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357308",
+      "url": "https://www.grants.gov/search-results-detail/357308",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "eb17e342a611670be2a1bcda35bbdfbe330a3948c3176752bc92a3b34e1fff71",
+      "title": "ADAPT_EXISTING: ChartPaste MD",
+      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "ec22084a87cd686f237a7dd0565ec882d9f465bfc8685bb89356f5cbd04486b7",
+      "title": "PURSUE_REMOTE_WORK: remote:1144-1507b818ad2585441ec08154845d76d19c5fc5a2c99d73911c62ddafd6c3cf6a-16-byte-168",
+      "url": "https://github.com/4laric/pikmin-randomizer/issues/1148",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "edd004a51fb77ad81370ac6bae7c6d9eedd73c7cec41943c4310b6f69f3c7b6d",
+      "title": "PURSUE_REMOTE_WORK: remote:954-acceptance-accepted-account",
+      "url": "https://github.com/hcoona/three/issues/954",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "ee0ff2131b51de5466c127cea7af1245e8a2a9ae7a7e82ade98e1c214882d0f7",
+      "title": "OFFER_SERVICE: service:1084-109-1091-120",
+      "url": "https://github.com/zhupanov/larch/issues/6991",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": []
+    },
+    {
+      "key": "ef6fe0902d00377d812c24f2ce8d1d991fef790e64262de9249cc7b3baae8bc1",
+      "title": "ADAPT_EXISTING: ResuMaster",
+      "url": "https://github.com/objectstack-ai/objectstack/issues/21118",
+      "source": "demand",
+      "lane": "EXISTING_PRODUCT",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION",
+        "ASSET_READINESS"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 5,
+      "previousDecisions": []
+    },
+    {
+      "key": "f1e714bbcbafe1f03ffcf6f7f496226d4362b5a0940567f5b8ce787edbbb769b",
+      "title": "PURSUE_REMOTE_WORK: remote:360-access-act-active",
+      "url": "https://github.com/BroMarcus/church-app/issues/28",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:51:34.445Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "f1f7e2148d24e978bc8c63006586d95d3a728fbe47eddfef0c2a9f16b8b31d50",
+      "title": "ChartPaste MD: commercial research seed",
+      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1068",
+      "source": "commercial-seed",
+      "lane": "commercial_research",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "AUTHORITATIVE_WORKFLOW",
+        "CAPABILITY_EVIDENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "VERIFIED_CONTACT"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T02:09:18.182Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 3,
+      "previousDecisions": []
+    },
+    {
+      "key": "f34d200c7361647b6f84905663ea44421f8aeb638ef074f0e5fe3f986ad49c92",
+      "title": "OFFER_SERVICE: service:0-20201027110005-a7ad2135616e-0-20220811071828-388f114305dd-0-20230301143203-a9d515a09cc2-0-20230728192033-2ba5b33183c6",
+      "url": "https://github.com/grafana/xk6-grafana-alerting/issues/3",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "f39dbcc2601d14e5364f46ff82a681240b1b8e568267861b08334178afa21ada",
+      "title": "PURSUE_REMOTE_WORK: remote:0-sponsor-000-10-category-1039",
+      "url": "https://github.com/marcusrbrown/marcusrbrown/issues/926",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "f6278c5284e3505adbec2c6b9574cedd9a15bc7e593f22aa1634e145cbd1c5ff",
+      "title": "OFFER_SERVICE: service:1-adopt-baseline-rollout-1-hotfix-and-rollout-report-237965f559e77569803463ecbf35233025dafc1f407aaccdd351d9ad61f87bf5-a88a61b7fcae632cdf5b282dc4461592b92cad57",
+      "url": "https://github.com/KayzenRoot/gef-bootstrap/issues/357",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 8,
+      "previousDecisions": []
+    },
+    {
+      "key": "fc22fafcbd6cb4b9b5cf5c7e73e1e9d2276f29ed06a5958486b560f198456763",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 320753",
+      "url": "https://www.grants.gov/search-results-detail/320753",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "fc9160536b45fc3eb19c781facd98c81353a54fb36dc933b4f1c3a8794fd2bf5",
+      "title": "PURSUE_REMOTE_WORK: remote:2026-acceptance-accepted-access",
+      "url": "https://github.com/LatinMaestro/DNA-Racing-Intelligence/issues/120",
+      "source": "demand",
+      "lane": "REMOTE_WORK",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "fcbba34678e102ce91f37512cb70e3a4fe448ce1f8005304e08019084418c2e8",
+      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359268",
+      "url": "https://www.grants.gov/search-results-detail/359268",
+      "source": "public-record:grants-gov",
+      "lane": "PUBLIC_RECORD",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "BUYER_INTENT",
+        "CURRENT_NEED",
+        "CONTACTABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T01:54:33.882Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "fe5a08aef00392cebcac0c42223141d0142264cac9f9e7f6847eb797f7778dde",
+      "title": "OFFER_SERVICE: service:0rrpy1ph7hafi3qoitg0mr-1-16-10am-12pm-11u71et-rztkvvp8yj",
+      "url": "https://github.com/hackforla/website/issues/8786",
+      "source": "demand",
+      "lane": "SERVICE",
+      "decision": "RESEARCH_SEED",
+      "verificationNeeds": [
+        "RECURRENCE",
+        "BUYER_INTENT",
+        "PAYMENT_PATH",
+        "COMPETITION"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 4,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:auscaster/stompstart-startup-list:84",
+      "title": "URGENT: 3 PRs blocking Frantic bounty payout ($4.50 USDC) - All checks green",
+      "url": "https://github.com/auscaster/stompstart-startup-list/issues/84",
+      "source": "github:auscaster/stompstart-startup-list",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:BasedHardware/omi:20264",
+      "title": "fix(backend): add error boundaries, validation, and sanitization to speaker labels router ($50 bounty proposal)",
+      "url": "https://github.com/BasedHardware/omi/issues/20264",
+      "source": "github:BasedHardware/omi",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:1",
+      "title": "[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:2",
+      "title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:3",
+      "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
+      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:claude-builders-bounty/claude-builders-bounty:5",
+      "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
+      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
+      "source": "github:claude-builders-bounty/claude-builders-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:ethtri/bloomjoy-hub:1687",
+      "title": "P1: Add refund exception amounts and English/Spanish customer pages",
+      "url": "https://github.com/ethtri/bloomjoy-hub/issues/1687",
+      "source": "github:ethtri/bloomjoy-hub",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:imhurl23/evals_research_repo:19",
+      "title": "Frontier watch — 2026-09-27",
+      "url": "https://github.com/imhurl23/evals_research_repo/issues/19",
+      "source": "github:imhurl23/evals_research_repo",
+      "lane": "bounty",
+      "decision": "NEEDS_VERIFICATION",
+      "verificationNeeds": [
+        "UPFRONT_SPEND",
+        "ELIGIBILITY",
+        "DEVICE_COMPATIBILITY",
+        "PAYMENT_VERIFIABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:NextCommunity/NextCommunity.github.io:613",
+      "title": "Join Hacktoberfest and get paid with GitHub Sponsors",
+      "url": "https://github.com/NextCommunity/NextCommunity.github.io/issues/613",
+      "source": "github:NextCommunity/NextCommunity.github.io",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T03:08:53.639Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 2,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:nick-transition/fitapp:73",
+      "title": "[Bounty Proposal] Accessible card styling for #37 — USD 450",
+      "url": "https://github.com/nick-transition/fitapp/issues/73",
+      "source": "github:nick-transition/fitapp",
+      "lane": "bounty",
+      "decision": "NEEDS_VERIFICATION",
+      "verificationNeeds": [
+        "UPFRONT_SPEND",
+        "ELIGIBILITY",
+        "DEVICE_COMPATIBILITY",
+        "PAYMENT_VERIFIABILITY"
+      ],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T04:42:06.069Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 1,
+      "previousDecisions": []
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:743",
+      "title": "Low Handing Fruit Automation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:76",
+      "title": "Technical Poem Generation and Content Creation",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/76",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
+    },
+    {
+      "key": "github:SecureBananaLabs/bug-bounty:80",
+      "title": "Pixel Art Creation with high Creative Thinking",
+      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
+      "source": "github:SecureBananaLabs/bug-bounty",
+      "lane": "bounty",
+      "decision": "REJECT",
+      "verificationNeeds": [],
+      "observedAt": "2026-10-02T04:42:06.069Z",
+      "firstSeenAt": "2026-10-02T00:11:53.214Z",
+      "lastSeenAt": "2026-10-02T04:42:06.069Z",
+      "observationCount": 9,
+      "previousDecisions": [
+        "NEEDS_VERIFICATION"
+      ]
     },
     {
       "key": "02230000d6e14a710f5ff6553acb15bfdb8dd4453f7ec8fe4b458585e6e06bcf",
@@ -99,43 +2571,6 @@
       "previousDecisions": []
     },
     {
-      "key": "0681c2df914c5e451b84e1156a45aa8bec9ec21b2394b8a5072d30776b55eff6",
-      "title": "OFFER_SERVICE: service:accessibility-actual-add-added",
-      "url": "https://github.com/Cosmian/kms/issues/1030",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "07e8ac88fe3fca2ab5a1b247f145e4a6df87edd226533197ae90c713d056cf70",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 363869",
-      "url": "https://www.grants.gov/search-results-detail/363869",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "0849fc647dfd41cd54a0968662afd3126562f3b49a84d77530009833f176fffd",
       "title": "OFFER_SERVICE: service:000-0b101-0xff-120p",
       "url": "https://github.com/gHashTag/t27/issues/5509",
@@ -152,43 +2587,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "0a8af252e9d79b7eca0c2fe8c18bd71cad16c759b5efbca40696331ead669335",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 350469",
-      "url": "https://www.grants.gov/search-results-detail/350469",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "0bc96c3f47f6177f79a38faf6dcca7319a4c8e1ed6c9b75693c3213b320eae30",
-      "title": "OFFER_SERVICE: service:16390-200-2026-08-07-375",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16471",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
       "previousDecisions": []
     },
     {
@@ -211,64 +2609,6 @@
       "previousDecisions": []
     },
     {
-      "key": "0d45f65baf1113442d6cd34f831f1f4117f231515aedcb620ba127afa46ffd1b",
-      "title": "ChartPaste MD: commercial research seed",
-      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "0f905a242af24bb05454cfbfd46720770c06278e042344b89c2a99cb2e1294df",
-      "title": "OFFER_SERVICE: service:0-alpha-403-accepts-accessible",
-      "url": "https://github.com/AETHERXGLOBAL/execsurface/issues/86",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "1030b54e8641676feb58c5ee0ef98a61a19896a9d2520950a5d861b7bba2595f",
-      "title": "PURSUE_REMOTE_WORK: remote:1044-1045-1046-1047",
-      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1048",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "107d5277a6fc1348bb2487490d7cd30ab53220164b422c4f126945aa32bd4cf2",
       "title": "PURSUE_REMOTE_WORK: remote:5467-7681-a-with-reason-above",
       "url": "https://github.com/cody-hutson/pmo-platform/issues/7765",
@@ -285,81 +2625,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "19dd4df1005ad5ddaf4fb3c9e8d006abf4eac8935449e05b83ed936d2c9126c5",
-      "title": "OFFER_SERVICE: service:000-120-player-300s-580",
-      "url": "https://github.com/Acervator-LLC/ACERVATOR/issues/147",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "19f3ca8fc5b2a59fc5944f26ee0daa4f9fb77940564ba2f3ccf7adabe97aa7b5",
-      "title": "OFFER_SERVICE: service:124-235-403-above",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/254",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "1b67cbc41d554bb2431cfc6ca57deb61961ba46d395508de5e6581f75b53974b",
-      "title": "OFFER_SERVICE: service:0-1-0-14-0-2-0-3",
-      "url": "https://github.com/7h3-3mp7y-m4n/GitHub-api-learner/issues/61",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "1bd8eb41f44e3065e139518cae21800dd89f0d13c88fc4c042446f32b7ad0233",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 356055",
-      "url": "https://www.grants.gov/search-results-detail/356055",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
@@ -382,43 +2647,6 @@
       "previousDecisions": []
     },
     {
-      "key": "21addec2580af21128b71079cdca5987d29595309e853a9d05f844dfa4a9df36",
-      "title": "OFFER_SERVICE: service:0-beta-0-preview-0-rc-1-alpha",
-      "url": "https://github.com/AMackProjekt/amackprojekt-web/issues/42",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "251833eb059f8bd06ed8c45bf41a0b9b299f23eb6f05c4044113bffa7caa2f89",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359271",
-      "url": "https://www.grants.gov/search-results-detail/359271",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "2b216a43e6808963a56ba050984addb86609cac1de0b8876bb1c0f68542ebbe7",
       "title": "PURSUE_REMOTE_WORK: remote:016f14e4283b3e531a7face591ca8165-10x-136-164",
       "url": "https://github.com/cbusillo/context-panel/issues/719",
@@ -435,44 +2663,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "2b702c55761ccb9728b3ed6e1a04fcad18604e6dcc639262b2dda9c1b12f9338",
-      "title": "OFFER_SERVICE: ResuMaster",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "2d34fe22c1ec13b89317846374c74e4eec449504c6b836e6180594c0be648777",
-      "title": "PUBLIC_RECORD: federal-contract-award: ACCESSAGILITY LLC: 70CMSD26FR0000167",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
       "previousDecisions": []
     },
     {
@@ -533,25 +2723,6 @@
       "previousDecisions": []
     },
     {
-      "key": "332aa444b26f2912f6ec51f50fa5ebb5416d8c17bc52d38aaad3ec767b01b4ca",
-      "title": "OFFER_SERVICE: service:700-743-all-another",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "3360b2d49787aea1bae61503bca582f7df1d1c2a1dde2911fd867aa6de6d7733",
       "title": "PURSUE_REMOTE_WORK: remote:all-append-append-only-automation",
       "url": "https://github.com/thp32tt/OutRun2006Tweaks/issues/14",
@@ -591,25 +2762,6 @@
       "previousDecisions": []
     },
     {
-      "key": "37852f37bdb7c486de1ae39b79b87f04fc96c2aad1e96a6822a0259b08b79e72",
-      "title": "OFFER_SERVICE: service:10-12-402-above-abrir",
-      "url": "https://github.com/Bitcoindefi/Open-Stellar/issues/29",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "37b86c342ef93d88e0cde9e1435e7cd315a0aafed0b31eef7638ae745c015790",
       "title": "OFFER_SERVICE: service:accept-acceptance-accepted-actions",
       "url": "https://github.com/LowcountryDigitalWorks/website-quality-toolkit/issues/14",
@@ -629,24 +2781,6 @@
       "previousDecisions": []
     },
     {
-      "key": "383b4db8319296b4713c5c4bb65d9e4afa86e94e89788390529d95d0f20b7578",
-      "title": "OFFER_SERVICE: VersionVault",
-      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "3cac3665bfe79839f0dd3573d7be42e4ebf7cd7540decd6dbcecedfb1a61854f",
       "title": "ADAPT_EXISTING: ResuMaster",
       "url": "https://github.com/objectstack-ai/objectui/issues/9771",
@@ -663,26 +2797,6 @@
       "firstSeenAt": "2026-10-02T00:37:36.138Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "3ddeba2d68421499f46667b4b8648c4e6a21829f188b47ed85898821fa717885",
-      "title": "OFFER_SERVICE: ChartPaste MD",
-      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1068",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
       "previousDecisions": []
     },
     {
@@ -738,44 +2852,6 @@
       ],
       "observedAt": "2026-10-02T03:08:53.639Z",
       "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "44219013b6f85e8528a62d111cce806c936f9c6823afc722cc1f4728e8116820",
-      "title": "PURSUE_REMOTE_WORK: remote:554-able-act-acting",
-      "url": "https://github.com/SoulSchoolAcademy/NayaPOWER/issues/554",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "44456c128e373a2b91e3d0b0440d03b884077578e8ffa8ece3886e0da34eb8ba",
-      "title": "PURSUE_REMOTE_WORK: remote:002-test-02d9abd62782-032s-064cfc900144",
-      "url": "https://github.com/smithersai/smithers/issues/2290",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 2,
       "previousDecisions": []
@@ -838,24 +2914,6 @@
       "previousDecisions": []
     },
     {
-      "key": "4cb23c19e2b98839f5be9c9a521ba2261c66126dc3124ebdba9c5797085ae45e",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359269",
-      "url": "https://www.grants.gov/search-results-detail/359269",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "4d2d9de2f87a42da5e783ab121394654941efe39d21fbbe85a774e49ba06e811",
       "title": "PURSUE_REMOTE_WORK: remote:018fxqvrjw12tahc7duq89y6-01pah3yshlerepjjugd82ohh-01utnxvdin376gf3sgxwaw4d-032865c9",
       "url": "https://github.com/objectstack-ai/objectstack/issues/6017",
@@ -894,24 +2952,6 @@
       "previousDecisions": []
     },
     {
-      "key": "4f2c56a70e2be18be285cf2243eb90551deb689788cd7153f6460e46343c7e8d",
-      "title": "PUBLIC_RECORD: federal-contract-award: IMPRES TECHNOLOGY SOLUTIONS, INC: 70CMSD26FR0000161",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "518d6df71dce627e81e00163e5eaf212c6d52dd703cac1ff45d965bdc9051f0e",
       "title": "PURSUE_REMOTE_WORK: remote:00z-07z-150-189",
       "url": "https://github.com/LEAPWare-Software/LEAPWare-ShellUX/issues/187",
@@ -928,25 +2968,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "51967fdf04d05fee0674a18e70ac04d862a16d9996ad93f5afda2dfa1cceb052",
-      "title": "PURSUE_REMOTE_WORK: remote:0ba6b78051c9e758b1f76b3903ec924319e01b3c-0f4cc64a106d7cc82c7133d84fcf99b0ae9d04b1-1001-1006",
-      "url": "https://github.com/pongbiphang/pbps/issues/595",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 2,
       "previousDecisions": []
     },
     {
@@ -986,26 +3007,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "5515f5e53bd481b889b15bb929cb27f343889f83e8dad294c912de70cab5f1f3",
-      "title": "VersionVault: commercial research seed",
-      "url": "https://github.com/Naveax/nxb-integrity-research-lab/issues/49",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
       "previousDecisions": []
     },
     {
@@ -1123,44 +3124,6 @@
       "previousDecisions": []
     },
     {
-      "key": "5d738d241ec03cdd1fef44a2f27dfd6eb835e7f2eac720c44ab497821a6e04b6",
-      "title": "OFFER_SERVICE: service:10m-20m-429-479",
-      "url": "https://github.com/sadouninc/Sado-Investment-Lab/issues/727",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "5ec32310271f3d85a56b75f8e3cb0b2f0dd8a09b3e3dc62f20f986bf83ebb7db",
-      "title": "OFFER_SERVICE: ProofRail",
-      "url": "https://github.com/ArgumentumGames/Argumentum/issues/458",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
       "key": "5eeb491e48ec5f2334d043225131ce2065d226483cd00638787c8390e4b7a570",
       "title": "PURSUE_REMOTE_WORK: remote:14-21-165-166-167",
       "url": "https://github.com/Elacity/elastos-runtime/issues/173",
@@ -1177,61 +3140,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "5f0fa5c7333bff6ec3c942a5a83d7a4a35a6d66d860d179ba4c835a7c9adfc09",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359123",
-      "url": "https://www.grants.gov/search-results-detail/359123",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "6120b9fdf6427a48e5e08944b344597b5578263ff2dc644aed8e0269ef2a053e",
-      "title": "OFFER_SERVICE: service:000001-100-2026-2026-09-09t15",
-      "url": "https://github.com/sanizakka-cyber/AI-CROP-DETECTOR/issues/9",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "684e63e9c73a6530d573cec1b9f5e95c784aca6f59074065e44cbcd99417b5a7",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359949",
-      "url": "https://www.grants.gov/search-results-detail/359949",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
@@ -1268,42 +3176,6 @@
       ],
       "observedAt": "2026-10-02T03:08:53.639Z",
       "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "6a37dc1f6804d2ab9084cd3fd25af67e57500a4efb76adfad0f286845b5b8667",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359004",
-      "url": "https://www.grants.gov/search-results-detail/359004",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "6a76ae386d9e47321cbc8b24ed36eb119d85c16cef4d3e40fde32b4057624435",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359666",
-      "url": "https://www.grants.gov/search-results-detail/359666",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 3,
       "previousDecisions": []
@@ -1346,44 +3218,6 @@
       "previousDecisions": []
     },
     {
-      "key": "6e171ba8a5ac8d63a3878d636dd979cde884d6d6bf1c7296613a20b954db28f1",
-      "title": "OFFER_SERVICE: service:1000-1107-1280-15-60",
-      "url": "https://github.com/Scottcjn/rustchain-bounties/issues/16601",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "6f03ecd55fe95d4287543e69942098bf4697e144b82f2ceefa95af0fbcb058fa",
-      "title": "OFFER_SERVICE: service:000-115-131-135",
-      "url": "https://github.com/spy4x/antonshubin.com/issues/388",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "713d453408f2bd9a4b987171f91193473bdc5eec9b63e5c3440c95cffecc7fb4",
       "title": "PURSUE_REMOTE_WORK: remote:acceptance-acknowledges-action-actionable",
       "url": "https://github.com/AnonymousNomad/covert-coder/issues/38",
@@ -1422,24 +3256,6 @@
       "previousDecisions": []
     },
     {
-      "key": "73944096a5de24451580fe516850f47a927c225c0f374f14185e0f9dd69606e8",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358934",
-      "url": "https://www.grants.gov/search-results-detail/358934",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "73a2794a98ce138bd32c8be7d6e53356b1ebf9e226b15c15bffd204a723c8451",
       "title": "PURSUE_REMOTE_WORK: remote:2020-12-3-line-403-422",
       "url": "https://github.com/ricardov03/code-forge/issues/2",
@@ -1459,44 +3275,6 @@
       "previousDecisions": []
     },
     {
-      "key": "767706a028c54693d78c230b3c53f84465afa44f5a5828ca23023315aa869955",
-      "title": "OFFER_SERVICE: service:045-074-10-page-134d4084662f28b27d8345969dca5de9d3cbc18a",
-      "url": "https://github.com/usdimpact/usd-impact-site/issues/570",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "77e00e52c222726d92696a64292bbe851d3e7fd5ca9b628f1c9d848a61f8b732",
-      "title": "OFFER_SERVICE: service:110496328283-168d86612554661281a28697c3c948c6126b49a4-2026-10-01-2cf55fde8bdb964d914ded7deaa0e93226284070",
-      "url": "https://github.com/bifanaboy/liszt/issues/5",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "7a685fbcebe0b570a7e8271abbc4e8124fdf0aa52dbc79d20080b0bd3da46c14",
       "title": "PURSUE_REMOTE_WORK: remote:acceptance-accepted-actual-add",
       "url": "https://github.com/Seavenly/dotfiles/issues/84",
@@ -1513,62 +3291,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "7c6723ab581963a9a000555967f19e8e8b118a72aedd4e9260001e86e0ffbe09",
-      "title": "OFFER_SERVICE: service:2026-09-28-2026-09-29-280-acceptance",
-      "url": "https://github.com/LowcountryDigitalWorks/gas-engine/issues/31",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "7d5874c4fecd5b9e6f406150a7028d7c509a1d759c3353cbac2ab21c68dd7fa8",
-      "title": "PURSUE_REMOTE_WORK: remote:1-4-112-commit-1869-18b9295",
-      "url": "https://github.com/division-sh/swarm/issues/2151",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "7de7c25d5dab09fe8a3f79e8a731715e97059651f61038a4a5604c5d80fb54e3",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 355439",
-      "url": "https://www.grants.gov/search-results-detail/355439",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
@@ -1666,62 +3388,6 @@
       "previousDecisions": []
     },
     {
-      "key": "861a63f1dafedb4fe8d839671f13da4c2d80dd33c3e06271188b7ff57f167065",
-      "title": "PURSUE_REMOTE_WORK: remote:103-108-527-537",
-      "url": "https://github.com/skerishKang/lovetree-limone/issues/589",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "881e2803920b6a09875f0526c8832fe4f409d2044e6909a48ca0c7ac8c777762",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: PAMS-SC: 361526",
-      "url": "https://www.grants.gov/search-results-detail/361526",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "88b555f86c1e66dbf68a5f763268111007a4f11b1d8fc3ed5a7ceebe0b78d75d",
-      "title": "PURSUE_REMOTE_WORK: remote:3af46da813c94f6d93ee5e7d9ca63911-4210-4240-5ac2776c-f1a9-48e2-ac26-8349ffcb0287",
-      "url": "https://github.com/eng-cc/oasis7/issues/4211",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "8d390f5b8e62f7dcc1e4272181a7ffd06cfa0e4a60adcaff5cc52e9a539b3838",
       "title": "ADAPT_EXISTING: ProofRail",
       "url": "https://github.com/HualapaiValley/HVO.SkyMonitor/issues/1110",
@@ -1760,25 +3426,6 @@
       "previousDecisions": []
     },
     {
-      "key": "90889b7eba98b46310e26bdf7769675e9ee7204f21996e36b69bcb7506efe473",
-      "title": "PURSUE_REMOTE_WORK: remote:000-000-run-100-100-gb",
-      "url": "https://github.com/SAC-CS112-Randall-Christopher/Q-Trades/issues/28",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "90c3d9ddf264584177fa44bbfbe1f98410316be41c8eee2cdf0d365671ae1c2d",
       "title": "PURSUE_REMOTE_WORK: remote:043fb46d1a93c77aae656e7c1c64a875d1fc6a0a-168352-168669-174371",
       "url": "https://github.com/home-assistant/core/issues/168216",
@@ -1795,24 +3442,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "922cf7a72e5899fd6c08a67cc5adced423ecbed9e5f4007768ff2ae1ec543a11",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359003",
-      "url": "https://www.grants.gov/search-results-detail/359003",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
@@ -1851,25 +3480,6 @@
       "firstSeenAt": "2026-10-02T00:23:29.704Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "93913558e1f5f5b829b3db10988a01a4d82913deae2a8751376a2d4b489af39c",
-      "title": "OFFER_SERVICE: service:198-220-acceptance-add",
-      "url": "https://github.com/Dfunder/stellarAid-contract/issues/798",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
       "previousDecisions": []
     },
     {
@@ -1930,62 +3540,6 @@
       "previousDecisions": []
     },
     {
-      "key": "97e629699749144ae90909d14bb0d913708257a7cfb42a56669004fec6ff4f73",
-      "title": "OFFER_SERVICE: service:000-60-day-absent-acceptance",
-      "url": "https://github.com/in-c0/tuned/issues/1",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "98ee207f0995909b6a9993c0a0c954cb37c191498bd731ccf0db45fe75b86e45",
-      "title": "OFFER_SERVICE: service:2026-2026-10-01-2030-24-1-ipu-ai-security-filter",
-      "url": "https://github.com/skerishKang/ai-revenue-lab/issues/731",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "99533aa05bd56c8ecd9e8f2f8c60ba6421e72099a60a47dc938292c45818f949",
-      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-101-1066-108cdeb60dd7e4b3dadd1f7cd34841a294c0774c",
-      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/344",
-      "source": "demand",
-      "lane": "NEW_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "9cd830223e695f6f3c5e409adc8ff76748860adaa69f999e8067fac0c8dadf62",
       "title": "OFFER_SERVICE: service:36603683638-36603683823-5356029383-a393304f8a0f306002dfdf0460b6e0599f75e917",
       "url": "https://github.com/kinoko34077/dev_agent/issues/42",
@@ -2040,44 +3594,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "a35e919bfc754de946510bf81c1928ec167d0afd0366ddc3fe83aebed1035252",
-      "title": "OFFER_SERVICE: service:794-advanced-already-already-completed",
-      "url": "https://github.com/Ajo-contrib/soroban-ajo/issues/904",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
-      "key": "a4e9b2b64b5b3c2f89723b48e710b0993644e4cf34dfa77765a02549b0817616",
-      "title": "OFFER_SERVICE: service:across-actually-add-on-adjustable",
-      "url": "https://github.com/FinalAsgard/asgard-guild-fellowship/issues/23",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
       "previousDecisions": []
     },
     {
@@ -2138,61 +3654,6 @@
       "previousDecisions": []
     },
     {
-      "key": "af1a1b00ca94e98eeed3eb692d92c19d33b142a4a5931ac8d11c62f2d382b1b4",
-      "title": "PURSUE_REMOTE_WORK: remote:03-spec-networking-100-120-127",
-      "url": "https://github.com/gominimal/minimal/issues/1437",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "b04dada97e0057844eba95d567b26e4b163ef27f315a35bca983f27987fd1c24",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357309",
-      "url": "https://www.grants.gov/search-results-detail/357309",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "b21eda0589cc7141a604c159a7ffd344e17336f10da6215ee0c8c0c6b748f75a",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359270",
-      "url": "https://www.grants.gov/search-results-detail/359270",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
       "key": "b6de3a1bcedb35abbb1842d4ba41cfe5e3a6b45021ee12cc7446f351c8f14817",
       "title": "ResuMaster: commercial research seed",
       "url": "https://github.com/objectstack-ai/objectui/issues/9771",
@@ -2224,26 +3685,6 @@
         "BUYER_INTENT",
         "PAYMENT_PATH",
         "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "bb1e01f339adbfff07454d39bf2c4b879af8e7cd6f50c7fbb6027473cc4e08bd",
-      "title": "ResuMaster: commercial research seed",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/6024",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
       ],
       "observedAt": "2026-10-02T03:08:53.639Z",
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
@@ -2290,102 +3731,6 @@
       "previousDecisions": []
     },
     {
-      "key": "c3ab32015438e56d248b883fc7c6511f9f8a80efe81188935f97d81166f1b5ba",
-      "title": "OFFER_SERVICE: service:190-191-249-250-403-427",
-      "url": "https://github.com/sol-aeternum/Daemon/issues/373",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "c62918bbe34c8a4209fcb55c661ac190f0ecae21809673b2e39cf5ea9ab6f200",
-      "title": "PURSUE_REMOTE_WORK: remote:031-0310569-058-061",
-      "url": "https://github.com/SUSANO-OOO/Zombieee/issues/172",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "c63730545f035d0d4a926f1ba2448bc7210b18884e9daa687633e2c799e589b1",
-      "title": "OFFER_SERVICE: service:14-specific-2025-11-25-2026-10-01-336",
-      "url": "https://github.com/radek-cerny-soukr/netops/issues/1",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "c72ae1df430ef5f9a7a8b8d6e23e893a10bd1bc02f78cf916861497b1aad60f4",
-      "title": "ProofRail: commercial research seed",
-      "url": "https://github.com/ArgumentumGames/Argumentum/issues/458",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "c9496a31e6c1fc45c907f20fc0d58e925392a09ecf9126e85b44b10417dbdf49",
-      "title": "OFFER_SERVICE: service:174-38s-692-694",
-      "url": "https://github.com/engine262/engine262/issues/367",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "c9eb717968f4c817d0c30719a10d32edcb161a57b8ee13bb5307ca8062c1f54a",
       "title": "PURSUE_REMOTE_WORK: remote:000-010693bf5dcc7e84dabc199b3e20b86f1404bb1cb292139d82eda77e4a724b6b-01a0f88b-3532-7913-9e84-f6b14bb7458b-01a0f988-15db-7611-8438-1f9839b83377",
       "url": "https://github.com/kburson/ai-task-manager/issues/1859",
@@ -2405,43 +3750,6 @@
       "previousDecisions": []
     },
     {
-      "key": "ca4f433f50b031a21cd6d8b4ea3989e37b37909e68bf00e1e95b6a632ba6ed91",
-      "title": "PURSUE_REMOTE_WORK: remote:024b574fcbf7ab3dfac03327075621ad81ad521a-1087-1152-1153",
-      "url": "https://github.com/relativityE/speaksharp/issues/1258",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 5,
-      "previousDecisions": []
-    },
-    {
-      "key": "cad697fad6ad3b382310a7a098022ef20946a64f2f554f5a232145fe741e01a5",
-      "title": "PUBLIC_RECORD: federal-contract-award: FOUR POINTS TECHNOLOGY, L.L.C.: 7571TE26F80332",
-      "url": "https://api.usaspending.gov/api/v2/search/spending_by_award/",
-      "source": "public-record:usaspending-federal-awards",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:51:08.799Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "caee5a9124785f07330383cb9f8b64ef530c2c9cdd9164b58c568b04a29a1304",
       "title": "PURSUE_REMOTE_WORK: remote:369-380-382-389",
       "url": "https://github.com/haoxiang-xu/PuPu/issues/390",
@@ -2458,24 +3766,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "cee225e35c0aca93269d0d47f6921db62587bfb4944582c2aef8cec5ad107fd7",
-      "title": "CREATE_NEW: new:06975680ec726cbeed0bf4d53c5657e601279abe-1066-1166-120",
-      "url": "https://github.com/johnkim9524-collab/kaios_enterprise_repo/issues/1166",
-      "source": "demand",
-      "lane": "NEW_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 6,
       "previousDecisions": []
     },
     {
@@ -2670,43 +3960,6 @@
       "previousDecisions": []
     },
     {
-      "key": "df1c1179318385cc359685a9911a6e83ef6dab655a50e9ca947e08ff2cea5bf2",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 358864",
-      "url": "https://www.grants.gov/search-results-detail/358864",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "e1606b616c1ece806386518ac7e894dae2c15117fd5ac989af3dd33906d3a41f",
-      "title": "OFFER_SERVICE: service:4616-4617-49h-5728",
-      "url": "https://github.com/genfeedai/genfeed.ai/issues/5788",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "e1fab769a35876d32daf5a97fc4ae92c61958e95b7b48488b6149da9e6daea51",
       "title": "PURSUE_REMOTE_WORK: remote:001-accepted-action-actions",
       "url": "https://github.com/xqc2098948451-byte/gpt-codex-framework/issues/17",
@@ -2745,43 +3998,6 @@
       "previousDecisions": []
     },
     {
-      "key": "ea0a70ba78e2e1e094b32d1a3a7c3424616b025e4170315157c47a12986990cf",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 357308",
-      "url": "https://www.grants.gov/search-results-detail/357308",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "eb17e342a611670be2a1bcda35bbdfbe330a3948c3176752bc92a3b34e1fff71",
-      "title": "ADAPT_EXISTING: ChartPaste MD",
-      "url": "https://github.com/FreshRSS/FreshRSS/issues/9340",
-      "source": "demand",
-      "lane": "EXISTING_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "eb7715b88aa54fda32025eeb65e32db4f613599699421f4a2fa961831bddf51a",
       "title": "PURSUE_REMOTE_WORK: remote:000377-024-row-03a3b73dd2fc6888e603307df5c3a00f0a879342-047670",
       "url": "https://github.com/snissn/gomap/issues/4805",
@@ -2796,83 +4012,6 @@
       ],
       "observedAt": "2026-10-02T03:08:53.639Z",
       "firstSeenAt": "2026-10-02T00:23:29.704Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "ec22084a87cd686f237a7dd0565ec882d9f465bfc8685bb89356f5cbd04486b7",
-      "title": "PURSUE_REMOTE_WORK: remote:1144-1507b818ad2585441ec08154845d76d19c5fc5a2c99d73911c62ddafd6c3cf6a-16-byte-168",
-      "url": "https://github.com/4laric/pikmin-randomizer/issues/1148",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "ee0ff2131b51de5466c127cea7af1245e8a2a9ae7a7e82ade98e1c214882d0f7",
-      "title": "OFFER_SERVICE: service:1084-109-1091-120",
-      "url": "https://github.com/zhupanov/larch/issues/6991",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "f1e714bbcbafe1f03ffcf6f7f496226d4362b5a0940567f5b8ce787edbbb769b",
-      "title": "PURSUE_REMOTE_WORK: remote:360-access-act-active",
-      "url": "https://github.com/BroMarcus/church-app/issues/28",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
-      "key": "f1f7e2148d24e978bc8c63006586d95d3a728fbe47eddfef0c2a9f16b8b31d50",
-      "title": "ChartPaste MD: commercial research seed",
-      "url": "https://github.com/Masterleeaus/Titan-Zero-Field-Service-Workforce/issues/1068",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T02:09:18.182Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 2,
       "previousDecisions": []
@@ -2897,44 +4036,6 @@
       "previousDecisions": []
     },
     {
-      "key": "f34d200c7361647b6f84905663ea44421f8aeb638ef074f0e5fe3f986ad49c92",
-      "title": "OFFER_SERVICE: service:0-20201027110005-a7ad2135616e-0-20220811071828-388f114305dd-0-20230301143203-a9d515a09cc2-0-20230728192033-2ba5b33183c6",
-      "url": "https://github.com/grafana/xk6-grafana-alerting/issues/3",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "f6278c5284e3505adbec2c6b9574cedd9a15bc7e593f22aa1634e145cbd1c5ff",
-      "title": "OFFER_SERVICE: service:1-adopt-baseline-rollout-1-hotfix-and-rollout-report-237965f559e77569803463ecbf35233025dafc1f407aaccdd351d9ad61f87bf5-a88a61b7fcae632cdf5b282dc4461592b92cad57",
-      "url": "https://github.com/KayzenRoot/gef-bootstrap/issues/357",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 7,
-      "previousDecisions": []
-    },
-    {
       "key": "fb6391b646c707f28c378d71c86f455924fd637988cf5acedb732f02c9136be1",
       "title": "PURSUE_REMOTE_WORK: remote:100-1206-1208-1346",
       "url": "https://github.com/boxs-51/assistant/issues/74",
@@ -2951,42 +4052,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "fc22fafcbd6cb4b9b5cf5c7e73e1e9d2276f29ed06a5958486b560f198456763",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: NSF: 320753",
-      "url": "https://www.grants.gov/search-results-detail/320753",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "fcbba34678e102ce91f37512cb70e3a4fe448ce1f8005304e08019084418c2e8",
-      "title": "PUBLIC_RECORD: federal-grant-opportunity: HHS-NIH11: 359268",
-      "url": "https://www.grants.gov/search-results-detail/359268",
-      "source": "public-record:grants-gov",
-      "lane": "PUBLIC_RECORD",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "BUYER_INTENT",
-        "CURRENT_NEED",
-        "CONTACTABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
@@ -3047,115 +4112,6 @@
       "previousDecisions": []
     },
     {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:1",
-      "title": "[BOUNTY $50] SKILL: Generate a structured CHANGELOG from git history",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/1",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:2",
-      "title": "[BOUNTY $75] TEMPLATE: CLAUDE.md for a Next.js + SQLite SaaS project",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/2",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:3",
-      "title": "[BOUNTY $100] HOOK: Pre-tool-use hook that blocks destructive bash commands",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/3",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:4",
-      "title": "[BOUNTY $150] AGENT: Claude Code sub-agent that reviews a PR and posts a structured comment",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/4",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:claude-builders-bounty/claude-builders-bounty:5",
-      "title": "[BOUNTY $200] WORKFLOW: n8n + Claude Code — automated weekly dev summary",
-      "url": "https://github.com/claude-builders-bounty/claude-builders-bounty/issues/5",
-      "source": "github:claude-builders-bounty/claude-builders-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:imhurl23/evals_research_repo:19",
-      "title": "Frontier watch — 2026-09-27",
-      "url": "https://github.com/imhurl23/evals_research_repo/issues/19",
-      "source": "github:imhurl23/evals_research_repo",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
       "key": "github:immanueltella-web/quantum-media-os.:1",
       "title": "💷 XOOL Penniless Agent — first £1 target",
       "url": "https://github.com/immanueltella-web/quantum-media-os./issues/1",
@@ -3194,25 +4150,6 @@
       "previousDecisions": []
     },
     {
-      "key": "github:NextCommunity/NextCommunity.github.io:613",
-      "title": "Join Hacktoberfest and get paid with GitHub Sponsors",
-      "url": "https://github.com/NextCommunity/NextCommunity.github.io/issues/613",
-      "source": "github:NextCommunity/NextCommunity.github.io",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T03:08:53.639Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
       "key": "github:PelvicSorcerer/moviecal:833",
       "title": "Fix production Jev control parameters and funded-account payment bounds",
       "url": "https://github.com/PelvicSorcerer/moviecal/issues/833",
@@ -3229,63 +4166,6 @@
       "firstSeenAt": "2026-10-02T03:08:53.639Z",
       "lastSeenAt": "2026-10-02T03:08:53.639Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:743",
-      "title": "Low Handing Fruit Automation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/743",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:76",
-      "title": "Technical Poem Generation and Content Creation",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/76",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
-      "previousDecisions": []
-    },
-    {
-      "key": "github:SecureBananaLabs/bug-bounty:80",
-      "title": "Pixel Art Creation with high Creative Thinking",
-      "url": "https://github.com/SecureBananaLabs/bug-bounty/issues/80",
-      "source": "github:SecureBananaLabs/bug-bounty",
-      "lane": "bounty",
-      "decision": "NEEDS_VERIFICATION",
-      "verificationNeeds": [
-        "UPFRONT_SPEND",
-        "ELIGIBILITY",
-        "DEVICE_COMPATIBILITY",
-        "PAYMENT_VERIFIABILITY"
-      ],
-      "observedAt": "2026-10-02T03:08:53.639Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T03:08:53.639Z",
-      "observationCount": 8,
       "previousDecisions": []
     },
     {
@@ -3534,25 +4414,6 @@
       "firstSeenAt": "2026-10-02T01:51:08.799Z",
       "lastSeenAt": "2026-10-02T02:09:18.182Z",
       "observationCount": 3,
-      "previousDecisions": []
-    },
-    {
-      "key": "96f8d9ea90eef0089f7a0d8b837758a5b8a6db31b242345b302f59f739966707",
-      "title": "OFFER_SERVICE: service:1316-1570-2022-2025",
-      "url": "https://github.com/peleduri/zero-day-pulse/issues/7",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T02:09:18.182Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T02:09:18.182Z",
-      "observationCount": 7,
       "previousDecisions": []
     },
     {
@@ -3995,25 +4856,6 @@
       "previousDecisions": []
     },
     {
-      "key": "702a1fc5e20ef66133a0bbbe7011d7e740474a975a543b40c8541ca2a89265dc",
-      "title": "PURSUE_REMOTE_WORK: remote:2026-09-27-absence-acceptable-acceptance",
-      "url": "https://github.com/elboaf/YAAH/issues/118",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T01:54:33.882Z",
-      "firstSeenAt": "2026-10-02T01:54:33.882Z",
-      "lastSeenAt": "2026-10-02T01:54:33.882Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
       "key": "75eb03049651e8c36661d108f2ccdd24c09dd8dc43aa96c0a3f891f00f558b2c",
       "title": "ProofRail: commercial research seed",
       "url": "https://github.com/Coil-Legal/coil/issues/12",
@@ -4088,25 +4930,6 @@
       "firstSeenAt": "2026-10-02T00:11:53.214Z",
       "lastSeenAt": "2026-10-02T01:54:33.882Z",
       "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
-      "key": "9039bea5ec536f48dbe11625dc13a72c8adb1dc3f23e0065cae58adf4c03a88d",
-      "title": "PURSUE_REMOTE_WORK: remote:169-357-379-667",
-      "url": "https://github.com/LouPineWays/Loop-Dee-Loup/issues/379",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T01:54:33.882Z",
-      "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T01:54:33.882Z",
-      "observationCount": 2,
       "previousDecisions": []
     },
     {
@@ -4337,25 +5160,6 @@
       "previousDecisions": []
     },
     {
-      "key": "dea84f8f38cc3f7b8fad69ea7893727e585e73f84a07ab1b3621efca448a2247",
-      "title": "PURSUE_REMOTE_WORK: remote:1312-1322-1404-1457",
-      "url": "https://github.com/chris-dare-dev/derived-alg-geo-lean/issues/554",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T01:54:33.882Z",
-      "firstSeenAt": "2026-10-02T00:51:34.445Z",
-      "lastSeenAt": "2026-10-02T01:54:33.882Z",
-      "observationCount": 2,
-      "previousDecisions": []
-    },
-    {
       "key": "e5b48e2d59eaa930c3b8320820176f9e53b78977c699eb8d8a88ee7f4caaee30",
       "title": "ProofRail: commercial research seed",
       "url": "https://github.com/yungGom/Auditing_Package/issues/23",
@@ -4566,26 +5370,6 @@
       "previousDecisions": []
     },
     {
-      "key": "b763164a427e4dc122b1ba1ad1b5b8db7c1a69d24981de3cac6fed34a0ccdd15",
-      "title": "ResuMaster: commercial research seed",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/21118",
-      "source": "commercial-seed",
-      "lane": "commercial_research",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "AUTHORITATIVE_WORKFLOW",
-        "CAPABILITY_EVIDENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "VERIFIED_CONTACT"
-      ],
-      "observedAt": "2026-10-02T01:51:08.799Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T01:51:08.799Z",
-      "observationCount": 4,
-      "previousDecisions": []
-    },
-    {
       "key": "c388fec4ab3f198423e20656238ae4b076ce6031c5b44ab28ce943c22f8bbc29",
       "title": "VersionVault: commercial research seed",
       "url": "https://github.com/jarmak-personal/hvir/issues/851",
@@ -4623,26 +5407,6 @@
       "firstSeenAt": "2026-10-02T01:51:08.799Z",
       "lastSeenAt": "2026-10-02T01:51:08.799Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "ef6fe0902d00377d812c24f2ce8d1d991fef790e64262de9249cc7b3baae8bc1",
-      "title": "ADAPT_EXISTING: ResuMaster",
-      "url": "https://github.com/objectstack-ai/objectstack/issues/21118",
-      "source": "demand",
-      "lane": "EXISTING_PRODUCT",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION",
-        "ASSET_READINESS"
-      ],
-      "observedAt": "2026-10-02T01:51:08.799Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T01:51:08.799Z",
-      "observationCount": 4,
       "previousDecisions": []
     },
     {
@@ -6743,25 +7507,6 @@
       "previousDecisions": []
     },
     {
-      "key": "8aa6cb9f2a94addfc5c3b43ef3612518548865015f61266c7e223b7e38ab1620",
-      "title": "PURSUE_REMOTE_WORK: remote:0045-014f099ddc73c935770cba917aed4374c58b7ba8-095c836c-0bf40375",
-      "url": "https://github.com/killjoy00/mtg-ev-analyzer/issues/575",
-      "source": "demand",
-      "lane": "REMOTE_WORK",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T00:37:36.138Z",
-      "firstSeenAt": "2026-10-02T00:37:36.138Z",
-      "lastSeenAt": "2026-10-02T00:37:36.138Z",
-      "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
       "key": "8bba50fc628536946664eeb09978c7321e812e81322ddec14d7aa658c6b257dd",
       "title": "PURSUE_REMOTE_WORK: remote:10-job-135-142-16379",
       "url": "https://github.com/daniel-ospina/tortoise/issues/6160",
@@ -6967,25 +7712,6 @@
       "firstSeenAt": "2026-10-02T00:37:36.138Z",
       "lastSeenAt": "2026-10-02T00:37:36.138Z",
       "observationCount": 1,
-      "previousDecisions": []
-    },
-    {
-      "key": "fe5a08aef00392cebcac0c42223141d0142264cac9f9e7f6847eb797f7778dde",
-      "title": "OFFER_SERVICE: service:0rrpy1ph7hafi3qoitg0mr-1-16-10am-12pm-11u71et-rztkvvp8yj",
-      "url": "https://github.com/hackforla/website/issues/8786",
-      "source": "demand",
-      "lane": "SERVICE",
-      "decision": "RESEARCH_SEED",
-      "verificationNeeds": [
-        "RECURRENCE",
-        "BUYER_INTENT",
-        "PAYMENT_PATH",
-        "COMPETITION"
-      ],
-      "observedAt": "2026-10-02T00:37:36.138Z",
-      "firstSeenAt": "2026-10-02T00:11:53.214Z",
-      "lastSeenAt": "2026-10-02T00:37:36.138Z",
-      "observationCount": 3,
       "previousDecisions": []
     },
     {
