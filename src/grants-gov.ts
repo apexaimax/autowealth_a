@@ -61,14 +61,12 @@ export async function fetchGrantsGovOpportunities(
         const closeDate=isoDate(hit.closeDate);
         const openDate=isoDate(hit.openDate);
         seen.add(id);
-        signals.push({
+        const signal:PublicRecordSignal={
           sourceId:"grants-gov",
           recordId:id,
           recordType:"federal-grant-opportunity",
           officialUrl:`https://www.grants.gov/search-results-detail/${encodeURIComponent(id)}`,
-          organizationName:hit.agencyName||hit.agencyCode||undefined,
           jurisdiction:"United States",
-          eventDate:openDate??undefined,
           retrievedAt,
           facts:{
             matchedKeyword:keyword,
@@ -82,7 +80,11 @@ export async function fetchGrantsGovOpportunities(
             eligibilityIds:applicantIds.join(","),
             aln:(hit.alnist??[]).join(",")
           }
-        });
+        };
+        const organizationName=hit.agencyName||hit.agencyCode;
+        if(organizationName) signal.organizationName=organizationName;
+        if(openDate) signal.eventDate=openDate;
+        signals.push(signal);
       }
     } catch(error) {
       failures.push({keyword,error:error instanceof Error?error.message:String(error)});
