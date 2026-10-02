@@ -6,6 +6,7 @@ import { verifyGitHubCandidates } from "./github-verification.js";
 import { buildCommercialResearchSeeds } from "./commercial-seeds.js";
 import { isCommercialServiceSignal } from "./service-signal-quality.js";
 import { fetchUsaSpendingContractAwards } from "./usaspending-public-records.js";
+import { fetchGrantsGovOpportunities } from "./grants-gov.js";
 
 interface SearchIssue {
   html_url:string; number:number; title:string; state:"open"|"closed"; locked:boolean;
@@ -118,6 +119,7 @@ async function main(){
     "healthcare workflow software",
     "browser automation software"
   ]);
+  const grantsEligibleApplicantTypes=csvEnv(process.env.REVENUE_GRANTS_ELIGIBILITY,["22","23","99"]);
   const observedAt=new Date().toISOString();
   const profile=profileFromEnv(process.env);
   const streams=[];
@@ -167,6 +169,10 @@ async function main(){
   const publicRecords=shouldFetchPublicRecords
     ? await fetchUsaSpendingContractAwards(publicRecordKeywords,dateOnly(start),dateOnly(end),observedAt)
     : {signals:[],failures:[]};
+  const grantRecords=shouldFetchPublicRecords
+    ? await fetchGrantsGovOpportunities(publicRecordKeywords,observedAt,grantsEligibleApplicantTypes)
+    : {signals:[],failures:[]};
+  const combinedPublicRecordSignals=[...publicRecords.signals,...grantRecords.signals];
 
   const uniqueDemand=[...new Map(demandObservations.map(item=>[item.id,item])).values()];
   const demandRecommendations=analyzeDemand(uniqueDemand,DEFAULT_PROJECT_ASSETS);
@@ -186,9 +192,9 @@ async function main(){
     errors:verificationAttempts.filter(item=>item.status==="ERROR").length
   };
   process.stdout.write(JSON.stringify({
-    source:"github-public-issues+usaspending-public-records",observedAt,profileEnabled:Boolean(profile),
-    paidQueries,demandQueries,serviceQueries,remoteWorkQueries,externalResearchQueries,publicRecordKeywords,
-    failures,demandFailures,publicRecordFailures:publicRecords.failures,
+    source:"github-public-issues+usaspending+grants-gov-public-records",observedAt,profileEnabled:Boolean(profile),
+    paidQueries,demandQueries,serviceQueries,remoteWorkQueries,externalResearchQueries,publicRecordKeywords,grantsEligibleApplicantTypes,
+    failures,demandFailures,publicRecordFailures:[...publicRecords.failures,...grantRecords.failures],
     summary:discoverySummary(batch),
     demandSummary:{
       totalObserved:demandObservations.length,
@@ -198,8 +204,8 @@ async function main(){
       commercialResearchSeeds:commercialResearchSeeds.length,
       serviceFilteredByQuality
     },
-    publicRecordSummary:{source:"USAspending",polled:shouldFetchPublicRecords,records:publicRecords.signals.length,failures:publicRecords.failures.length},
-    publicRecordSignals:publicRecords.signals,
+    publicRecordSummary:{source:"USAspending+Grants.gov",polled:shouldFetchPublicRecords,records:combinedPublicRecordSignals.length,failures:publicRecords.failures.length+grantRecords.failures.length,bySource:{usaspending:publicRecords.signals.length,grantsGov:grantRecords.signals.length}},
+    publicRecordSignals:combinedPublicRecordSignals,
     commercialResearchSeeds,
     creationCandidates,
     readyForEconomics:batch.readyForEconomics,
